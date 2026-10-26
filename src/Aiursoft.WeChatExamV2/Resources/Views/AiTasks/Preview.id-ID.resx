@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Abandon" xml:space="preserve">
+    <value>Tinggalkan</value>
+  </data>
+  <data name="Adopt" xml:space="preserve">
+    <value>Terima</value>
+  </data>
+  <data name="Adopt All" xml:space="preserve">
+    <value>Terima Semua</value>
+  </data>
+  <data name="AI New Answer" xml:space="preserve">
+    <value>Jawaban Baru AI</value>
+  </data>
+  <data name="AI New Explanation" xml:space="preserve">
+    <value>Penjelasan AI Baru</value>
+  </data>
+  <data name="AI Task Preview" xml:space="preserve">
+    <value>Pratinjau Tugas AI</value>
+  </data>
+  <data name="Are you sure you want to adopt all AI suggestions?" xml:space="preserve">
+    <value>Apakah Anda yakin ingin mengadopsi semua saran AI?</value>
+  </data>
+  <data name="Are you sure you want to cancel all pending tasks?" xml:space="preserve">
+    <value>Apakah Anda yakin ingin membatalkan semua tugas yang tertunda?</value>
+  </data>
+  <data name="Auto Categorize" xml:space="preserve">
+    <value>Kategorisasi Otomatis</value>
+  </data>
+  <data name="Auto Tagging" xml:space="preserve">
+    <value>Pengelompokan Otomatis</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Kembali</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Batal</value>
+  </data>
+  <data name="Cancel All" xml:space="preserve">
+    <value>Batalkan Semua</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Selesai</value>
+  </data>
+  <data name="Current Answer" xml:space="preserve">
+    <value>Jawaban Saat Ini</value>
+  </data>
+  <data name="Current Category" xml:space="preserve">
+    <value>Kategori Saat Ini</value>
+  </data>
+  <data name="Current Tags" xml:space="preserve">
+    <value>Tag Saat Ini</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Edit AI Explanation" xml:space="preserve">
+    <value>Edit Penjelasan AI</value>
+  </data>
+  <data name="Edit AI Suggestion" xml:space="preserve">
+    <value>Edit Saran AI</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Kesalahan</value>
+  </data>
+  <data name="Failed to adopt suggestions." xml:space="preserve">
+    <value>Gagal mengadopsi saran.</value>
+  </data>
+  <data name="Generate Answer" xml:space="preserve">
+    <value>Hasilkan Jawaban</value>
+  </data>
+  <data name="Generate Explanation" xml:space="preserve">
+    <value>Hasilkan Penjelasan</value>
+  </data>
+  <data name="Old Explanation" xml:space="preserve">
+    <value>Penjelasan Lama</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Memproses...</value>
+  </data>
+  <data name="Save &amp; Adopt" xml:space="preserve">
+    <value>Simpan &amp; Terapkan</value>
+  </data>
+  <data name="Select Category" xml:space="preserve">
+    <value>Pilih Kategori</value>
+  </data>
+  <data name="Suggested Category" xml:space="preserve">
+    <value>Kategori yang Disarankan</value>
+  </data>
+  <data name="Suggested Tags" xml:space="preserve">
+    <value>Tag yang Disarankan</value>
+  </data>
+  <data name="Tasks are still processing. Do you want to adopt completed ones and abandon the rest?" xml:space="preserve">
+    <value>Tugas masih diproses. Apakah Anda ingin mengadopsi yang telah selesai dan mengabaikan sisanya?</value>
+  </data>
+  <data name="Too many requests, waiting 30s..." xml:space="preserve">
+    <value>Terlalu banyak permintaan, menunggu 30s...</value>
+  </data>
+
+</root>

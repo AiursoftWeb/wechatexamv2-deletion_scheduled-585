@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Option" xml:space="preserve">
+    <value>Adaugă opțiune</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anulează</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Categorie</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Conținut</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Corect</value>
+  </data>
+  <data name="Custom order index. Lower numbers come first. Current max index is:" xml:space="preserve">
+    <value>Indice de ordine personalizat. Numerele mai mici vin primele. Indicele maxim curent este:</value>
+  </data>
+  <data name="Edit Question" xml:space="preserve">
+    <value>Editează Întrebarea</value>
+  </data>
+  <data name="Explanation" xml:space="preserve">
+    <value>Explicație</value>
+  </data>
+  <data name="Fill In" xml:space="preserve">
+    <value>Completare</value>
+  </data>
+  <data name="Fill In Correct (for fill in, JSON array)" xml:space="preserve">
+    <value>Răspuns corect (pentru completare, matrice JSON)</value>
+  </data>
+  <data name="Grading Strategy" xml:space="preserve">
+    <value>Strategie de notare</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Incorect</value>
+  </data>
+  <data name="Metadata (e.g. Choices JSON)" xml:space="preserve">
+    <value>Metadata (de exemplu, Opțiuni JSON)</value>
+  </data>
+  <data name="Option content" xml:space="preserve">
+    <value>Conținut opțiune</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Opțiuni</value>
+  </data>
+  <data name="Options (for single choice, JSON array)" xml:space="preserve">
+    <value>Opțiuni (pentru alegere unică, matrice JSON)</value>
+  </data>
+  <data name="Order Index" xml:space="preserve">
+    <value>Indice de ordonare</value>
+  </data>
+  <data name="Press Enter to add a tag, or select from suggestions. Click X to remove." xml:space="preserve">
+    <value>Apăsați Enter pentru a adăuga o etichetă, sau selectați din sugestii. Faceți clic pe X pentru a elimina.</value>
+  </data>
+  <data name="Remove Option" xml:space="preserve">
+    <value>Elimină opțiunea</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Salvează</value>
+  </data>
+  <data name="Save and return to content checks" xml:space="preserve">
+    <value>Salvează și revino la verificările conținutului</value>
+  </data>
+  <data name="Select category" xml:space="preserve">
+    <value>Selectați categoria</value>
+  </data>
+  <data name="Select strategy" xml:space="preserve">
+    <value>Selectați strategie</value>
+  </data>
+  <data name="Select type" xml:space="preserve">
+    <value>Selectați tipul</value>
+  </data>
+  <data name="Single Choice" xml:space="preserve">
+    <value>Opțiune unică</value>
+  </data>
+  <data name="Single Correct (for single choice)" xml:space="preserve">
+    <value>Răspuns corect unic (pentru alegere unică)</value>
+  </data>
+  <data name="Standard Answer" xml:space="preserve">
+    <value>Răspuns standard</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Etichete</value>
+  </data>
+  <data name="Tags (space separated)" xml:space="preserve">
+    <value>Etichete (separate prin spațiu)</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="Type to search or add tags..." xml:space="preserve">
+    <value>Tastați pentru a căuta sau adăuga etichete...</value>
+  </data>
+
+</root>

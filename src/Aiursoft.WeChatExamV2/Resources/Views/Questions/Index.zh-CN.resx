@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>添加问题</value>
+  </data>
+  <data name="AI Auto Categorize" xml:space="preserve">
+    <value>AI 自动分类</value>
+  </data>
+  <data name="AI Auto Tagging" xml:space="preserve">
+    <value>AI 自动打标签</value>
+  </data>
+  <data name="AI Classify" xml:space="preserve">
+    <value>AI 一键分类</value>
+  </data>
+  <data name="AI Classify - Select Categories" xml:space="preserve">
+    <value>AI 分类 - 选择类别</value>
+  </data>
+  <data name="AI Generate Answers" xml:space="preserve">
+    <value>AI 生成答案</value>
+  </data>
+  <data name="AI Generate Explanations" xml:space="preserve">
+    <value>AI 生成解析</value>
+  </data>
+  <data name="All Categories" xml:space="preserve">
+    <value>所有分类</value>
+  </data>
+  <data name="All Types" xml:space="preserve">
+    <value>所有类型</value>
+  </data>
+  <data name="An error occurred during deletion." xml:space="preserve">
+    <value>删除过程中发生错误。</value>
+  </data>
+  <data name="An error occurred while starting AI answer generation." xml:space="preserve">
+    <value>启动 AI 生成答案时发生错误。</value>
+  </data>
+  <data name="An error occurred while starting AI categorization." xml:space="preserve">
+    <value>启动 AI 分类时发生错误。</value>
+  </data>
+  <data name="An error occurred while starting AI generation." xml:space="preserve">
+    <value>启动 AI 生成时发生错误。</value>
+  </data>
+  <data name="An error occurred while starting AI tagging." xml:space="preserve">
+    <value>启动 AI 自动打标签时发生错误。</value>
+  </data>
+  <data name="An error occurred while starting classification." xml:space="preserve">
+    <value>开始分类时发生错误。</value>
+  </data>
+  <data name="Apply Filters" xml:space="preserve">
+    <value>应用筛选条件</value>
+  </data>
+  <data name="Are you sure you want to delete" xml:space="preserve">
+    <value>确定要删除吗</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="Confirm Batch Delete" xml:space="preserve">
+    <value>确认批量删除</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>创建时间</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Delete Selected" xml:space="preserve">
+    <value>删除所选内容</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>详情</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>编辑</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="Failed to delete questions. Please try again." xml:space="preserve">
+    <value>删除问题失败，请重试。</value>
+  </data>
+  <data name="Failed to start AI answer generation." xml:space="preserve">
+    <value>启动 AI 生成答案失败。</value>
+  </data>
+  <data name="Failed to start AI categorization." xml:space="preserve">
+    <value>AI分类启动失败。</value>
+  </data>
+  <data name="Failed to start AI generation." xml:space="preserve">
+    <value>启动 AI 生成失败。</value>
+  </data>
+  <data name="Failed to start AI tagging." xml:space="preserve">
+    <value>启动 AI 自动打标签失败。</value>
+  </data>
+  <data name="Failed to start classification." xml:space="preserve">
+    <value>分类启动失败。</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>筛选</value>
+  </data>
+  <data name="Filters &amp; Search" xml:space="preserve">
+    <value>筛选与搜索</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>前往</value>
+  </data>
+  <data name="Items per page" xml:space="preserve">
+    <value>每页项目数</value>
+  </data>
+  <data name="MTQL Query" xml:space="preserve">
+    <value>MTQL 查询</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="No categories available. Please create categories first." xml:space="preserve">
+    <value>没有可用的类别。请先创建类别。</value>
+  </data>
+  <data name="No questions found" xml:space="preserve">
+    <value>未找到任何问题</value>
+  </data>
+  <data name="No questions found matching your criteria" xml:space="preserve">
+    <value>未找到符合筛选条件的问题</value>
+  </data>
+  <data name="Please enter a valid page number between 1 and" xml:space="preserve">
+    <value>请输入 1 到之间的有效页码</value>
+  </data>
+  <data name="Please select at least one category." xml:space="preserve">
+    <value>请至少选择一个类别。</value>
+  </data>
+  <data name="Please select at least one question." xml:space="preserve">
+    <value>请至少选择一个问题。</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="Question List" xml:space="preserve">
+    <value>问题列表</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>问题</value>
+  </data>
+  <data name="questions?" xml:space="preserve">
+    <value>问题？</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Search Questions and Knowledge Points" xml:space="preserve">
+    <value>搜索题目和知识点</value>
+  </data>
+  <data name="Search questions and knowledge points..." xml:space="preserve">
+    <value>搜索问题和知识点...</value>
+  </data>
+  <data name="Select All / Deselect All" xml:space="preserve">
+    <value>全选 / 取消全选</value>
+  </data>
+  <data name="Select the candidate categories for AI classification. The AI will choose exactly one category for each question." xml:space="preserve">
+    <value>选择用于AI分类的候选类别。AI将为每个问题选择一个类别。</value>
+  </data>
+  <data name="selected" xml:space="preserve">
+    <value>已选择</value>
+  </data>
+  <data name="Start Classification" xml:space="preserve">
+    <value>开始分类</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="Submitting..." xml:space="preserve">
+    <value>提交中...</value>
+  </data>
+  <data name="Tag" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>题目内容</value>
+  </data>
+  <data name="This action cannot be undone." xml:space="preserve">
+    <value>此操作无法撤销。</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+
+</root>

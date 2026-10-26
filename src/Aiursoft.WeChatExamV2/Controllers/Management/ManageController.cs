@@ -1,0 +1,236 @@
+using Aiursoft.UiStack.Navigation;
+using Aiursoft.UiStack.Layout;
+using Aiursoft.WebTools.Attributes;
+using Aiursoft.WeChatExamV2.Configuration;
+using Aiursoft.WeChatExamV2.Entities;
+using Aiursoft.WeChatExamV2.Models.ManageViewModels;
+using Aiursoft.WeChatExamV2.Services;
+using Aiursoft.WeChatExamV2.Services.FileStorage;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Options;
+
+namespace Aiursoft.WeChatExamV2.Controllers.Management;
+
+/// <summary>
+/// This controller is used to handle user related actions like change password, change avatar.
+/// </summary>
+[Authorize]
+[LimitPerMin]
+public class ManageController(
+    ImageProcessingService image,
+    StorageService storageService,
+    IStringLocalizer<ManageController> localizer,
+    IOptions<AppSettings> appSettings,
+    UserManager<User> userManager,
+    SignInManager<User> signInManager,
+    ILogger<ManageController> logger)
+    : Controller
+{
+    //
+    // GET: /Manage/Index
+    [RenderInNavBar(
+        NavGroupName = "Settings",
+        NavGroupOrder = 9998,
+        CascadedLinksGroupName = "Personal",
+        CascadedLinksIcon = "user-circle",
+        CascadedLinksOrder = 1,
+        LinkText = "Profile Settings",
+        LinkOrder = 3)]
+    [HttpGet]
+    public IActionResult Index(ManageMessageId? message = null)
+    {
+        ViewData["StatusMessage"] =
+            message == ManageMessageId.ChangeProfileSuccess ? localizer["Your profile has been saved."] :
+            message == ManageMessageId.ChangeAvatarSuccess ? localizer["Your avatar has been saved."] :
+            message == ManageMessageId.ChangePasswordSuccess ? localizer["Your password has been changed."] :
+            message == ManageMessageId.Error ? localizer["An error has occurred."]
+            : "";
+
+        var model = new IndexViewModel();
+        return this.StackView(model);
+    }
+
+    //
+    // GET: /Manage/ChangePassword
+    [HttpGet]
+    public IActionResult ChangePassword()
+    {
+        if (appSettings.Value.OIDCEnabled)
+        {
+            return BadRequest("Local password is disabled when OIDC authentication is enabled.");
+        }
+        return this.StackView(new ChangePasswordViewModel());
+    }
+
+    //
+    // POST: /Manage/ChangePassword
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
+    {
+        if (appSettings.Value.OIDCEnabled)
+        {
+            return BadRequest("Local password is disabled when OIDC authentication is enabled.");
+        }
+        if (!ModelState.IsValid)
+        {
+            return this.StackView(model);
+        }
+        var user = await GetCurrentUserAsync();
+        if (user != null)
+        {
+            var result = await userManager.ChangePasswordAsync(user, model.OldPassword!, model.NewPassword!);
+            if (result.Succeeded)
+            {
+                await signInManager.SignInAsync(user, isPersistent: false);
+                logger.LogInformation(3, "User changed their password successfully");
+                return RedirectToAction(nameof(Index), new { Message = ManageMessageId.ChangePasswordSuccess });
+            }
+            AddErrors(result);
+            return this.StackView(model);
+        }
+        return RedirectToAction(nameof(Index), new { Message = ManageMessageId.Error });
+    }
+
+    //
+    // GET: /Manage/ChangeProfile
+    [HttpGet]
+    public async Task<IActionResult> ChangeProfile()
+    {
+        var user = await GetCurrentUserAsync();
+        return this.StackView(new ChangeProfileViewModel
+        {
+            Name = user!.DisplayName
+        });
+    }
+
+    //
+    // POST: /Manage/ChangeProfile
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ChangeProfile(ChangeProfileViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return this.StackView(model);
+        }
+
+        var user = await GetCurrentUserAsync();
+        if (user != null)
+        {
+            user.DisplayName = model.Name;
+            await userManager.UpdateAsync(user);
+            await signInManager.SignInAsync(user, isPersistent: false);
+            return RedirectToAction(nameof(Index), new { Message = ManageMessageId.ChangeProfileSuccess });
+        }
+        return RedirectToAction(nameof(Index), new { Message = ManageMessageId.Error });
+    }
+
+    //
+    // GET: /Manage/ChangeAvatar
+    [HttpGet]
+    public async Task<IActionResult> ChangeAvatar()
+    {
+        var user = await GetCurrentUserAsync();
+        return this.StackView(new ChangeAvatarViewModel
+        {
+            AvatarUrl = user!.AvatarRelativePath
+        });
+    }
+
+    //
+    // POST: /Manage/ChangeAvatar
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> ChangeAvatar(ChangeAvatarViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            return this.StackView(model);
+        }
+
+        // Make sure the file is actually a photo.
+        var absolutePath = storageService.GetFilePhysicalPath(model.AvatarUrl);
+        if (!await image.IsValidImageAsync(absolutePath))
+        {
+            ModelState.AddModelError(string.Empty, localizer["The file is not a valid image."]);
+            return this.StackView(model);
+        }
+
+        // Save the new avatar in the database.
+        var user = await GetCurrentUserAsync();
+        if (user != null)
+        {
+            user.AvatarRelativePath = model.AvatarUrl;
+            await userManager.UpdateAsync(user);
+
+            // Sign in the user to refresh the avatar.
+            await signInManager.SignInAsync(user, isPersistent: false);
+            return RedirectToAction(nameof(Index), new { Message = ManageMessageId.ChangeAvatarSuccess });
+        }
+
+        return this.StackView(model);
+    }
+
+    //
+    // GET: /Manage/DeleteAccount
+    [HttpGet]
+    public IActionResult DeleteAccount()
+    {
+        return this.StackView(new UiStackLayoutViewModel { PageTitle = "Delete Account" });
+    }
+
+    //
+    // POST: /Manage/DeleteAccount
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteAccountPost()
+    {
+        var user = await GetCurrentUserAsync();
+        if (user != null)
+        {
+            try
+            {
+                await userManager.DeleteAsync(user);
+                await signInManager.SignOutAsync();
+                logger.LogInformation(3, "User deleted their account successfully");
+                return Redirect("/");
+            }
+            catch (Microsoft.EntityFrameworkCore.DbUpdateException)
+            {
+                logger.LogWarning(4, "User attempted to delete account but failed due to financial records restrictions");
+                ModelState.AddModelError(string.Empty, localizer["Cannot delete your account because you have existing financial records (e.g. VIP memberships or payment orders). Please contact customer service."]);
+                return this.StackView(new UiStackLayoutViewModel { PageTitle = "Delete Account" }, "DeleteAccount");
+            }
+        }
+        return RedirectToAction(nameof(Index), new { Message = ManageMessageId.Error });
+    }
+
+    #region Helpers
+
+    private void AddErrors(IdentityResult result)
+    {
+        foreach (var error in result.Errors)
+        {
+            ModelState.AddModelError(string.Empty, error.Description);
+        }
+    }
+
+    public enum ManageMessageId
+    {
+        ChangeAvatarSuccess,
+        ChangePasswordSuccess,
+        ChangeProfileSuccess,
+        Error
+    }
+
+    private Task<User?> GetCurrentUserAsync()
+    {
+        return userManager.GetUserAsync(HttpContext.User);
+    }
+
+    #endregion
+}

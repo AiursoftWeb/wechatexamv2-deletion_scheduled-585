@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Option" xml:space="preserve">
+    <value>Añadir opción</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>Añadir Pregunta</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Categoría</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Contenido</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Correcto</value>
+  </data>
+  <data name="Custom order index. Lower numbers come first. Current max index is:" xml:space="preserve">
+    <value>Índice de orden personalizado. Los números más bajos aparecen primero. El índice máximo actual es:</value>
+  </data>
+  <data name="Explanation" xml:space="preserve">
+    <value>Explicación</value>
+  </data>
+  <data name="Fill In" xml:space="preserve">
+    <value>Rellenar</value>
+  </data>
+  <data name="Fill In Correct (for fill in, JSON array)" xml:space="preserve">
+    <value>Respuesta correcta de rellenar (para rellenar, array JSON)</value>
+  </data>
+  <data name="Grading Strategy" xml:space="preserve">
+    <value>Estrategia de Calificación</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Incorrect</value>
+  </data>
+  <data name="Metadata (e.g. Choices JSON)" xml:space="preserve">
+    <value>Metadatos (p. ej. Opciones JSON)</value>
+  </data>
+  <data name="Option content" xml:space="preserve">
+    <value>Contenido de la opción</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Opciones</value>
+  </data>
+  <data name="Options (for single choice, JSON array)" xml:space="preserve">
+    <value>Opciones (para selección única, array JSON)</value>
+  </data>
+  <data name="Order Index" xml:space="preserve">
+    <value>Índice de orden</value>
+  </data>
+  <data name="Press Space, Comma, Semicolon or Enter to add a tag. Click X to remove." xml:space="preserve">
+    <value>Pulse Espacio, Coma, Punto y coma o Intro para añadir una etiqueta. Haz clic en X para eliminar.</value>
+  </data>
+  <data name="Remove Option" xml:space="preserve">
+    <value>Eliminar opción</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="Select category" xml:space="preserve">
+    <value>Seleccionar categoría</value>
+  </data>
+  <data name="Select strategy" xml:space="preserve">
+    <value>Seleccione estrategia</value>
+  </data>
+  <data name="Select type" xml:space="preserve">
+    <value>Seleccionar tipo</value>
+  </data>
+  <data name="Single Choice" xml:space="preserve">
+    <value>Opción Única</value>
+  </data>
+  <data name="Single Correct (for single choice)" xml:space="preserve">
+    <value>Respuesta correcta (para opción única)</value>
+  </data>
+  <data name="Standard Answer" xml:space="preserve">
+    <value>Respuesta estándar</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Etiquetas</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Type to search or add tags..." xml:space="preserve">
+    <value>Escribe para buscar o añadir etiquetas...</value>
+  </data>
+
+</root>

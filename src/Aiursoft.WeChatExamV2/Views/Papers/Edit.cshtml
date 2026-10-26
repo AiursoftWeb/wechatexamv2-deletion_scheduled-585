@@ -1,0 +1,249 @@
+@using Aiursoft.WeChatExamV2.Authorization
+@model Aiursoft.WeChatExamV2.Models.PapersViewModels.EditViewModel
+
+<h1 class="h3 mb-3">@Localizer["Edit Paper"]</h1>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        <div class="alert-icon">
+            <i data-lucide="alert-circle"></i>
+        </div>
+        <div class="alert-message">
+            @TempData["Error"]
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit" method="post">
+            <partial name="_ContentCheckReturn" />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">@Localizer["Paper Info"]</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label asp-for="Title" class="form-label">@Localizer["Title"]</label>
+                        <input asp-for="Title" class="form-control" required />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="TimeLimit" class="form-label">@Localizer["Time Limit (minutes)"]</label>
+                        <input asp-for="TimeLimit" type="number" class="form-control" min="1" />
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="SelectedCategoryId" class="form-label">@Localizer["Category"]</label>
+                        <select asp-for="SelectedCategoryId" asp-items="Model.AvailableCategories" class="form-select">
+                            <option value="">@Localizer["-- Select Category (Optional) --"]</option>
+                        </select>
+                        <div class="form-text">@Localizer["Selecting a category will filter available questions."]</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="IsFree" class="form-check-input" type="checkbox" />
+                        <label asp-for="IsFree" class="form-check-label">@Localizer["Free Paper"]</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input asp-for="IsRealExam" class="form-check-input" type="checkbox" />
+                        <label asp-for="IsRealExam" class="form-check-label">@Localizer["Real Exam"]</label>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["Tags"]</label>
+                        <input type="text" id="tagInputField" class="form-control" placeholder="@Localizer["Type to search or add tags..."]" autocomplete="off" />
+                        <input type="hidden" asp-for="Tags" id="Tags" />
+                        <small class="form-text text-muted">@Localizer["Press Enter to add a tag, or select from suggestions. Click X to remove."]</small>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">@Localizer["Status"]</label>
+                        <div>
+                            @switch (Model.Status)
+                            {
+                                case Aiursoft.WeChatExamV2.Entities.PaperStatus.Draft:
+                                    <span class="badge bg-secondary">@Localizer["Draft"]</span>
+                                    break;
+                                case Aiursoft.WeChatExamV2.Entities.PaperStatus.Publishable:
+                                    <span class="badge bg-success">@Localizer["Publishable"]</span>
+                                    break;
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">
+                        @if (ViewData["CheckReturnUrl"] is string)
+                        {
+                            @Localizer["Save and return to content checks"]
+                        }
+                        else
+                        {
+                            @Localizer["Save"]
+                        }
+                    </button>
+                    <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-secondary ms-2">@Localizer["Cancel"]</a>
+                </div>
+            </div>
+        </form>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Status Actions"]</h5>
+            </div>
+            <div class="card-body">
+                @if (Model.Status == Aiursoft.WeChatExamV2.Entities.PaperStatus.Draft)
+                {
+                    <form asp-action="SetStatus" asp-route-id="@Model.Id" method="post" class="d-inline">
+                        <input type="hidden" name="status" value="@((int)Aiursoft.WeChatExamV2.Entities.PaperStatus.Publishable)" />
+                        <button type="submit" class="btn btn-success">@Localizer["Mark as Publishable"]</button>
+                    </form>
+                }
+                else if (Model.Status == Aiursoft.WeChatExamV2.Entities.PaperStatus.Publishable)
+                {
+                    <form asp-action="SetStatus" asp-route-id="@Model.Id" method="post" class="d-inline">
+                        <input type="hidden" name="status" value="@((int)Aiursoft.WeChatExamV2.Entities.PaperStatus.Draft)" />
+                        <button type="submit" class="btn btn-secondary me-2">@Localizer["Revert to Draft"]</button>
+                    </form>
+                    <form asp-action="Publish" asp-route-id="@Model.Id" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-primary me-2">@Localizer["Publish Snapshot"]</button>
+                    </form>
+                    <form asp-action="Freeze" asp-route-id="@Model.Id" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-info">@Localizer["Freeze"]</button>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card mb-3">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Questions in Paper"] (@Model.PaperQuestions.Count)</h5>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-sm mb-0">
+                    <thead>
+                        <tr>
+                            <th>@Localizer["Order"]</th>
+                            <th>@Localizer["Question"]</th>
+                            <th>@Localizer["Score"]</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var pq in Model.PaperQuestions.OrderBy(q => q.Order))
+                        {
+                            <tr>
+                                <td>@pq.Order</td>
+                                <td>@pq.Question.Content[..Math.Min(50, pq.Question.Content.Length)]...</td>
+                                <td>@pq.Score</td>
+                                <td>
+                                    @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanReadQuestions))
+                                    {
+                                        <button type="button" class="btn btn-sm btn-outline-secondary text-nowrap mb-1"
+                                                data-similar-question="@pq.QuestionId" data-question-title="@pq.Question.Content">
+                                            @Localizer["Find Similar Questions"]
+                                        </button>
+                                    }
+                                    <form asp-action="RemoveQuestion" asp-route-id="@Model.Id" method="post" class="d-inline">
+                                        <input type="hidden" name="questionId" value="@pq.QuestionId" />
+                                        <button type="submit" class="btn btn-sm btn-outline-danger">
+                                            <i data-lucide="x"></i>
+                                            <span class="visually-hidden">@Localizer["delete"]</span>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card mt-3" data-paper-question-search data-endpoint="@Url.Action("SearchQuestions", new { id = Model.Id })"
+             data-similar-endpoint="@Url.Action("SimilarQuestions", new { id = Model.Id })">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Search & Add Questions"]</h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-2 mb-2">
+                    <div class="col-sm-6">
+                        <label for="question-search-mode" class="form-label">@Localizer["Search Mode"]</label>
+                        <select id="question-search-mode" class="form-select">
+                            <option value="smart">@Localizer["Smart Search (Default)"]</option>
+                            <option value="keywords">@Localizer["Keyword Search"]</option>
+                            <option value="mtql">@Localizer["Advanced: Tag Expression (MTQL)"]</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="typeFilter" class="form-label">@Localizer["Exam Question Type"]</label>
+                        <select id="typeFilter" asp-items="Model.QuestionTypeOptions" class="form-select">
+                            <option value="">@Localizer["All Types"]</option>
+                        </select>
+                    </div>
+                </div>
+                <p id="question-search-help" class="form-text">@Localizer["Find exact words and related meanings."]</p>
+                <div class="input-group mb-3">
+                    <input type="search" id="question-search-input" class="form-control" maxlength="500" aria-describedby="question-search-help"
+                           aria-label="@Localizer["Find Questions"]" placeholder="@Localizer["Enter a topic or a few words..."]" />
+                    <button class="btn btn-outline-primary" type="button" id="find-questions">@Localizer["Search"]</button>
+                </div>
+                <div id="question-search-status" class="small mb-2" role="status"></div>
+                <div class="form-check mb-2">
+                    <input type="checkbox" id="selectAllQuestions" class="form-check-input" disabled />
+                    <label for="selectAllQuestions" class="form-check-label">@Localizer["Select All Results"]</label>
+                </div>
+                <div id="search-results-container" class="list-group mb-3 overflow-auto" style="max-height: 400px" aria-live="polite"></div>
+                <div id="batchAddOptions" hidden>
+                    <h6>@Localizer["Selected Questions"]</h6>
+                    <p class="form-text">@Localizer["Selections are kept when you search again. Add them when you are ready."]</p>
+                    <div id="selected-questions-list" class="list-group mb-3"></div>
+                    <form asp-action="BatchAddQuestions" asp-route-id="@Model.Id" method="post" id="batchAddForm">
+                        @Html.AntiForgeryToken()
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label class="form-label">@Localizer["Starting Order"]</label>
+                                <input type="number" name="startingOrder" id="batchStartingOrder" class="form-control" value="@(Model.PaperQuestions.Count + 1)" min="1" />
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">@Localizer["Default Score"]</label>
+                                <input type="number" name="defaultScore" id="batchDefaultScore" class="form-control" value="10" min="1" />
+                            </div>
+                        </div>
+                        <div id="selectedQuestionsContainer"></div>
+                        <button type="submit" class="btn btn-success w-100" id="batchAddBtn">@Localizer["Add Selected"]</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-paper-search-localization hidden>
+    <span data-key="smart-help">@Localizer["Find exact words and related meanings."]</span>
+    <span data-key="keywords-help">@Localizer["Match words in the question text, answers and explanations."]</span>
+    <span data-key="mtql-help">@Localizer["Combine tags, for example: rock && not metal"]</span>
+    <span data-key="text-placeholder">@Localizer["Enter a topic or a few words..."]</span>
+    <span data-key="mtql-placeholder">@Localizer["e.g. rock && not metal"]</span>
+    <span data-key="enter-search">@Localizer["Enter a few words to find questions."]</span>
+    <span data-key="searching">@Localizer["Searching..."]</span>
+    <span data-key="no-questions">@Localizer["No questions found."]</span>
+    <span data-key="search-failed">@Localizer["Search is unavailable. Please try again."]</span>
+    <span data-key="ai-search">@Localizer["AI Semantic Search"]</span>
+    <span data-key="keyword-search">@Localizer["Keyword Search"]</span>
+    <span data-key="mtql-search">@Localizer["Tag Expression Search (MTQL)"]</span>
+    <span data-key="ai-fallback">@Localizer["AI semantic search was not used. Showing keyword results."]</span>
+    <span data-key="similar-to">@Localizer["Similar to: {0}"].Value</span>
+    <span data-key="similar-help">@Localizer["Up to five similar questions in the selected category, or all categories if none is selected. Existing paper questions are excluded. Select candidates to add; the original question stays unchanged."]</span>
+    <span data-key="similar-unavailable">@Localizer["Similar questions are unavailable. Please try again later."]</span>
+    <span data-key="answer">@Localizer["Answer"]</span>
+    <span data-key="preview">@Localizer["Preview"]</span>
+    <span data-key="select-question">@Localizer["Select Question"]</span>
+    <span data-key="remove">@Localizer["Remove"]</span>
+    <span data-key="add-selected">@Localizer["Add Selected ({0})"].Value</span>
+</div>
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/js/tag-input.js" asp-append-version="true"></script>
+    <script src="~/js/paper-editor.js" asp-append-version="true"></script>
+}

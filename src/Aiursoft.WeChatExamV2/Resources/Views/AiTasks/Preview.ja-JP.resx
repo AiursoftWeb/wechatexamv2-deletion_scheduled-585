@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Abandon" xml:space="preserve">
+    <value>放棄</value>
+  </data>
+  <data name="Adopt" xml:space="preserve">
+    <value>採用</value>
+  </data>
+  <data name="Adopt All" xml:space="preserve">
+    <value>すべて採用</value>
+  </data>
+  <data name="AI New Answer" xml:space="preserve">
+    <value>AI 新しい回答</value>
+  </data>
+  <data name="AI New Explanation" xml:space="preserve">
+    <value>AI 新しい説明</value>
+  </data>
+  <data name="AI Task Preview" xml:space="preserve">
+    <value>AIタスクプレビュー</value>
+  </data>
+  <data name="Are you sure you want to adopt all AI suggestions?" xml:space="preserve">
+    <value>すべてのAIの提案を採用してもよろしいですか？</value>
+  </data>
+  <data name="Are you sure you want to cancel all pending tasks?" xml:space="preserve">
+    <value>保留中のタスクをすべてキャンセルしてもよろしいですか？</value>
+  </data>
+  <data name="Auto Categorize" xml:space="preserve">
+    <value>自動カテゴリ分け</value>
+  </data>
+  <data name="Auto Tagging" xml:space="preserve">
+    <value>自動タグ付け</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Cancel All" xml:space="preserve">
+    <value>すべてキャンセル</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>完了</value>
+  </data>
+  <data name="Current Answer" xml:space="preserve">
+    <value>現在の回答</value>
+  </data>
+  <data name="Current Category" xml:space="preserve">
+    <value>現在のカテゴリ</value>
+  </data>
+  <data name="Current Tags" xml:space="preserve">
+    <value>現在のタグ</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="Edit AI Explanation" xml:space="preserve">
+    <value>AI解説の編集</value>
+  </data>
+  <data name="Edit AI Suggestion" xml:space="preserve">
+    <value>AIの提案を編集</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="Failed to adopt suggestions." xml:space="preserve">
+    <value>提案の採用に失敗しました。</value>
+  </data>
+  <data name="Generate Answer" xml:space="preserve">
+    <value>回答を生成する</value>
+  </data>
+  <data name="Generate Explanation" xml:space="preserve">
+    <value>説明を生成する</value>
+  </data>
+  <data name="Old Explanation" xml:space="preserve">
+    <value>元の説明</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>処理中...</value>
+  </data>
+  <data name="Save &amp; Adopt" xml:space="preserve">
+    <value>保存して採用</value>
+  </data>
+  <data name="Select Category" xml:space="preserve">
+    <value>カテゴリを選択</value>
+  </data>
+  <data name="Suggested Category" xml:space="preserve">
+    <value>推奨カテゴリ</value>
+  </data>
+  <data name="Suggested Tags" xml:space="preserve">
+    <value>推奨タグ</value>
+  </data>
+  <data name="Tasks are still processing. Do you want to adopt completed ones and abandon the rest?" xml:space="preserve">
+    <value>タスクはまだ処理中です。完了したものを採用し、残りを破棄しますか？</value>
+  </data>
+  <data name="Too many requests, waiting 30s..." xml:space="preserve">
+    <value>リクエストが多すぎます。30秒待機中...</value>
+  </data>
+
+</root>

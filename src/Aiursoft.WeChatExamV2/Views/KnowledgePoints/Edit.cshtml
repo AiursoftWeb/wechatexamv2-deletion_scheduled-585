@@ -1,0 +1,93 @@
+@using Aiursoft.WeChatExamV2.Authorization
+@using Aiursoft.WeChatExamV2.Models.ContentSearchViewModels
+@model Aiursoft.WeChatExamV2.Models.KnowledgePointsViewModels.EditViewModel
+
+<h1 class="h3 mb-3">@Localizer["Edit KnowledgePoint"]</h1>
+<div class="row g-3">
+<div class="@(User.HasClaim(AppPermissions.Type, AppPermissionNames.CanReadQuestions) ? "col-xl-8" : "col-12")">
+<form asp-action="Edit" method="post" data-content-editor
+      data-search-url="@Url.Action("Questions", "ContentSearch")" data-mtql-url="@Url.Action("Search", "Questions")">
+    <partial name="_ContentCheckReturn" />
+    <input type="hidden" asp-for="ReturnUrl" />
+    <input type="hidden" asp-for="Id" />
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label">@Localizer["Title"]</label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="Content" class="form-label">@Localizer["Content"]</label>
+        <textarea asp-for="Content" class="form-control" rows="10"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3">
+        <label asp-for="ParentId" class="form-label">@Localizer["Parent KnowledgePoint"]</label>
+        <select asp-for="ParentId" class="form-select">
+            <option value="">@Localizer["Top Level"]</option>
+            @foreach (var parent in Model.AvailableParents)
+            {
+                <option value="@parent.Id" selected="@(parent.Id == Model.ParentId)">
+                    @parent.Title
+                </option>
+            }
+        </select>
+        <span asp-validation-for="ParentId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="SelectedCategoryIds" class="form-label">@Localizer["Associated Categories"]</label>
+        <select asp-for="SelectedCategoryIds" class="form-select" multiple style="height: 200px">
+            @foreach (var category in Model.AvailableCategories)
+            {
+                <option value="@category.Id">@category.Title</option>
+            }
+        </select>
+        <div class="form-text">@Localizer["Hold Ctrl (Windows) or Command (Mac) to select multiple options."]</div>
+        <span asp-validation-for="SelectedCategoryIds" class="text-danger"></span>
+    </div>
+
+    @await Html.PartialAsync("_QuestionFinder", Model.QuestionTypeOptions)
+    <div class="mb-3">
+        <label class="form-label">@Localizer["Selected Questions"]</label>
+        <p class="form-text">@Localizer["Associations are applied when you save this knowledge point."]</p>
+        <div id="selected-questions-container" class="list-group">
+            @foreach (var question in Model.AvailableQuestions)
+            {
+                <div class="list-group-item d-flex gap-2 justify-content-between align-items-center" data-question-id="@question.Id">
+                    <span class="text-break">@question.Content</span>
+                    <button type="button" class="btn btn-sm btn-outline-danger flex-shrink-0 text-nowrap" data-remove-question>@Localizer["Remove"]</button>
+                    <input type="hidden" name="SelectedQuestionIds" value="@question.Id" />
+                </div>
+            }
+        </div>
+        <span asp-validation-for="SelectedQuestionIds" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">
+        @if (ViewData["CheckReturnUrl"] is string)
+        {
+            @Localizer["Save and return to content checks"]
+        }
+        else
+        {
+            @Localizer["Save"]
+        }
+    </button>
+    <a href="@(Url.IsLocalUrl(Model.ReturnUrl) ? Model.ReturnUrl : Url.Action("Index"))" class="btn btn-light">@Localizer["Back to List"]</a>
+</form>
+</div>
+@if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanReadQuestions))
+{
+    <aside class="col-xl-4">
+        @await Html.PartialAsync("_QuestionRecommendations", new QuestionRecommendationsViewModel { Id = Model.Id, IsKnowledgePoint = true })
+        @await Html.PartialAsync("_KnowledgePointRecommendations", new KnowledgePointRecommendationsViewModel { Id = Model.Id })
+    </aside>
+}
+</div>
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/js/content-editor.js" asp-append-version="true"></script>
+    <script src="~/js/knowledge-point-recommendations.js" asp-append-version="true"></script>
+}

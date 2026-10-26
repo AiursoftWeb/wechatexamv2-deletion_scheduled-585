@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Any KnowledgePoint" xml:space="preserve">
+    <value>Add Any Knowledge Point</value>
+  </data>
+  <data name="Add Articles" xml:space="preserve">
+    <value>Add Articles</value>
+  </data>
+  <data name="Add Distribution Channels" xml:space="preserve">
+    <value>Add Distribution Channels</value>
+  </data>
+  <data name="Add Exams" xml:space="preserve">
+    <value>Add Exams</value>
+  </data>
+  <data name="Add New Roles" xml:space="preserve">
+    <value>Add New Roles</value>
+  </data>
+  <data name="Add New Users" xml:space="preserve">
+    <value>Add New Users</value>
+  </data>
+  <data name="Add Papers" xml:space="preserve">
+    <value>Add Papers</value>
+  </data>
+  <data name="Add Questions" xml:space="preserve">
+    <value>Add Questions</value>
+  </data>
+  <data name="Add VIP Products" xml:space="preserve">
+    <value>Add VIP Products</value>
+  </data>
+  <data name="Allows adding of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>Allows the addition of any knowledgePoint, regardless of ownership.</value>
+  </data>
+  <data name="Allows adding of articles, regardless of ownership." xml:space="preserve">
+    <value>Allows adding of articles, regardless of ownership.</value>
+  </data>
+  <data name="Allows adding of exams, regardless of ownership." xml:space="preserve">
+    <value>Allows adding of exams, regardless of ownership.</value>
+  </data>
+  <data name="Allows adding of papers, regardless of ownership." xml:space="preserve">
+    <value>Allows adding papers, regardless of ownership.</value>
+  </data>
+  <data name="Allows adding of questions, regardless of ownership." xml:space="preserve">
+    <value>Allows the addition of questions, regardless of ownership.</value>
+  </data>
+  <data name="Allows assigning or removing roles for any user." xml:space="preserve">
+    <value>Allows assigning or removing roles for any user.</value>
+  </data>
+  <data name="Allows creating new VIP products with category, price, and duration settings." xml:space="preserve">
+    <value>Allows creating new VIP products with category, price, and duration settings.</value>
+  </data>
+  <data name="Allows deleting tags from the system. Note that deleting a tag will not delete associated questions." xml:space="preserve">
+    <value>Allows deleting tags from the system. Note that deleting a tag will not delete associated questions.</value>
+  </data>
+  <data name="Allows deleting user feedbacks." xml:space="preserve">
+    <value>Allows deleting user feedback.</value>
+  </data>
+  <data name="Allows deletion of any category, regardless of ownership." xml:space="preserve">
+    <value>Allows deletion of any category, irrespective of ownership.</value>
+  </data>
+  <data name="Allows deletion of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>Allows deletion of any knowledgePoint, regardless of ownership.</value>
+  </data>
+  <data name="Allows deletion of articles, regardless of ownership." xml:space="preserve">
+    <value>Allows deletion of articles, regardless of ownership.</value>
+  </data>
+  <data name="Allows deletion of exams, regardless of ownership." xml:space="preserve">
+    <value>Allows deletion of exams, regardless of ownership.</value>
+  </data>
+  <data name="Allows deletion of papers, regardless of ownership." xml:space="preserve">
+    <value>Allows deletion of papers, regardless of ownership.</value>
+  </data>
+  <data name="Allows deletion of questions, regardless of ownership." xml:space="preserve">
+    <value>Allows deletion of questions, regardless of ownership.</value>
+  </data>
+  <data name="Allows editing of any category, regardless of ownership." xml:space="preserve">
+    <value>Allows editing of any category, regardless of ownership.</value>
+  </data>
+  <data name="Allows editing of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>Allows editing of any knowledgePoint, regardless of ownership.</value>
+  </data>
+  <data name="Allows editing of articles, regardless of ownership." xml:space="preserve">
+    <value>Allows editing of articles, regardless of ownership.</value>
+  </data>
+  <data name="Allows editing of exams, regardless of ownership." xml:space="preserve">
+    <value>Allows editing of exams, regardless of ownership.</value>
+  </data>
+  <data name="Allows editing of papers, regardless of ownership." xml:space="preserve">
+    <value>Allows editing of papers, regardless of ownership.</value>
+  </data>
+  <data name="Allows editing of questions, regardless of ownership." xml:space="preserve">
+    <value>Allows editing of questions, regardless of ownership.</value>
+  </data>
+  <data name="Allows extracting knowledge points, questions, tags from articles using AI." xml:space="preserve">
+    <value>Allows extracting knowledge points, questions, and tags from articles using AI.</value>
+  </data>
+  <data name="Allows managing accounting." xml:space="preserve">
+    <value>Allows management of accounting.</value>
+  </data>
+  <data name="Allows modification of distribution channel details and enabling/disabling channels." xml:space="preserve">
+    <value>Allows modification of distribution channel details and enabling or disabling channels.</value>
+  </data>
+  <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
+    <value>Allows modification of role names and their assigned permissions.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>Allows modification of user details such as email and roles, and can also reset user passwords.</value>
+  </data>
+  <data name="Allows modifying global system settings." xml:space="preserve">
+    <value>Allows modifying global system settings.</value>
+  </data>
+  <data name="Allows modifying VIP product settings including price, duration, and enabled status." xml:space="preserve">
+    <value>Allows modifying VIP product settings including price, duration, and enabled status.</value>
+  </data>
+  <data name="Allows Reading of exams, regardless of ownership." xml:space="preserve">
+    <value>Allows reading of exams, regardless of ownership.</value>
+  </data>
+  <data name="Allows reading of questions, regardless of ownership." xml:space="preserve">
+    <value>Allows reading of questions, regardless of ownership.</value>
+  </data>
+  <data name="Allows the permanent deletion of distribution channels." xml:space="preserve">
+    <value>Allows the permanent deletion of distribution channels.</value>
+  </data>
+  <data name="Allows the permanent deletion of roles." xml:space="preserve">
+    <value>Allows the permanent deletion of roles.</value>
+  </data>
+  <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
+    <value>Allows the permanent deletion of user accounts.</value>
+  </data>
+  <data name="Allows the permanent deletion of VIP products." xml:space="preserve">
+    <value>Allows the permanent deletion of VIP products.</value>
+  </data>
+  <data name="Allows triggering background jobs to optimize question answers and explanations using AI." xml:space="preserve">
+    <value>Allows triggering background jobs to optimize question answers and explanations using AI.</value>
+  </data>
+  <data name="Allows updating the status of user feedbacks." xml:space="preserve">
+    <value>Allows updating the status of user feedbacks.</value>
+  </data>
+  <data name="Allows viewing and managing background job queues and their execution status." xml:space="preserve">
+    <value>Allows viewing and managing background job queues and their execution status.</value>
+  </data>
+  <data name="Allows viewing payment orders, payment details, and user payment history." xml:space="preserve">
+    <value>Allows viewing payment orders, payment details, and user payment history.</value>
+  </data>
+  <data name="Allows viewing system-level information and settings." xml:space="preserve">
+    <value>Allows viewing system-level information and settings.</value>
+  </data>
+  <data name="Allows viewing the list of all users." xml:space="preserve">
+    <value>Allows viewing the list of all users.</value>
+  </data>
+  <data name="Allows viewing the list of distribution channels and their statistics." xml:space="preserve">
+    <value>Allows viewing the list of distribution channels and their statistics.</value>
+  </data>
+  <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
+    <value>Allows viewing the list of roles and their assigned permissions.</value>
+  </data>
+  <data name="Allows viewing the list of user feedbacks." xml:space="preserve">
+    <value>Allows viewing the list of user feedback.</value>
+  </data>
+  <data name="Allows viewing VIP products and their configuration." xml:space="preserve">
+    <value>Allows viewing VIP products and their configuration.</value>
+  </data>
+  <data name="Allows viewing, adding, and deleting VIP memberships for users." xml:space="preserve">
+    <value>Allows viewing, adding, and deleting VIP memberships for users.</value>
+  </data>
+  <data name="Assign Roles to Users" xml:space="preserve">
+    <value>Assign Roles to Users</value>
+  </data>
+  <data name="Delete Any Category" xml:space="preserve">
+    <value>Delete Any Category</value>
+  </data>
+  <data name="Delete Any KnowledgePoint" xml:space="preserve">
+    <value>Delete Any Knowledge Point</value>
+  </data>
+  <data name="Delete Articles" xml:space="preserve">
+    <value>Delete Articles</value>
+  </data>
+  <data name="Delete Distribution Channels" xml:space="preserve">
+    <value>Delete Distribution Channels</value>
+  </data>
+  <data name="Delete Exams" xml:space="preserve">
+    <value>Delete Exams</value>
+  </data>
+  <data name="Delete Feedbacks" xml:space="preserve">
+    <value>Delete Feedbacks</value>
+  </data>
+  <data name="Delete Papers" xml:space="preserve">
+    <value>Delete Papers</value>
+  </data>
+  <data name="Delete Questions" xml:space="preserve">
+    <value>Delete Questions</value>
+  </data>
+  <data name="Delete Roles" xml:space="preserve">
+    <value>Delete Roles</value>
+  </data>
+  <data name="Delete Users" xml:space="preserve">
+    <value>Delete Users</value>
+  </data>
+  <data name="Delete VIP Products" xml:space="preserve">
+    <value>Delete VIP Products</value>
+  </data>
+  <data name="Edit Any Category" xml:space="preserve">
+    <value>Edit Any Category</value>
+  </data>
+  <data name="Edit Any KnowledgePoint" xml:space="preserve">
+    <value>Edit Any Knowledge Point</value>
+  </data>
+  <data name="Edit Articles" xml:space="preserve">
+    <value>Edit Articles</value>
+  </data>
+  <data name="Edit Distribution Channels" xml:space="preserve">
+    <value>Edit Distribution Channels</value>
+  </data>
+  <data name="Edit Exams" xml:space="preserve">
+    <value>Edit Exams</value>
+  </data>
+  <data name="Edit Feedbacks" xml:space="preserve">
+    <value>Edit Feedbacks</value>
+  </data>
+  <data name="Edit Papers" xml:space="preserve">
+    <value>Edit Papers</value>
+  </data>
+  <data name="Edit Questions" xml:space="preserve">
+    <value>Edit Questions</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>Edit Role Information</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>Edit User Information</value>
+  </data>
+  <data name="Edit VIP Products" xml:space="preserve">
+    <value>Edit VIP Products</value>
+  </data>
+  <data name="Grants permission to create new distribution channels." xml:space="preserve">
+    <value>Grants permission to create new distribution channels.</value>
+  </data>
+  <data name="Grants permission to create new roles." xml:space="preserve">
+    <value>Grants permission to create new roles.</value>
+  </data>
+  <data name="Grants permission to create new user accounts." xml:space="preserve">
+    <value>Grants permission to create new user accounts.</value>
+  </data>
+  <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
+    <value>Grants permission to restart the application instance. May cause service interruptions, but all settings and cache will be reloaded.</value>
+  </data>
+  <data name="Manage Accounting" xml:space="preserve">
+    <value>Manage Accounting</value>
+  </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>Manage Global Settings</value>
+  </data>
+  <data name="Manage Tags" xml:space="preserve">
+    <value>Manage Tags</value>
+  </data>
+  <data name="Manage VIP Members" xml:space="preserve">
+    <value>Manage VIP Members</value>
+  </data>
+  <data name="Read Distribution Channels" xml:space="preserve">
+    <value>Read Distribution Channels</value>
+  </data>
+  <data name="Read Exams" xml:space="preserve">
+    <value>Read Exams</value>
+  </data>
+  <data name="Read Feedbacks" xml:space="preserve">
+    <value>Read Feedback</value>
+  </data>
+  <data name="Read Payment Orders" xml:space="preserve">
+    <value>Read Payment Orders</value>
+  </data>
+  <data name="Read Questions" xml:space="preserve">
+    <value>Read Questions</value>
+  </data>
+  <data name="Read Roles" xml:space="preserve">
+    <value>View Roles</value>
+  </data>
+  <data name="Read Users" xml:space="preserve">
+    <value>View Users</value>
+  </data>
+  <data name="Read VIP Products" xml:space="preserve">
+    <value>Read VIP Products</value>
+  </data>
+  <data name="Reboot This App" xml:space="preserve">
+    <value>Restart This Application</value>
+  </data>
+  <data name="Trigger Optimization Jobs" xml:space="preserve">
+    <value>Trigger Optimization Jobs</value>
+  </data>
+  <data name="Use AI Extractor" xml:space="preserve">
+    <value>Use AI Extractor</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>View Background Jobs</value>
+  </data>
+  <data name="View System Context" xml:space="preserve">
+    <value>View System Context</value>
+  </data>
+
+</root>

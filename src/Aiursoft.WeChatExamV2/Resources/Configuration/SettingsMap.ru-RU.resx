@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name=" The link to the brand&apos;s home page." xml:space="preserve">
+    <value>Ссылка на домашнюю страницу бренда.</value>
+  </data>
+  <data name="AI Prompt: Auto Categorize" xml:space="preserve">
+    <value>Промпт ИИ: Автоматическая категоризация</value>
+  </data>
+  <data name="AI Prompt: Auto Tagging" xml:space="preserve">
+    <value>Промпт ИИ: Автоматическая разметка</value>
+  </data>
+  <data name="AI Prompt: Base Explanation" xml:space="preserve">
+    <value>Промпт ИИ: Базовое объяснение</value>
+  </data>
+  <data name="AI Prompt: Deep Explanation" xml:space="preserve">
+    <value>Промпт ИИ: Глубокое объяснение</value>
+  </data>
+  <data name="AI Prompt: Default Extraction" xml:space="preserve">
+    <value>AI Prompt: Извлечение по умолчанию</value>
+  </data>
+  <data name="AI Prompt: Default Grading" xml:space="preserve">
+    <value>Промпт ИИ: Оценка по умолчанию</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Blank)" xml:space="preserve">
+    <value>Промпт ИИ: Генерация ответа (заполнение пропуска)</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Bool)" xml:space="preserve">
+    <value>Промпт ИИ: Генерация ответа (Булево)</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Choice)" xml:space="preserve">
+    <value>Промпт ИИ: Генерация ответа (выбор)</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Subjective)" xml:space="preserve">
+    <value>Промпт ИИ: Генерация ответа (субъективный)</value>
+  </data>
+  <data name="Allow User Adjust Nickname" xml:space="preserve">
+    <value>Разрешить пользователю изменять никнейм</value>
+  </data>
+  <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
+    <value>Позволить пользователям изменять свой ник в странице управления профилем.</value>
+  </data>
+  <data name="Brand Home URL" xml:space="preserve">
+    <value>URL домашней страницы бренда</value>
+  </data>
+  <data name="Brand Name" xml:space="preserve">
+    <value>Название бренда</value>
+  </data>
+  <data name="Embedding API Token" xml:space="preserve">
+    <value>Токен API для векторных представлений</value>
+  </data>
+  <data name="Embedding Endpoint" xml:space="preserve">
+    <value>Конечная точка для эмбеддингов</value>
+  </data>
+  <data name="Embedding Model" xml:space="preserve">
+    <value>Модель эмбеддингов</value>
+  </data>
+  <data name="Enable background embedding generation for questions and knowledge points." xml:space="preserve">
+    <value>Включить фоновое создание эмбеддингов для вопросов и элементов базы знаний.</value>
+  </data>
+  <data name="Enable Embedding-Based Search" xml:space="preserve">
+    <value>Включить поиск на основе векторных представлений</value>
+  </data>
+  <data name="ICP Number" xml:space="preserve">
+    <value>Номер ICP</value>
+  </data>
+  <data name="Optional bearer token for the embedding endpoint. Falls back to the OpenAI token when empty." xml:space="preserve">
+    <value>Необязательный токен Bearer для конечной точки эмбеддингов. Если поле пустое, используется токен OpenAI.</value>
+  </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>Логотип проекта</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>Название проекта</value>
+  </data>
+  <data name="The AI prompt for auto categorizing questions. Use {0} for content, {1} for metadata, {2} for answer, {3} for tags, {4} for explanation, and {5} for categories list." xml:space="preserve">
+    <value>Промпт ИИ для автоматической категоризации вопросов. Используйте {0} для содержания, {1} для метаданных, {2} для ответа, {3} для тегов, {4} для пояснения и {5} для списка категорий.</value>
+  </data>
+  <data name="The AI prompt for auto tagging questions. Use {0} for type, {1} for category, {2} for content, {3} for answer, {4} for explanation, {5} for existing tags, and {6} for taxonomy instructions." xml:space="preserve">
+    <value>Промпт ИИ для автоматической разметки вопросов. Используйте {0} для типа, {1} для категории, {2} для содержания, {3} для ответа, {4} для объяснения, {5} для существующих тегов и {6} для инструкций по таксономии.</value>
+  </data>
+  <data name="The AI prompt for generating answers for blank-filling questions." xml:space="preserve">
+    <value>Промпт ИИ для генерации ответов на вопросы с пропусками.</value>
+  </data>
+  <data name="The AI prompt for generating answers for choice questions." xml:space="preserve">
+    <value>Промпт ИИ для генерации ответов на вопросы с выбором вариантов.</value>
+  </data>
+  <data name="The AI prompt for generating answers for subjective questions (Short Answer, Essay, Noun Explanation)." xml:space="preserve">
+    <value>Промпт ИИ для генерации ответов на субъективные вопросы (Краткий ответ, Эссе, Пояснение термина).</value>
+  </data>
+  <data name="The AI prompt for generating answers for true/false questions." xml:space="preserve">
+    <value>Промпт ИИ для генерации ответов на вопросы типа «верно/неверно».</value>
+  </data>
+  <data name="The AI prompt for generating base explanations." xml:space="preserve">
+    <value>Промпт ИИ для генерации базовых объяснений.</value>
+  </data>
+  <data name="The AI prompt for generating deep explanations." xml:space="preserve">
+    <value>Промпт ИИ для генерации глубоких объяснений.</value>
+  </data>
+  <data name="The AI prompt for grading questions. Use {0} for content, {1} for standard answer, {2} for explanation, {3} for student answer, and {4} for max score." xml:space="preserve">
+    <value>Промпт ИИ для оценки вопросов. Используйте {0} для содержания, {1} для эталонного ответа, {2} для пояснения, {3} для ответа ученика и {4} для максимального балла.</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>Название бренда, отображаемое в подвале.</value>
+  </data>
+  <data name="The default system prompt for extracting knowledge from material." xml:space="preserve">
+    <value>Системный промпт по умолчанию для извлечения знаний из материала.</value>
+  </data>
+  <data name="The embedding model for questions and knowledge points. Existing vectors use the bge-m3 1024-dimension index contract." xml:space="preserve">
+    <value>Модель эмбеддингов для вопросов и пунктов базы знаний. Для существующих векторов используется индекс с размерностью 1024 согласно контракту bge-m3.</value>
+  </data>
+  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
+    <value>Номер лицензии ICP для пользователей из материкового Китая. Оставьте пустым, чтобы скрыть.</value>
+  </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>Логотип проекта отображается в навигационной панели и подвале. Поддержка jpg, png, svg.</value>
+  </data>
+  <data name="The name of the project displayed in the frontend." xml:space="preserve">
+    <value>Название проекта, отображаемое на фронтенде.</value>
+  </data>
+  <data name="The Ollama API base URL for embeddings. Only the host is used; /api/embed is appended automatically. Falls back to the OpenAI completion endpoint when empty." xml:space="preserve">
+    <value>Базовый URL API Ollama для создания эмбеддингов. Используется только хост; путь /api/embed добавляется автоматически. Если поле пустое, используется конечная точка OpenAI для генерации текста.</value>
+  </data>
+
+</root>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Administrator paper test" xml:space="preserve">
+    <value>Test della prova amministratore</value>
+  </data>
+  <data name="AI grading" xml:space="preserve">
+    <value>Valutazione AI</value>
+  </data>
+  <data name="AI questions are sent to the configured model after submission." xml:space="preserve">
+    <value>Le domande AI vengono inviate al modello configurato dopo l&apos;invio.</value>
+  </data>
+  <data name="Answer sheet" xml:space="preserve">
+    <value>Griglia delle risposte</value>
+  </data>
+  <data name="Answered" xml:space="preserve">
+    <value>Risposta</value>
+  </data>
+  <data name="Answers are saved in this browser." xml:space="preserve">
+    <value>Le risposte vengono salvate in questo browser.</value>
+  </data>
+  <data name="Continue reviewing" xml:space="preserve">
+    <value>Continua a rivedere</value>
+  </data>
+  <data name="Enter your answer" xml:space="preserve">
+    <value>Inserisci la tua risposta</value>
+  </data>
+  <data name="Exit test" xml:space="preserve">
+    <value>Esci dal test</value>
+  </data>
+  <data name="Flag for review" xml:space="preserve">
+    <value>Segnala per revisione</value>
+  </data>
+  <data name="Flagged" xml:space="preserve">
+    <value>Segnata</value>
+  </data>
+  <data name="Grading..." xml:space="preserve">
+    <value>Correzione...</value>
+  </data>
+  <data name="Live grading preview" xml:space="preserve">
+    <value>Anteprima della correzione in tempo reale</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>minuti</value>
+  </data>
+  <data name="No time limit" xml:space="preserve">
+    <value>Nessun limite di tempo</value>
+  </data>
+  <data name="Paper Test" xml:space="preserve">
+    <value>Test su carta</value>
+  </data>
+  <data name="points" xml:space="preserve">
+    <value>punti</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Avanzamento</value>
+  </data>
+  <data name="questions" xml:space="preserve">
+    <value>domande</value>
+  </data>
+  <data name="Ready to submit?" xml:space="preserve">
+    <value>Pronto per inviare?</value>
+  </data>
+  <data name="Real AI grading" xml:space="preserve">
+    <value>Correzione reale con IA</value>
+  </data>
+  <data name="Review flagged questions before asking the grading engine for a result." xml:space="preserve">
+    <value>Rivedi le domande contrassegnate prima di richiedere il risultato al motore di valutazione.</value>
+  </data>
+  <data name="Saved in this browser" xml:space="preserve">
+    <value>Salvato in questo browser</value>
+  </data>
+  <data name="Saving..." xml:space="preserve">
+    <value>Salvataggio...</value>
+  </data>
+  <data name="Submit and grade" xml:space="preserve">
+    <value>Invia e valuta</value>
+  </data>
+  <data name="Submit paper" xml:space="preserve">
+    <value>Invia il compito</value>
+  </data>
+  <data name="Submit this paper?" xml:space="preserve">
+    <value>Inviare questo documento?</value>
+  </data>
+  <data name="The grading engine will score every question. AI-graded answers may take a little longer." xml:space="preserve">
+    <value>Il motore di valutazione attribuirà un punteggio a ogni domanda. Le risposte valutate dall&apos;IA potrebbero richiedere un po&apos; più di tempo.</value>
+  </data>
+  <data name="Time remaining" xml:space="preserve">
+    <value>Tempo rimanente</value>
+  </data>
+  <data name="Write your answer here..." xml:space="preserve">
+    <value>Scrivi la tua risposta qui...</value>
+  </data>
+
+</root>

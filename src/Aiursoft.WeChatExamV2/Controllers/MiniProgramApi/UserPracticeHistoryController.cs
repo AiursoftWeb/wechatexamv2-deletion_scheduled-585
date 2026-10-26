@@ -1,0 +1,245 @@
+using Aiursoft.WeChatExamV2.Entities;
+using Aiursoft.WeChatExamV2.Models.MiniProgramApi;
+using Aiursoft.WeChatExamV2.Services.Authentication;
+using Aiursoft.WeChatExamV2.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+
+namespace Aiursoft.WeChatExamV2.Controllers.MiniProgramApi;
+
+[Route("api/[controller]")]
+[ApiController]
+[WeChatUserOnly]
+public class UserPracticeHistoryController : ControllerBase
+{
+    private readonly WeChatExamV2DbContext _context;
+    private readonly IGradingService _gradingService;
+
+    public UserPracticeHistoryController(
+        WeChatExamV2DbContext context,
+        IGradingService gradingService)
+    {
+        _context = context;
+        _gradingService = gradingService;
+    }
+
+    /// <summary>
+    /// 查询当前用户的刷题历史
+    /// </summary>
+    /// <param name="filters">题目、练习类型、题型、UTC 时间、正确性及分页过滤条件</param>
+    /// <returns>过滤后的刷题历史列表，按时间和 ID 倒序排列</returns>
+    /// <response code="200">成功返回历史记录列表</response>
+    /// <response code="400">过滤参数无效</response>
+    /// <response code="401">用户未登录</response>
+    [HttpGet]
+    [ProducesResponseType(typeof(List<UserPracticeHistoryDto>), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    public async Task<IActionResult> Get([FromQuery] GetUserPracticeHistoryQueryDto filters)
+    {
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (string.IsNullOrEmpty(userId))
+        {
+            return Unauthorized();
+        }
+
+        var query = _context.UserPracticeHistories
+            .AsNoTracking()
+            .Where(x => x.UserId == userId);
+
+        if (filters.QuestionId.HasValue)
+        {
+            query = query.Where(x => x.QuestionId == filters.QuestionId.Value);
+        }
+
+        if (filters.PracticeType.HasValue)
+        {
+            query = query.Where(x => x.PracticeType == filters.PracticeType.Value);
+        }
+
+        if (filters.QuestionType.HasValue)
+        {
+            query = query.Where(x => x.Question.QuestionType == filters.QuestionType.Value);
+        }
+
+        if (filters.IsCorrect.HasValue)
+        {
+            query = query.Where(x => x.IsCorrect == filters.IsCorrect.Value);
+        }
+
+        if (filters.StartTime.HasValue)
+        {
+            var startTime = filters.StartTime.Value.UtcDateTime;
+            query = query.Where(x => x.CreationTime >= startTime);
+        }
+
+        if (filters.EndTime.HasValue)
+        {
+            var endTime = filters.EndTime.Value.UtcDateTime;
+            query = query.Where(x => x.CreationTime <= endTime);
+        }
+
+        var orderedQuery = query
+            .OrderByDescending(x => x.CreationTime)
+            .ThenByDescending(x => x.Id)
+            .Skip(filters.Offset);
+
+        if (filters.Count.HasValue)
+        {
+            orderedQuery = orderedQuery.Take(filters.Count.Value);
+        }
+
+        var result = await orderedQuery
+            .Select(x => new UserPracticeHistoryDto
+            {
+                Id = x.Id,
+                QuestionId = x.QuestionId,
+                UserAnswer = x.UserAnswer,
+                StandardAnswer = x.Question.StandardAnswer,
+                Explanation = x.Question.Explanation,
+                IsCorrect = x.IsCorrect,
+                PracticeType = x.PracticeType,
+                CreationTime = x.CreationTime
+            })
+            .ToListAsync();
+        return Ok(result);
+    }
+
+    /// <summary>
+    /// 新增刷题历史记录（用户ID自动从token获取）
+    /// </summary>
+    /// <param name="dto">刷题历史提交数据</param>
+    /// <returns>创建成功的历史记录</returns>
+    /// <response code="201">创建成功</response>
+    /// <response code="400">用户或题目不存在</response>
+    /// <response code="401">用户未登录</response>
+    [HttpPost]
+    [ProducesResponseType(typeof(CreateUserPracticeHistoryDto), StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    public async Task<IActionResult> Post([FromBody] CreateUserPracticeHistoryDto dto)
+    {
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (string.IsNullOrEmpty(userId))
+        {
+            return Unauthorized();
+        }
+
+        // 检查用户和题目是否存在
+        var userExists = await _context.Users.AnyAsync(u => u.Id == userId);
+        var question = await _context.Questions.FirstOrDefaultAsync(q => q.Id == dto.QuestionId);
+
+        if (!userExists || question == null)
+        {
+            return BadRequest(new { Message = "User or Question not found" });
+        }
+
+        // Server-side Grading
+        var gradingResult = await _gradingService.GradeAsync(question, dto.UserAnswer);
+
+        var entity = new UserPracticeHistory
+        {
+            Id = Guid.NewGuid(),
+            UserId = userId,
+            QuestionId = dto.QuestionId,
+            UserAnswer = dto.UserAnswer,
+            IsCorrect = gradingResult.IsCorrect,
+            PracticeType = dto.PracticeType,
+            CreationTime = DateTime.UtcNow
+        };
+        _context.UserPracticeHistories.Add(entity);
+        await _context.SaveChangesAsync();
+
+        var result = new UserPracticeHistoryDto
+        {
+            Id = entity.Id,
+            QuestionId = entity.QuestionId,
+            UserAnswer = entity.UserAnswer,
+            StandardAnswer = question.StandardAnswer,
+            Explanation = question.Explanation,
+            IsCorrect = entity.IsCorrect,
+            PracticeType = entity.PracticeType,
+            CreationTime = entity.CreationTime
+        };
+        return CreatedAtAction(nameof(Get), new { questionId = dto.QuestionId }, result);
+    }
+
+    /// <summary>
+    /// 提交试卷题目（快照）的练习答案
+    /// </summary>
+    /// <param name="dto">答案提交数据（QuestionId为SnapshotId）</param>
+    /// <returns>判分结果及保存的历史记录（如果有）</returns>
+    /// <response code="200">提交成功，返回判分结果</response>
+    /// <response code="404">题目快照不存在</response>
+    /// <response code="401">用户未登录</response>
+    [HttpPost("Snapshot")]
+    [ProducesResponseType(typeof(UserPracticeHistoryDto), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    public async Task<IActionResult> SubmitSnapshot([FromBody] CreateUserPracticeHistoryDto dto)
+    {
+        var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (string.IsNullOrEmpty(userId))
+        {
+            return Unauthorized();
+        }
+
+        var snapshot = await _context.QuestionSnapshots
+            .AsNoTracking()
+            .FirstOrDefaultAsync(q => q.Id == dto.QuestionId);
+
+        if (snapshot == null)
+        {
+            return NotFound(new { Message = "Question snapshot not found" });
+        }
+
+        // Server-side Grading
+        var gradingResult = await _gradingService.GradeAsync(
+            dto.UserAnswer,
+            snapshot.StandardAnswer,
+            snapshot.GradingStrategy,
+            snapshot.Score,
+            snapshot.Content);
+
+        var resultDto = new UserPracticeHistoryDto
+        {
+            Id = Guid.Empty, // Default if not saved
+            QuestionId = dto.QuestionId, // Return the Snapshot ID
+            UserAnswer = dto.UserAnswer,
+            StandardAnswer = snapshot.StandardAnswer,
+            Explanation = snapshot.Explanation,
+            IsCorrect = gradingResult.IsCorrect,
+            Score = gradingResult.Score,
+            CreationTime = DateTime.UtcNow
+        };
+
+        // If linked to an original question that still exists, record the history
+        if (snapshot.OriginalQuestionId.HasValue)
+        {
+            var originalQuestionExists = await _context.Questions
+                .AnyAsync(q => q.Id == snapshot.OriginalQuestionId.Value);
+
+            if (originalQuestionExists)
+            {
+                var history = new UserPracticeHistory
+                {
+                    Id = Guid.NewGuid(),
+                    UserId = userId,
+                    QuestionId = snapshot.OriginalQuestionId.Value,
+                    UserAnswer = dto.UserAnswer,
+                    IsCorrect = gradingResult.IsCorrect,
+                    PracticeType = dto.PracticeType,
+                    CreationTime = resultDto.CreationTime
+                };
+
+                _context.UserPracticeHistories.Add(history);
+                await _context.SaveChangesAsync();
+
+                resultDto.Id = history.Id;
+            }
+        }
+
+        return Ok(resultDto);
+    }
+}

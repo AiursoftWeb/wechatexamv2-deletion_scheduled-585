@@ -1,0 +1,53 @@
+@using Aiursoft.WebTools
+@model Aiursoft.WeChatExamV2.Models.QuestionsViewModels.DetailsViewModel
+
+<h1 class="h3 mb-3">@Localizer["Question Details"]</h1>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-2">@Localizer["Content"]</dt>
+            <dd class="col-sm-10">@Model.Question?.Content</dd>
+
+            <dt class="col-sm-2">@Localizer["Type"]</dt>
+            <dd class="col-sm-10">@Localizer[Model.Question?.QuestionType.GetDisplayName() ?? string.Empty]</dd>
+
+            <dt class="col-sm-2">@Localizer["Category"]</dt>
+            <dd class="col-sm-10">@Model.Category?.Title</dd>
+            
+            <dt class="col-sm-2">@Localizer["Grading Strategy"]</dt>
+            <dd class="col-sm-10">@Localizer[Model.Question?.GradingStrategy.GetDisplayName() ?? string.Empty]</dd>
+
+            <dt class="col-sm-2">@Localizer["Metadata"]</dt>
+            <dd class="col-sm-10">@Model.Question?.Metadata</dd>
+
+            <dt class="col-sm-2">@Localizer["Standard Answer"]</dt>
+            <dd class="col-sm-10">@Model.Question?.StandardAnswer</dd>
+
+            <dt class="col-sm-2">@Localizer["Explanation"]</dt>
+            <dd class="col-sm-10">@Model.Question?.Explanation</dd>
+
+            <dt class="col-sm-2">@Localizer["Created"]</dt>
+            <dd class="col-sm-10"><span data-utc-time="@Model.Question?.CreationTime.ToHtmlDateTime()"></span></dd>
+
+            <dt class="col-sm-2">@Localizer["Tags"]</dt>
+            <dd class="col-sm-10">
+                @if (Model.Question?.QuestionTags.Any() == true)
+                {
+                    foreach (var tag in Model.Question!.QuestionTags.Select(qt => qt.Tag))
+                    {
+                        <span class="badge bg-secondary me-1">@tag.DisplayName</span>
+                    }
+                }
+                else
+                {
+                    <span class="text-muted">@Localizer["None"]</span>
+                }
+            </dd>
+        </dl>
+    </div>
+    <div class="card-footer text-end">
+        <a asp-action="Edit" asp-route-id="@Model.Question?.Id" asp-route-returnUrl="@Model.ReturnUrl" class="btn btn-primary btn-sm">@Localizer["Edit"]</a>
+        <a href="@(string.IsNullOrWhiteSpace(Model.ReturnUrl) ? Url.Action("Index", new { categoryId = Model.Question?.CategoryId }) : Model.ReturnUrl)" class="btn btn-secondary btn-sm ms-2">@Localizer["Back"]</a>
+    </div>
+</div>

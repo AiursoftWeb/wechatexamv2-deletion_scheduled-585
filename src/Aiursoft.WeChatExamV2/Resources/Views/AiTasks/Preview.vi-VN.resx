@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Abandon" xml:space="preserve">
+    <value>Bỏ qua</value>
+  </data>
+  <data name="Adopt" xml:space="preserve">
+    <value>Chấp nhận</value>
+  </data>
+  <data name="Adopt All" xml:space="preserve">
+    <value>Chấp nhận tất cả</value>
+  </data>
+  <data name="AI New Answer" xml:space="preserve">
+    <value>Câu trả lời mới từ AI</value>
+  </data>
+  <data name="AI New Explanation" xml:space="preserve">
+    <value>Giải thích mới bởi AI</value>
+  </data>
+  <data name="AI Task Preview" xml:space="preserve">
+    <value>Xem trước nhiệm vụ AI</value>
+  </data>
+  <data name="Are you sure you want to adopt all AI suggestions?" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn áp dụng tất cả các đề xuất của AI không?</value>
+  </data>
+  <data name="Are you sure you want to cancel all pending tasks?" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn hủy tất cả các tác vụ đang chờ xử lý không?</value>
+  </data>
+  <data name="Auto Categorize" xml:space="preserve">
+    <value>Tự động phân loại</value>
+  </data>
+  <data name="Auto Tagging" xml:space="preserve">
+    <value>Gán nhãn tự động</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="Cancel All" xml:space="preserve">
+    <value>Hủy tất cả</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Đã hoàn thành</value>
+  </data>
+  <data name="Current Answer" xml:space="preserve">
+    <value>Câu trả lời hiện tại</value>
+  </data>
+  <data name="Current Category" xml:space="preserve">
+    <value>Danh mục hiện tại</value>
+  </data>
+  <data name="Current Tags" xml:space="preserve">
+    <value>Nhãn hiện tại</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Chỉnh sửa</value>
+  </data>
+  <data name="Edit AI Explanation" xml:space="preserve">
+    <value>Chỉnh sửa Giải thích của AI</value>
+  </data>
+  <data name="Edit AI Suggestion" xml:space="preserve">
+    <value>Chỉnh sửa đề xuất AI</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="Failed to adopt suggestions." xml:space="preserve">
+    <value>Không thể áp dụng các gợi ý.</value>
+  </data>
+  <data name="Generate Answer" xml:space="preserve">
+    <value>Tạo câu trả lời</value>
+  </data>
+  <data name="Generate Explanation" xml:space="preserve">
+    <value>Tạo Giải thích</value>
+  </data>
+  <data name="Old Explanation" xml:space="preserve">
+    <value>Giải thích cũ</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Đang xử lý...</value>
+  </data>
+  <data name="Save &amp; Adopt" xml:space="preserve">
+    <value>Lưu &amp; Chấp nhận</value>
+  </data>
+  <data name="Select Category" xml:space="preserve">
+    <value>Chọn danh mục</value>
+  </data>
+  <data name="Suggested Category" xml:space="preserve">
+    <value>Danh mục đề xuất</value>
+  </data>
+  <data name="Suggested Tags" xml:space="preserve">
+    <value>Nhãn đề xuất</value>
+  </data>
+  <data name="Tasks are still processing. Do you want to adopt completed ones and abandon the rest?" xml:space="preserve">
+    <value>Các tác vụ vẫn đang được xử lý. Bạn có muốn áp dụng các tác vụ đã hoàn thành và bỏ qua phần còn lại không?</value>
+  </data>
+  <data name="Too many requests, waiting 30s..." xml:space="preserve">
+    <value>Quá nhiều yêu cầu, đang đợi 30s...</value>
+  </data>
+
+</root>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Option" xml:space="preserve">
+    <value>Add Option</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>Add Question</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Correct</value>
+  </data>
+  <data name="Custom order index. Lower numbers come first. Current max index is:" xml:space="preserve">
+    <value>Custom order index. Lower numbers come first. Current max index is:</value>
+  </data>
+  <data name="Explanation" xml:space="preserve">
+    <value>Explanation</value>
+  </data>
+  <data name="Fill In" xml:space="preserve">
+    <value>Fill In</value>
+  </data>
+  <data name="Fill In Correct (for fill in, JSON array)" xml:space="preserve">
+    <value>Fill In Correct (for fill in, JSON array)</value>
+  </data>
+  <data name="Grading Strategy" xml:space="preserve">
+    <value>Grading Strategy</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Incorrect</value>
+  </data>
+  <data name="Metadata (e.g. Choices JSON)" xml:space="preserve">
+    <value>Metadata (e.g. Choices JSON)</value>
+  </data>
+  <data name="Option content" xml:space="preserve">
+    <value>Option content</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Options (for single choice, JSON array)" xml:space="preserve">
+    <value>Options (for single choice, JSON array)</value>
+  </data>
+  <data name="Order Index" xml:space="preserve">
+    <value>Order Index</value>
+  </data>
+  <data name="Press Space, Comma, Semicolon or Enter to add a tag. Click X to remove." xml:space="preserve">
+    <value>Press Space, Comma, Semicolon or Enter to add a tag. Click X to remove.</value>
+  </data>
+  <data name="Remove Option" xml:space="preserve">
+    <value>Remove option</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Select category" xml:space="preserve">
+    <value>Select category</value>
+  </data>
+  <data name="Select strategy" xml:space="preserve">
+    <value>Select strategy</value>
+  </data>
+  <data name="Select type" xml:space="preserve">
+    <value>Select type</value>
+  </data>
+  <data name="Single Choice" xml:space="preserve">
+    <value>Single Choice</value>
+  </data>
+  <data name="Single Correct (for single choice)" xml:space="preserve">
+    <value>Single Correct (for single choice)</value>
+  </data>
+  <data name="Standard Answer" xml:space="preserve">
+    <value>Standard Answer</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Type to search or add tags..." xml:space="preserve">
+    <value>Type to search or add tags...</value>
+  </data>
+
+</root>

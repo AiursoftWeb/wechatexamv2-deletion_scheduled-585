@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>कार्रवाइयाँ</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>प्रश्न जोड़ें</value>
+  </data>
+  <data name="AI Auto Categorize" xml:space="preserve">
+    <value>AI स्वचालित वर्गीकरण</value>
+  </data>
+  <data name="AI Auto Tagging" xml:space="preserve">
+    <value>AI स्वचालित टैगिंग</value>
+  </data>
+  <data name="AI Classify" xml:space="preserve">
+    <value>AI Classify</value>
+  </data>
+  <data name="AI Classify - Select Categories" xml:space="preserve">
+    <value>AI Classify - Select Categories</value>
+  </data>
+  <data name="AI Generate Answers" xml:space="preserve">
+    <value>AI उत्तर उत्पन्न करें</value>
+  </data>
+  <data name="AI Generate Explanations" xml:space="preserve">
+    <value>AI एक्सप्लनेशन्स जनरेट करें</value>
+  </data>
+  <data name="All Categories" xml:space="preserve">
+    <value>सभी श्रेणियाँ</value>
+  </data>
+  <data name="All Types" xml:space="preserve">
+    <value>सभी प्रकार</value>
+  </data>
+  <data name="An error occurred during deletion." xml:space="preserve">
+    <value>हटाते समय एक त्रुटि हुई।</value>
+  </data>
+  <data name="An error occurred while starting AI answer generation." xml:space="preserve">
+    <value>AI उत्तर उत्पन्न करने के शुरू करते समय एक त्रुटि उत्पन्न हुई।</value>
+  </data>
+  <data name="An error occurred while starting AI categorization." xml:space="preserve">
+    <value>AI वर्गीकरण शुरू करते समय कोई त्रुटि उत्पन्न हुई।</value>
+  </data>
+  <data name="An error occurred while starting AI generation." xml:space="preserve">
+    <value>AI जनरेशन शुरू करते समय एक त्रुटि हुई।</value>
+  </data>
+  <data name="An error occurred while starting AI tagging." xml:space="preserve">
+    <value>AI टैगिंग शुरू करते समय एक त्रुटि उत्पन्न हुई।</value>
+  </data>
+  <data name="An error occurred while starting classification." xml:space="preserve">
+    <value>वर्गीकरण शुरू करते समय एक त्रुटि हुई।</value>
+  </data>
+  <data name="Apply Filters" xml:space="preserve">
+    <value>फिल्टर लागू करें</value>
+  </data>
+  <data name="Are you sure you want to delete" xml:space="preserve">
+    <value>क्या आप वाकई हटाना चाहते हैं?</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>रद्द करें</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>श्रेणी</value>
+  </data>
+  <data name="Confirm Batch Delete" xml:space="preserve">
+    <value>बैच हटाएं की पुष्टि करें</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>सामग्री</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>बनाया गया</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>हटाएं</value>
+  </data>
+  <data name="Delete Selected" xml:space="preserve">
+    <value>चयनित हटाएं</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>विवरण</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>संपादित करें</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>अंतिम तिथि</value>
+  </data>
+  <data name="Failed to delete questions. Please try again." xml:space="preserve">
+    <value>प्रश्नों को हटाने में विफल। कृपया पुनः प्रयास करें।</value>
+  </data>
+  <data name="Failed to start AI answer generation." xml:space="preserve">
+    <value>AI उत्तर उत्पन्न करना शुरू करने में विफल रहा।</value>
+  </data>
+  <data name="Failed to start AI categorization." xml:space="preserve">
+    <value>AI वर्गीकरण शुरू करने में विफल रहा।</value>
+  </data>
+  <data name="Failed to start AI generation." xml:space="preserve">
+    <value>AI जनरेटिंग शुरू करने में विफल रहा।</value>
+  </data>
+  <data name="Failed to start AI tagging." xml:space="preserve">
+    <value>AI टैगिंग शुरू करने में विफल रहा।</value>
+  </data>
+  <data name="Failed to start classification." xml:space="preserve">
+    <value>वर्गीकरण शुरू करने में विफल रहे।</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>फ़िल्टर करें</value>
+  </data>
+  <data name="Filters &amp; Search" xml:space="preserve">
+    <value>फ़िल्टर्स &amp; सर्च</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>जाएँ</value>
+  </data>
+  <data name="Items per page" xml:space="preserve">
+    <value>प्रति पृष्ठ आइटम</value>
+  </data>
+  <data name="MTQL Query" xml:space="preserve">
+    <value>MTQL क्वेरी</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>अगला</value>
+  </data>
+  <data name="No categories available. Please create categories first." xml:space="preserve">
+    <value>कोई श्रेणियाँ उपलब्ध नहीं हैं। कृपया पहले श्रेणियाँ बनाएं।</value>
+  </data>
+  <data name="No questions found" xml:space="preserve">
+    <value>कोई प्रश्न नहीं मिला</value>
+  </data>
+  <data name="No questions found matching your criteria" xml:space="preserve">
+    <value>आपके मानदंड के अनुरूप कोई प्रश्न नहीं मिला</value>
+  </data>
+  <data name="Please enter a valid page number between 1 and" xml:space="preserve">
+    <value>कृपया 1 और के बीच एक मान्य पृष्ठ संख्या दर्ज करें</value>
+  </data>
+  <data name="Please select at least one category." xml:space="preserve">
+    <value>कृपया कम से कम एक श्रेणी का चयन करें।</value>
+  </data>
+  <data name="Please select at least one question." xml:space="preserve">
+    <value>कृपया कम से कम एक प्रश्न चुनें।</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>पिछला</value>
+  </data>
+  <data name="Question List" xml:space="preserve">
+    <value>प्रश्न सूची</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>प्रश्न</value>
+  </data>
+  <data name="questions?" xml:space="preserve">
+    <value>प्रश्न?</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>रीसेट</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>खोजें</value>
+  </data>
+  <data name="Search Questions and Knowledge Points" xml:space="preserve">
+    <value>प्रश्नों और ज्ञान बिंदुओं को खोजें</value>
+  </data>
+  <data name="Search questions and knowledge points..." xml:space="preserve">
+    <value>प्रश्न और ज्ञान बिंदु खोजें...</value>
+  </data>
+  <data name="Select All / Deselect All" xml:space="preserve">
+    <value>सभी को चुनें / सभी को अचुनें</value>
+  </data>
+  <data name="Select the candidate categories for AI classification. The AI will choose exactly one category for each question." xml:space="preserve">
+    <value>AI वर्गीकरण के लिए उम्मीदवार श्रेणियों का चयन करें। AI प्रत्येक प्रश्न के लिए ठीक एक श्रेणी का चयन करेगा।</value>
+  </data>
+  <data name="selected" xml:space="preserve">
+    <value>चयनित</value>
+  </data>
+  <data name="Start Classification" xml:space="preserve">
+    <value>वर्गीकरण शुरू करें</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>प्रारंभ तारीख</value>
+  </data>
+  <data name="Submitting..." xml:space="preserve">
+    <value>जमा कर रहा है...</value>
+  </data>
+  <data name="Tag" xml:space="preserve">
+    <value>टैग</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>टैग्स</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>पाठ</value>
+  </data>
+  <data name="This action cannot be undone." xml:space="preserve">
+    <value>इस कार्रवाई को वापस नहीं लाया जा सकता है।</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>प्रकार</value>
+  </data>
+
+</root>

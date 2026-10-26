@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Any KnowledgePoint" xml:space="preserve">
+    <value>إضافة أي نقطة معرفة</value>
+  </data>
+  <data name="Add Articles" xml:space="preserve">
+    <value>إضافة مقالات</value>
+  </data>
+  <data name="Add Distribution Channels" xml:space="preserve">
+    <value>إضافة قنوات التوزيع</value>
+  </data>
+  <data name="Add Exams" xml:space="preserve">
+    <value>إضافة امتحانات</value>
+  </data>
+  <data name="Add New Roles" xml:space="preserve">
+    <value>إضافة أدوار جديدة</value>
+  </data>
+  <data name="Add New Users" xml:space="preserve">
+    <value>إضافة مستخدمين جدد</value>
+  </data>
+  <data name="Add Papers" xml:space="preserve">
+    <value>إضافة ورقات</value>
+  </data>
+  <data name="Add Questions" xml:space="preserve">
+    <value>إضافة الأسئلة</value>
+  </data>
+  <data name="Add VIP Products" xml:space="preserve">
+    <value>إضافة منتجات VIP</value>
+  </data>
+  <data name="Allows adding of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>يسمح بإضافة أي نقطة معرفة، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows adding of articles, regardless of ownership." xml:space="preserve">
+    <value>يسمح بإضافة المقالات، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows adding of exams, regardless of ownership." xml:space="preserve">
+    <value>يُتيح إضافة الامتحانات، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows adding of papers, regardless of ownership." xml:space="preserve">
+    <value>يُسمح بإضافة ورقات، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows adding of questions, regardless of ownership." xml:space="preserve">
+    <value>يسمح بإضافة الأسئلة، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows assigning or removing roles for any user." xml:space="preserve">
+    <value>يسمح بتعيين أو إزالة الأدوار لأي مستخدم.</value>
+  </data>
+  <data name="Allows creating new VIP products with category, price, and duration settings." xml:space="preserve">
+    <value>يتيح إنشاء منتجات VIP جديدة مع إعدادات الفئة والسعر والمدة.</value>
+  </data>
+  <data name="Allows deleting tags from the system. Note that deleting a tag will not delete associated questions." xml:space="preserve">
+    <value>يسمح بحذف العلامات من النظام. ملاحظة: لن يتم حذف الأسئلة المرتبطة بالعلامة عند حذف العلامة.</value>
+  </data>
+  <data name="Allows deleting user feedbacks." xml:space="preserve">
+    <value>يسمح بحذف ملاحظات المستخدمين.</value>
+  </data>
+  <data name="Allows deletion of any category, regardless of ownership." xml:space="preserve">
+    <value>يسمح بحذف أي فئة، بغض النظر عن ملكيتها.</value>
+  </data>
+  <data name="Allows deletion of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>يسمح بحذف أي نقطة معرفة، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows deletion of articles, regardless of ownership." xml:space="preserve">
+    <value>يسمح بحذف المقالات، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows deletion of exams, regardless of ownership." xml:space="preserve">
+    <value>يسمح بحذف الامتحانات، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows deletion of papers, regardless of ownership." xml:space="preserve">
+    <value>يسمح بحذف الوثائق، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows deletion of questions, regardless of ownership." xml:space="preserve">
+    <value>يسمح بحذف الأسئلة، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows editing of any category, regardless of ownership." xml:space="preserve">
+    <value>يسمح بتعديل أي فئة، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows editing of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>يسمح بتعديل أي knowledgePoint، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows editing of articles, regardless of ownership." xml:space="preserve">
+    <value>يسمح بتعديل المقالات، بغض النظر عن ملكيتها.</value>
+  </data>
+  <data name="Allows editing of exams, regardless of ownership." xml:space="preserve">
+    <value>يُسمح بتحرير الاختبارات، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows editing of papers, regardless of ownership." xml:space="preserve">
+    <value>يسمح بتحرير الأوراق، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows editing of questions, regardless of ownership." xml:space="preserve">
+    <value>يسمح بتعديل الأسئلة، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows extracting knowledge points, questions, tags from articles using AI." xml:space="preserve">
+    <value>يُمكّن استخراج نقاط المعرفة والأسئلة والعلامات من المقالات باستخدام الذكاء الاصطناعي.</value>
+  </data>
+  <data name="Allows managing accounting." xml:space="preserve">
+    <value>يسمح بإدارة المحاسبة.</value>
+  </data>
+  <data name="Allows modification of distribution channel details and enabling/disabling channels." xml:space="preserve">
+    <value>يُسمح بتعديل تفاصيل قناة التوزيع وتمكين/تعطيل القنوات.</value>
+  </data>
+  <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
+    <value>يسمح بتعديل أسماء الأدوار والصلاحيات المخصصة لها.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>يسمح بتعديل تفاصيل المستخدم مثل البريد الإلكتروني والأدوار، ويمكن أيضًا إعادة تعيين كلمات مرور المستخدمين.</value>
+  </data>
+  <data name="Allows modifying global system settings." xml:space="preserve">
+    <value>يسمح بتعديل إعدادات النظام العالمية.</value>
+  </data>
+  <data name="Allows modifying VIP product settings including price, duration, and enabled status." xml:space="preserve">
+    <value>يتيح تعديل إعدادات منتجات VIP بما في ذلك السعر والمدة وحالة التفعيل.</value>
+  </data>
+  <data name="Allows Reading of exams, regardless of ownership." xml:space="preserve">
+    <value>يسمح بقراءة الامتحانات، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows reading of questions, regardless of ownership." xml:space="preserve">
+    <value>يسمح بقراءة الأسئلة، بغض النظر عن الملكية.</value>
+  </data>
+  <data name="Allows the permanent deletion of distribution channels." xml:space="preserve">
+    <value>يسمح بالحذف الدائم للقنوات المتعددة للتوزيع.</value>
+  </data>
+  <data name="Allows the permanent deletion of roles." xml:space="preserve">
+    <value>يسمح بالحذف الدائم للأدوار.</value>
+  </data>
+  <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
+    <value>يسمح بالحذف الدائم لحسابات المستخدمين.</value>
+  </data>
+  <data name="Allows the permanent deletion of VIP products." xml:space="preserve">
+    <value>يسمح بحذف منتجات VIP بشكل دائم.</value>
+  </data>
+  <data name="Allows triggering background jobs to optimize question answers and explanations using AI." xml:space="preserve">
+    <value>يُمكّن من تشغيل مهام خلفية لتحسين إجابات الأسئلة والشروحات باستخدام الذكاء الاصطناعي.</value>
+  </data>
+  <data name="Allows updating the status of user feedbacks." xml:space="preserve">
+    <value>يسمح بتحديث حالة تعليقات المستخدمين.</value>
+  </data>
+  <data name="Allows viewing and managing background job queues and their execution status." xml:space="preserve">
+    <value>يُتيح عرض وإدارة صفوف المهام الخلفية وحالة تنفيذها.</value>
+  </data>
+  <data name="Allows viewing payment orders, payment details, and user payment history." xml:space="preserve">
+    <value>يسمح بعرض أوامر الدفع وتفاصيل الدفع وسجل مدفوعات المستخدم.</value>
+  </data>
+  <data name="Allows viewing system-level information and settings." xml:space="preserve">
+    <value>يسمح بعرض معلومات وإعدادات على مستوى النظام.</value>
+  </data>
+  <data name="Allows viewing the list of all users." xml:space="preserve">
+    <value>يسمح بعرض قائمة جميع المستخدمين.</value>
+  </data>
+  <data name="Allows viewing the list of distribution channels and their statistics." xml:space="preserve">
+    <value>يسمح بعرض قائمة قنوات التوزيع وإحصائياتها.</value>
+  </data>
+  <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
+    <value>يسمح بعرض قائمة الأدوار والصلاحيات المخصصة لها.</value>
+  </data>
+  <data name="Allows viewing the list of user feedbacks." xml:space="preserve">
+    <value>يسمح بعرض قائمة ملاحظات المستخدمين.</value>
+  </data>
+  <data name="Allows viewing VIP products and their configuration." xml:space="preserve">
+    <value>يسمح بعرض منتجات VIP وإعداداتها.</value>
+  </data>
+  <data name="Allows viewing, adding, and deleting VIP memberships for users." xml:space="preserve">
+    <value>يسمح بعرض وإضافة وحذف عضويات VIP للمستخدمين.</value>
+  </data>
+  <data name="Assign Roles to Users" xml:space="preserve">
+    <value>تعيين الأدوار للمستخدمين</value>
+  </data>
+  <data name="Delete Any Category" xml:space="preserve">
+    <value>حذف أي فئة</value>
+  </data>
+  <data name="Delete Any KnowledgePoint" xml:space="preserve">
+    <value>حذف أي نقطة معرفة</value>
+  </data>
+  <data name="Delete Articles" xml:space="preserve">
+    <value>حذف المقالات</value>
+  </data>
+  <data name="Delete Distribution Channels" xml:space="preserve">
+    <value>حذف قنوات التوزيع</value>
+  </data>
+  <data name="Delete Exams" xml:space="preserve">
+    <value>حذف الامتحانات</value>
+  </data>
+  <data name="Delete Feedbacks" xml:space="preserve">
+    <value>حذف الملاحظات</value>
+  </data>
+  <data name="Delete Papers" xml:space="preserve">
+    <value>حذف الأوراق</value>
+  </data>
+  <data name="Delete Questions" xml:space="preserve">
+    <value>حذف الأسئلة</value>
+  </data>
+  <data name="Delete Roles" xml:space="preserve">
+    <value>حذف الأدوار</value>
+  </data>
+  <data name="Delete Users" xml:space="preserve">
+    <value>حذف المستخدمين</value>
+  </data>
+  <data name="Delete VIP Products" xml:space="preserve">
+    <value>حذف منتجات VIP</value>
+  </data>
+  <data name="Edit Any Category" xml:space="preserve">
+    <value>تعديل أي فئة</value>
+  </data>
+  <data name="Edit Any KnowledgePoint" xml:space="preserve">
+    <value>تعديل أي نقطة معرفة</value>
+  </data>
+  <data name="Edit Articles" xml:space="preserve">
+    <value>تعديل المقالات</value>
+  </data>
+  <data name="Edit Distribution Channels" xml:space="preserve">
+    <value>تعديل قنوات التوزيع</value>
+  </data>
+  <data name="Edit Exams" xml:space="preserve">
+    <value>تعديل الامتحانات</value>
+  </data>
+  <data name="Edit Feedbacks" xml:space="preserve">
+    <value>تعديل الملاحظات</value>
+  </data>
+  <data name="Edit Papers" xml:space="preserve">
+    <value>تحرير الأوراق</value>
+  </data>
+  <data name="Edit Questions" xml:space="preserve">
+    <value>تعديل الأسئلة</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>تعديل معلومات الدور</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>تعديل معلومات المستخدم</value>
+  </data>
+  <data name="Edit VIP Products" xml:space="preserve">
+    <value>تعديل منتجات VIP</value>
+  </data>
+  <data name="Grants permission to create new distribution channels." xml:space="preserve">
+    <value>يُمنِح صلاحية إنشاء قنوات توزيع جديدة.</value>
+  </data>
+  <data name="Grants permission to create new roles." xml:space="preserve">
+    <value>يمنح الإذن لإنشاء أدوار جديدة.</value>
+  </data>
+  <data name="Grants permission to create new user accounts." xml:space="preserve">
+    <value>يمنح الإذن لإنشاء حسابات مستخدمين جديدة.</value>
+  </data>
+  <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
+    <value>يمنح الإذن بإعادة تشغيل نسخة التطبيق. قد يتسبب ذلك في انقطاعات في التوفر ولكن سيتم إعادة تحميل جميع الإعدادات والذاكرة المؤقتة.</value>
+  </data>
+  <data name="Manage Accounting" xml:space="preserve">
+    <value>إدارة المحاسبة</value>
+  </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>إدارة الإعدادات العالمية</value>
+  </data>
+  <data name="Manage Tags" xml:space="preserve">
+    <value>إدارة العلامات</value>
+  </data>
+  <data name="Manage VIP Members" xml:space="preserve">
+    <value>إدارة أعضاء VIP</value>
+  </data>
+  <data name="Read Distribution Channels" xml:space="preserve">
+    <value>قراءة قنوات التوزيع</value>
+  </data>
+  <data name="Read Exams" xml:space="preserve">
+    <value>قراءة الامتحانات</value>
+  </data>
+  <data name="Read Feedbacks" xml:space="preserve">
+    <value>قراءة الملاحظات</value>
+  </data>
+  <data name="Read Payment Orders" xml:space="preserve">
+    <value>قراءة أوامر الدفع</value>
+  </data>
+  <data name="Read Questions" xml:space="preserve">
+    <value>قراءة الأسئلة</value>
+  </data>
+  <data name="Read Roles" xml:space="preserve">
+    <value>قراءة الأدوار</value>
+  </data>
+  <data name="Read Users" xml:space="preserve">
+    <value>قراءة المستخدمين</value>
+  </data>
+  <data name="Read VIP Products" xml:space="preserve">
+    <value>قراءة منتجات VIP</value>
+  </data>
+  <data name="Reboot This App" xml:space="preserve">
+    <value>إعادة تشغيل هذا التطبيق</value>
+  </data>
+  <data name="Trigger Optimization Jobs" xml:space="preserve">
+    <value>تشغيل مهام التحسين</value>
+  </data>
+  <data name="Use AI Extractor" xml:space="preserve">
+    <value>استخدام مستخرج الذكاء الاصطناعي</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>عرض المهام الخلفية</value>
+  </data>
+  <data name="View System Context" xml:space="preserve">
+    <value>عرض سياق النظام</value>
+  </data>
+
+</root>

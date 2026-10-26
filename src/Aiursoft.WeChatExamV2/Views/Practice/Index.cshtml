@@ -1,0 +1,100 @@
+@using Aiursoft.WebTools
+@model Aiursoft.WeChatExamV2.Models.PracticeViewModels.IndexViewModel
+
+<div class="container-fluid p-0">
+    <h1 class="h3 mb-3">@Localizer["Practice Test"]</h1>
+
+    <div class="row">
+        <div class="col-12">
+<div class="card mb-3">
+    <div class="card-body">
+        <form asp-action="Index" method="get">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-3">
+                    <label class="form-label">@Localizer["Type"]</label>
+                    <select name="questionType" asp-items="Model.QuestionTypeOptions" class="form-select">
+                        <option value="">@Localizer["All Types"]</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">@Localizer["MTQL Query"]</label>
+                    <div class="input-group">
+                        <input type="text" name="mtql" value="@Model.Mtql" class="form-control" placeholder="e.g. content contains 'sql'" />
+                        <button type="submit" class="btn btn-primary">@Localizer["Search"]</button>
+                    </div>
+                    <span asp-validation-for="Mtql" class="text-danger small"></span>
+                </div>
+                <div class="col-md-3">
+                    <a href="@Url.Action("Index")" class="btn btn-outline-secondary w-100">@Localizer["Reset"]</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+            <form asp-action="Start" method="post">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">@Localizer["Select Questions to Practice"] (@Model.Questions.Count)</h5>
+                        <button type="submit" class="btn btn-success">@Localizer["Start Practice"]</button>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-striped mb-0">
+                            <thead>
+                                <tr>
+                                    <th style="width: 40px;"><input type="checkbox" id="selectAll"></th>
+                                    <th>@Localizer["Type"]</th>
+                                    <th>@Localizer["Content"]</th>
+                                    <th>@Localizer["Created Time"]</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var question in Model.Questions)
+                                {
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="questionIds" value="@question.Id" class="question-checkbox">
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-secondary">@question.QuestionType</span>
+                                        </td>
+                                        <td>
+                                            @if (question.Content.Length > 100)
+                                            {
+                                                @question.Content.Substring(0, 100)@:...
+                                            }
+                                            else
+                                            {
+                                                @question.Content
+                                            }
+                                        </td>
+                                        <td><span data-utc-time="@question.CreationTime.ToHtmlDateTime()"></span></td>
+                                    </tr>
+                                }
+                                @if (!Model.Questions.Any())
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center">@Localizer["No questions found."]</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script>
+        document.getElementById('selectAll').addEventListener('change', function() {
+            var checkboxes = document.querySelectorAll('.question-checkbox');
+            for (var checkbox of checkboxes) {
+                checkbox.checked = this.checked;
+            }
+        });
+    </script>
+}

@@ -1,0 +1,372 @@
+@using Aiursoft.WeChatExamV2.Authorization
+@using Aiursoft.WeChatExamV2.Entities
+@model Aiursoft.WeChatExamV2.Models.TagsViewModels.IndexViewModel
+
+<div class="row">
+    <div class="col-md-9">
+        <h1 class="h3 mb-3">@Localizer["Tags Management"]</h1>
+    </div>
+    <div class="col-md-3 text-end">
+        <a asp-action="Create" class="btn btn-primary">
+            <i data-lucide="plus"></i> @Localizer["Create Tag"]
+        </a>
+        <a asp-controller="Taxonomies" asp-action="Index" class="btn btn-outline-primary">
+            <i data-lucide="settings"></i> @Localizer["Manage Taxonomies"]
+        </a>
+    </div>
+</div>
+
+<div class="card position-relative mb-4">
+    <!-- Batch Action Toolbar -->
+    <div id="batchToolbar" class="position-absolute top-0 start-0 w-100 h-100 bg-light d-none flex-row align-items-center px-3 rounded" style="z-index: 10; opacity: 0.95;">
+        <span class="fw-bold me-3 text-primary"><span id="selectedCount">0</span> @Localizer["selected"]</span>
+        <button class="btn btn-danger btn-sm" onclick="confirmBatchDelete()">
+            <i class="align-middle me-2" data-lucide="trash-2"></i> @Localizer["Delete Selected"]
+        </button>
+        <button class="btn btn-link btn-sm text-secondary ms-auto" onclick="clearSelection()">
+            @Localizer["Cancel"]
+        </button>
+    </div>
+
+    <div class="card-body">
+        <form id="filterForm" method="get" asp-action="Index" class="row g-3 align-items-center">
+            <div class="col-auto flex-grow-1">
+                <div class="input-group">
+                    <span class="input-group-text"><i data-lucide="search"></i></span>
+                    <input type="text" name="search" value="@Model.SearchQuery" class="form-control"
+                           placeholder="@Localizer["Search tags..."]" />
+                </div>
+            </div>
+            <div class="col-auto">
+                <select name="taxonomyId" asp-items="Model.AvailableTaxonomies" class="form-select">
+                    <option value="">@Localizer["-- All Taxonomies --"]</option>
+                    <!option value="0" @(Model.TaxonomyId == 0 ? "selected" : "")>@Localizer["-- Uncategorized --"]</!option>
+                </select>
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">
+                    @Localizer["Search"]
+                </button>
+            </div>
+            @if (!string.IsNullOrWhiteSpace(Model.SearchQuery) || Model.TaxonomyId.HasValue)
+            {
+                <div class="col-auto">
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i data-lucide="x"></i> @Localizer["Clear"]
+                    </a>
+                </div>
+            }
+        </form>
+    </div>
+</div>
+
+@{
+    var uncategorizedTags = Model.Tags.Where(t => t.TaxonomyId == null).ToList();
+    var groupedTags = Model.Tags
+        .Where(t => t.TaxonomyId != null)
+        .GroupBy(t => t.TaxonomyId)
+        .ToDictionary(g => g.Key!.Value, g => g.ToList());
+}
+
+@if (uncategorizedTags.Any())
+{
+    <div class="card border-danger mb-4 shadow-sm">
+        <div class="card-header bg-danger text-white d-flex justify-content-between align-items-center">
+            <span>
+                <i data-lucide="alert-triangle" class="me-2"></i>
+                <strong>@Localizer["Uncategorized Tags"]</strong>
+                <span class="badge bg-white text-danger ms-2">@uncategorizedTags.Count</span>
+            </span>
+            <small class="d-none d-sm-block">@Localizer["These tags are not assigned to any taxonomy. Please categorize them for better organization."]</small>
+        </div>
+        <div class="card-body">
+            <div class="d-flex flex-wrap gap-2">
+                @foreach (var tag in uncategorizedTags)
+                {
+                    <div class="btn-group shadow-sm">
+                        <div class="input-group-text bg-transparent border-danger border-end-0 py-0 px-2">
+                            <input type="checkbox" class="form-check-input row-selector" value="@tag.Id" onchange="updateSelection(this)" />
+                        </div>
+                        <a asp-controller="Questions" asp-action="Index" asp-route-tag="@tag.DisplayName" class="btn btn-outline-danger btn-sm border-start-0">
+                            @if (!tag.IsFree)
+                            {
+                                <i data-lucide="crown" class="icon-sm text-warning me-1" title="@Localizer["VIP Required"]"></i>
+                            }
+                            @tag.DisplayName
+                            <span class="badge bg-danger ms-1">@Model.TagUsageCounts[tag.Id]</span>
+                        </a>
+                        <button type="button" class="btn btn-outline-danger btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">@Localizer["Toggle Dropdown"]</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" asp-action="Edit" asp-route-id="@tag.Id"><i data-lucide="edit" class="icon-sm"></i> @Localizer["Edit / Categorize"]</a></li>
+                            @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageTags))
+                            {
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-danger" asp-action="Delete" asp-route-id="@tag.Id"><i data-lucide="trash-2" class="icon-sm"></i> @Localizer["Delete"]</a></li>
+                            }
+                        </ul>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+    @foreach (var taxonomy in Model.AllTaxonomies)
+    {
+        var tagsInThisTaxonomy = groupedTags.ContainsKey(taxonomy.Id) ? groupedTags[taxonomy.Id] : new List<Tag>();
+        
+        @if (Model.TaxonomyId.HasValue && Model.TaxonomyId != taxonomy.Id)
+        {
+            continue;
+        }
+
+        @if (!string.IsNullOrWhiteSpace(Model.SearchQuery) && !tagsInThisTaxonomy.Any())
+        {
+            continue;
+        }
+
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-header bg-light d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">
+                        <i data-lucide="folder" class="me-2 text-primary"></i>@taxonomy.Name
+                    </h5>
+                    <span class="badge bg-primary rounded-pill">@tagsInThisTaxonomy.Count</span>
+                </div>
+                <div class="card-body">
+                    @if (tagsInThisTaxonomy.Any())
+                    {
+                        <div class="d-flex flex-wrap gap-2 tags-sortable" data-update-url="@Url.Action("UpdateOrder", "Tags")">
+                            @foreach (var tag in tagsInThisTaxonomy)
+                            {
+                                <div class="btn-group" data-id="@tag.Id">
+                                    <div class="input-group-text bg-transparent border border-end-0 py-0 px-2 drag-handle" style="cursor: move;">
+                                        <i data-lucide="grip-vertical" class="icon-sm text-muted"></i>
+                                    </div>
+                                    <div class="input-group-text bg-transparent border border-end-0 border-start-0 py-0 px-2">
+                                        <input type="checkbox" class="form-check-input row-selector" value="@tag.Id" onchange="updateSelection(this)" />
+                                    </div>
+                                    <a asp-controller="Questions" asp-action="Index" asp-route-tag="@tag.DisplayName" class="btn btn-light border btn-sm border-start-0">
+                                        @if (!tag.IsFree)
+                                        {
+                                            <i data-lucide="crown" class="icon-sm text-warning me-1" title="@Localizer["VIP Required"]"></i>
+                                        }
+                                        @tag.DisplayName
+                                        <span class="badge bg-secondary ms-1">@Model.TagUsageCounts[tag.Id]</span>
+                                    </a>
+                                    <button type="button" class="btn btn-light border btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="visually-hidden">@Localizer["Toggle Dropdown"]</span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" asp-action="Edit" asp-route-id="@tag.Id"><i data-lucide="edit" class="icon-sm"></i> @Localizer["Edit"]</a></li>
+                                        @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageTags))
+                                        {
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item text-danger" asp-action="Delete" asp-route-id="@tag.Id"><i data-lucide="trash-2" class="icon-sm"></i> @Localizer["Delete"]</a></li>
+                                        }
+                                    </ul>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted small mb-0">@Localizer["No tags in this taxonomy matching your search."]</p>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@if (!Model.Tags.Any())
+{
+    <div class="alert alert-info mt-4 shadow-sm" role="alert">
+        <div class="alert-icon">
+            <i data-lucide="info"></i>
+        </div>
+        <div class="alert-message">
+            @Localizer["No tags found matching your criteria."]
+        </div>
+    </div>
+}
+
+<!-- Batch Delete Confirmation Modal -->
+<div class="modal fade" id="batchDeleteModal" tabindex="-1" aria-labelledby="batchDeleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="batchDeleteModalLabel">@Localizer["Confirm Batch Delete"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @Localizer["Are you sure you want to delete"] <span id="deleteCount" class="fw-bold">0</span> @Localizer["selected tags? This action cannot be undone."]
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">@Localizer["Cancel"]</button>
+                <button type="button" class="btn btn-danger" onclick="executeBatchDelete()">@Localizer["Delete"]</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Configuration and Localization Data for JavaScript *@
+<div id="tags-config" hidden
+     data-batch-delete-url="@Url.Action("BatchDelete")">
+</div>
+
+@* Localization Data for JavaScript *@
+<div id="loc-data" hidden>
+    <span data-key="failed-delete">@Localizer["Failed to delete tags:"]</span>
+    <span data-key="error-occurred">@Localizer["An error occurred during deletion."]</span>
+</div>
+
+@Html.AntiForgeryToken()
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script type="module">
+        import Sortable from '/node_modules/sortablejs/modular/sortable.esm.js';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortables = document.querySelectorAll('.tags-sortable');
+            sortables.forEach(el => {
+                Sortable.create(el, {
+                    animation: 150,
+                    handle: '.drag-handle',
+                    onEnd: async function () {
+                        const ids = Array.from(el.querySelectorAll('.btn-group')).map(item => parseInt(item.dataset.id));
+                        const url = el.dataset.updateUrl;
+                        const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+                        try {
+                            const response = await fetch(url, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'RequestVerificationToken': token
+                                },
+                                body: JSON.stringify(ids)
+                            });
+
+                            if (!response.ok) {
+                                alert('Failed to update order');
+                                location.reload();
+                            }
+                        } catch (error) {
+                            console.error('Error:', error);
+                            alert('An error occurred while updating order');
+                            location.reload();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        const config = document.getElementById('tags-config').dataset;
+        const STORAGE_KEY = 'selectedTagsIds';
+
+        function getLocalizedText(key, defaultText) {
+            const el = document.querySelector(`#loc-data span[data-key="${key}"]`);
+            return el ? el.innerText : defaultText;
+        }
+
+        function getSelectedIds() {
+            const stored = sessionStorage.getItem(STORAGE_KEY);
+            return stored ? new Set(JSON.parse(stored)) : new Set();
+        }
+
+        function saveSelectedIds(ids) {
+            sessionStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(ids)));
+            updateToolbar();
+        }
+
+        function updateToolbar() {
+            const ids = getSelectedIds();
+            const toolbar = document.getElementById('batchToolbar');
+            const countSpan = document.getElementById('selectedCount');
+
+            if (ids.size > 0) {
+                toolbar.classList.remove('d-none');
+                toolbar.classList.add('d-flex');
+            } else {
+                toolbar.classList.add('d-none');
+                toolbar.classList.remove('d-flex');
+            }
+            countSpan.textContent = ids.size;
+        }
+
+        function clearSelection() {
+            sessionStorage.removeItem(STORAGE_KEY);
+            document.querySelectorAll('.row-selector').forEach(cb => cb.checked = false);
+            updateToolbar();
+        }
+
+        function updateSelection(checkbox) {
+            const ids = getSelectedIds();
+            if (checkbox.checked) {
+                ids.add(checkbox.value);
+            } else {
+                ids.delete(checkbox.value);
+            }
+            saveSelectedIds(ids);
+        }
+
+        function confirmBatchDelete() {
+            const count = getSelectedIds().size;
+            document.getElementById('deleteCount').textContent = count;
+            new bootstrap.Modal(document.getElementById('batchDeleteModal')).show();
+        }
+
+        async function executeBatchDelete() {
+            const ids = Array.from(getSelectedIds()).map(Number);
+            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+            try {
+                const response = await fetch(config.batchDeleteUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': token
+                    },
+                    body: JSON.stringify({ tagIds: ids })
+                });
+
+                if (response.ok) {
+                    clearSelection();
+                    location.reload();
+                } else {
+                    const error = await response.text();
+                    alert(getLocalizedText('failed-delete', 'Failed to delete tags:') + ' ' + error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert(getLocalizedText('error-occurred', 'An error occurred during deletion.'));
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const ids = getSelectedIds();
+            document.querySelectorAll('.row-selector').forEach(cb => {
+                if (ids.has(cb.value)) {
+                    cb.checked = true;
+                }
+            });
+            updateToolbar();
+            
+            // Clear selection on filter change
+            const filterForm = document.getElementById('filterForm');
+            if (filterForm) {
+                filterForm.querySelectorAll('select, input').forEach(input => {
+                    input.addEventListener('change', () => {
+                        sessionStorage.removeItem(STORAGE_KEY);
+                    });
+                });
+            }
+        });
+    </script>
+}

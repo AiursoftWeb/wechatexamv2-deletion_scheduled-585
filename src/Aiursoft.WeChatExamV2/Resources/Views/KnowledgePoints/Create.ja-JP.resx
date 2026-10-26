@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Selected" xml:space="preserve">
+    <value>選択したものを追加</value>
+  </data>
+  <data name="All Types" xml:space="preserve">
+    <value>すべての種類</value>
+  </data>
+  <data name="Associated Categories" xml:space="preserve">
+    <value>関連カテゴリ</value>
+  </data>
+  <data name="Associated Questions" xml:space="preserve">
+    <value>関連する質問</value>
+  </data>
+  <data name="Associations are applied when you save this knowledge point." xml:space="preserve">
+    <value>このナレッジポイントを保存すると、関連付けが適用されます。</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>リストに戻る</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>コンテンツ</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>作成</value>
+  </data>
+  <data name="Create KnowledgePoint" xml:space="preserve">
+    <value>ナレッジポイントを作成</value>
+  </data>
+  <data name="Enter MTQL query (e.g. content:&quot;math&quot;)" xml:space="preserve">
+    <value>MTQLクエリを入力してください（例: content:&quot;math&quot;）</value>
+  </data>
+  <data name="Error:" xml:space="preserve">
+    <value>エラー:</value>
+  </data>
+  <data name="Hold Ctrl (Windows) or Command (Mac) to select multiple options." xml:space="preserve">
+    <value>複数のオプションを選択するには、Ctrl (Windows) または Command (Mac) を押したままにしてください。</value>
+  </data>
+  <data name="MTQL Question Finder" xml:space="preserve">
+    <value>MTQL 質問検索</value>
+  </data>
+  <data name="No questions found." xml:space="preserve">
+    <value>質問が見つかりません。</value>
+  </data>
+  <data name="Parent KnowledgePoint" xml:space="preserve">
+    <value>親ナレッジポイント</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Search results will appear here..." xml:space="preserve">
+    <value>検索結果はここに表示されます...</value>
+  </data>
+  <data name="Searching..." xml:space="preserve">
+    <value>検索中...</value>
+  </data>
+  <data name="Selected Questions" xml:space="preserve">
+    <value>選択された質問</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>タイトル</value>
+  </data>
+  <data name="Top Level" xml:space="preserve">
+    <value>最上位レベル</value>
+  </data>
+
+</root>

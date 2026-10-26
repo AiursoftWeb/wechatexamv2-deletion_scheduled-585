@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Administrator paper test" xml:space="preserve">
+    <value>Administrator paper test</value>
+  </data>
+  <data name="AI grading" xml:space="preserve">
+    <value>AI marking</value>
+  </data>
+  <data name="AI questions are sent to the configured model after submission." xml:space="preserve">
+    <value>AI questions are sent to the configured model after submission.</value>
+  </data>
+  <data name="Answer sheet" xml:space="preserve">
+    <value>Answer sheet</value>
+  </data>
+  <data name="Answered" xml:space="preserve">
+    <value>Answered</value>
+  </data>
+  <data name="Answers are saved in this browser." xml:space="preserve">
+    <value>Answers are saved in this browser.</value>
+  </data>
+  <data name="Continue reviewing" xml:space="preserve">
+    <value>Continue reviewing</value>
+  </data>
+  <data name="Enter your answer" xml:space="preserve">
+    <value>Enter your answer</value>
+  </data>
+  <data name="Exit test" xml:space="preserve">
+    <value>Exit test</value>
+  </data>
+  <data name="Flag for review" xml:space="preserve">
+    <value>Flag for review</value>
+  </data>
+  <data name="Flagged" xml:space="preserve">
+    <value>Flagged</value>
+  </data>
+  <data name="Grading..." xml:space="preserve">
+    <value>Grading...</value>
+  </data>
+  <data name="Live grading preview" xml:space="preserve">
+    <value>Live grading preview</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="No time limit" xml:space="preserve">
+    <value>No time limit</value>
+  </data>
+  <data name="Paper Test" xml:space="preserve">
+    <value>Paper Test</value>
+  </data>
+  <data name="points" xml:space="preserve">
+    <value>points</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="questions" xml:space="preserve">
+    <value>questions</value>
+  </data>
+  <data name="Ready to submit?" xml:space="preserve">
+    <value>Ready to submit?</value>
+  </data>
+  <data name="Real AI grading" xml:space="preserve">
+    <value>Real AI marking</value>
+  </data>
+  <data name="Review flagged questions before asking the grading engine for a result." xml:space="preserve">
+    <value>Review flagged questions before requesting a result from the grading engine.</value>
+  </data>
+  <data name="Saved in this browser" xml:space="preserve">
+    <value>Saved in this browser</value>
+  </data>
+  <data name="Saving..." xml:space="preserve">
+    <value>Saving...</value>
+  </data>
+  <data name="Submit and grade" xml:space="preserve">
+    <value>Submit and grade</value>
+  </data>
+  <data name="Submit paper" xml:space="preserve">
+    <value>Submit paper</value>
+  </data>
+  <data name="Submit this paper?" xml:space="preserve">
+    <value>Submit this paper?</value>
+  </data>
+  <data name="The grading engine will score every question. AI-graded answers may take a little longer." xml:space="preserve">
+    <value>The grading engine will score every question. AI-graded answers may take a little longer.</value>
+  </data>
+  <data name="Time remaining" xml:space="preserve">
+    <value>Time remaining</value>
+  </data>
+  <data name="Write your answer here..." xml:space="preserve">
+    <value>Write your answer here...</value>
+  </data>
+
+</root>

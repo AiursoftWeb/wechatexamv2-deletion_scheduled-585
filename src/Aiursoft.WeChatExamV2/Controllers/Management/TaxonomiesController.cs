@@ -1,0 +1,128 @@
+using Aiursoft.UiStack.Navigation;
+using Aiursoft.WebTools.Attributes;
+using Aiursoft.WeChatExamV2.Authorization;
+using Aiursoft.WeChatExamV2.Entities;
+using Aiursoft.WeChatExamV2.Models.TaxonomiesViewModels;
+using Aiursoft.WeChatExamV2.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Aiursoft.WeChatExamV2.Controllers.Management;
+
+[LimitPerMin]
+[Authorize(Policy = AppPermissionNames.CanManageTags)]
+public class TaxonomiesController(WeChatExamV2DbContext context, ITaxonomyService taxonomyService) : Controller
+{
+        // GET: Taxonomies
+        [RenderInNavBar(
+            NavGroupName = "Administration",
+            NavGroupOrder = 9999,
+            CascadedLinksGroupName = "Content Management",
+            CascadedLinksIcon = "folder-tree",
+            CascadedLinksOrder = 1,
+            LinkText = "Taxonomies",
+            LinkOrder = 7)]
+        public async Task<IActionResult> Index()    {
+        var taxonomies = await taxonomyService.GetAllTaxonomiesAsync(includeCategory: true);
+        var tagCounts = new Dictionary<int, int>();
+
+        foreach (var taxonomy in taxonomies)
+        {
+            var count = await context.Tags.CountAsync(t => t.TaxonomyId == taxonomy.Id);
+            tagCounts[taxonomy.Id] = count;
+        }
+
+        return this.StackView(new IndexViewModel
+        {
+            Taxonomies = taxonomies,
+            TagCounts = tagCounts
+        });
+    }
+
+    public async Task<IActionResult> Create()
+    {
+        return this.StackView(new CreateViewModel
+        {
+            AvailableCategories = await context.Categories.OrderBy(c => c.Title).ToListAsync()
+        });
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Create(CreateViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            model.AvailableCategories = await context.Categories.OrderBy(c => c.Title).ToListAsync();
+            return this.StackView(model);
+        }
+
+        await taxonomyService.AddTaxonomyAsync(model.Name, model.CategoryId != null ? [model.CategoryId.Value] : null);
+        return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> Edit(int? id, string? checkReturnUrl = null)
+    {
+        ViewData["CheckReturnUrl"] = Url.IsLocalUrl(checkReturnUrl) ? checkReturnUrl : null;
+        if (id == null) return NotFound();
+
+        var taxonomy = await taxonomyService.GetTaxonomyByIdAsync(id.Value);
+        if (taxonomy == null) return NotFound();
+
+        return this.StackView(new EditViewModel
+        {
+            Id = taxonomy.Id,
+            Name = taxonomy.Name,
+            CategoryId = taxonomy.CategoryTaxonomies.FirstOrDefault()?.CategoryId,
+            AvailableCategories = await context.Categories.OrderBy(c => c.Title).ToListAsync()
+        });
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(EditViewModel model, string? checkReturnUrl = null)
+    {
+        ViewData["CheckReturnUrl"] = Url.IsLocalUrl(checkReturnUrl) ? checkReturnUrl : null;
+        if (!ModelState.IsValid)
+        {
+            model.AvailableCategories = await context.Categories.OrderBy(c => c.Title).ToListAsync();
+            return this.StackView(model);
+        }
+
+        var taxonomy = await taxonomyService.GetTaxonomyByIdAsync(model.Id);
+        if (taxonomy == null) return NotFound();
+
+        taxonomy.Name = model.Name;
+        await taxonomyService.UpdateTaxonomyAsync(taxonomy, model.CategoryId != null ? [model.CategoryId.Value] : Array.Empty<Guid>());
+
+        if (Url.IsLocalUrl(checkReturnUrl)) return LocalRedirect(checkReturnUrl);
+
+        return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> Delete(int? id)
+    {
+        if (id == null) return NotFound();
+
+        var taxonomy = await taxonomyService.GetTaxonomyByIdAsync(id.Value);
+        if (taxonomy == null) return NotFound();
+
+        var tagCount = await context.Tags.CountAsync(t => t.TaxonomyId == id.Value);
+
+        return this.StackView(new DeleteViewModel
+        {
+            Taxonomy = taxonomy,
+            TagCount = tagCount
+        });
+    }
+
+    [HttpPost]
+    [ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        await taxonomyService.DeleteTaxonomyAsync(id);
+        return RedirectToAction(nameof(Index));
+    }
+}

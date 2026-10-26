@@ -1,0 +1,102 @@
+using System.Net;
+using Aiursoft.DbTools;
+using Aiursoft.WeChatExamV2.Entities;
+using Aiursoft.WeChatExamV2.Models.MiniProgramApi;
+using Aiursoft.WeChatExamV2.Tests.TestServices;
+using static Aiursoft.WebTools.Extends;
+
+namespace Aiursoft.WeChatExamV2.Tests.IntegrationTests;
+
+[TestClass]
+public class DebugModeTests
+{
+    private int _port;
+    private HttpClient _http = null!;
+    private IHost? _server;
+
+    [TestCleanup]
+    public async Task CleanServer()
+    {
+        if (_server == null) return;
+        await _server.StopAsync();
+        _server.Dispose();
+        _http.Dispose();
+    }
+
+    private async Task StartServer(bool debugMode)
+    {
+        using var reservation = new TestPortReservation();
+        _port = reservation.Port;
+        var handler = new HttpClientHandler
+        {
+            AllowAutoRedirect = false
+        };
+        _http = new HttpClient(handler)
+        {
+            BaseAddress = new Uri($"http://localhost:{_port}")
+        };
+
+        TestStartupWithMockWeChat.MockWeChatService = new StubWeChatService();
+        TestStartupWithMockWeChat.MockDistributionChannelService = new StubDistributionChannelService();
+        TestStartupWithMockWeChat.MockWeChatPayService = new StubWeChatPayService();
+        TestStartupWithMockWeChat.MockOllamaService = new StubOllamaService();
+        TestStartupWithMockWeChat.MockVipProductService = new StubVipProductService();
+
+        // Pass configuration override via command line arguments
+        _server = await AppAsync<TestStartupWithMockWeChat>(
+            [
+                "--AppSettings:DebugMode=" + debugMode.ToString()
+            ],
+            port: _port);
+        try
+        {
+            reservation.ConfigureServer(_server);
+
+            await _server.UpdateDbAsync<WeChatExamV2DbContext>();
+            await _server.SeedAsync();
+            await _server.StartAsync();
+        }
+        catch
+        {
+            _server.Dispose();
+            throw;
+        }
+    }
+
+    [TestMethod]
+    public async Task ExchangeDebugToken_DebugModeOff_ReturnsNotFound()
+    {
+        // Arrange
+        await StartServer(false);
+        var model = new DebugTokenRequestDto
+        {
+            MagicKey = "test-magic-key-12345"
+        };
+
+        // Act
+        var response = await _http.PostAsJsonAsync("/api/Auth/exchange_debug_token", model);
+
+        // Assert
+        Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+    }
+
+    [TestMethod]
+    public async Task ExchangeDebugToken_DebugModeOn_ReturnsToken()
+    {
+        // Arrange
+        await StartServer(true);
+        var model = new DebugTokenRequestDto
+        {
+            MagicKey = "test-magic-key-12345" // Match what's in tests/appsettings.json
+        };
+
+        // Act
+        var response = await _http.PostAsJsonAsync("/api/Auth/exchange_debug_token", model);
+
+        // Assert
+        Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
+        var token = await response.Content.ReadFromJsonAsync<TokenDto>();
+        Assert.IsNotNull(token);
+        Assert.IsFalse(string.IsNullOrEmpty(token.Token));
+    }
+}

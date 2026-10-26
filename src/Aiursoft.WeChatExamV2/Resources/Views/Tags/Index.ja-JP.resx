@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="-- All Taxonomies --" xml:space="preserve">
+    <value>-- 全ての分類 --</value>
+  </data>
+  <data name="-- Uncategorized --" xml:space="preserve">
+    <value>-- カテゴリ未設定 --</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
+  <data name="An error occurred during deletion." xml:space="preserve">
+    <value>削除中にエラーが発生しました。</value>
+  </data>
+  <data name="Are you sure you want to delete" xml:space="preserve">
+    <value>選択したタグを削除してもよろしいですか？</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="Confirm Batch Delete" xml:space="preserve">
+    <value>一括削除の確認</value>
+  </data>
+  <data name="Create Tag" xml:space="preserve">
+    <value>タグを作成</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Delete Selected" xml:space="preserve">
+    <value>選択したものを削除</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>編集</value>
+  </data>
+  <data name="Edit / Categorize" xml:space="preserve">
+    <value>編集 / カテゴリ分け</value>
+  </data>
+  <data name="Failed to delete tags:" xml:space="preserve">
+    <value>タグの削除に失敗しました:</value>
+  </data>
+  <data name="Manage Taxonomies" xml:space="preserve">
+    <value>分類の管理</value>
+  </data>
+  <data name="No tags found matching your criteria." xml:space="preserve">
+    <value>条件に一致するタグは見つかりませんでした。</value>
+  </data>
+  <data name="No tags found. Tags will appear here once you create them when editing questions." xml:space="preserve">
+    <value>タグが見つかりません。質問を編集する際にタグを作成すると、ここに表示されます。</value>
+  </data>
+  <data name="No tags in this taxonomy matching your search." xml:space="preserve">
+    <value>検索条件に一致するタグがこのタクソノミーにはありません。</value>
+  </data>
+  <data name="No tags match your search query." xml:space="preserve">
+    <value>検索条件に一致するタグは見つかりませんでした。</value>
+  </data>
+  <data name="questions" xml:space="preserve">
+    <value>質問</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Search tags..." xml:space="preserve">
+    <value>タグを検索...</value>
+  </data>
+  <data name="selected" xml:space="preserve">
+    <value>選択済み</value>
+  </data>
+  <data name="selected tags? This action cannot be undone." xml:space="preserve">
+    <value>選択されたタグを削除しますか？この操作は元に戻せません。</value>
+  </data>
+  <data name="Tag Name" xml:space="preserve">
+    <value>タグ名</value>
+  </data>
+  <data name="Tags Management" xml:space="preserve">
+    <value>タグ管理</value>
+  </data>
+  <data name="These tags are not assigned to any taxonomy. Please categorize them for better organization." xml:space="preserve">
+    <value>これらのタグはどのタクソノミーにも割り当てられていません。より良い整理のために、カテゴリに分類してください。</value>
+  </data>
+  <data name="Toggle Dropdown" xml:space="preserve">
+    <value>ドロップダウンの切り替え</value>
+  </data>
+  <data name="Uncategorized Tags" xml:space="preserve">
+    <value>未分類のタグ</value>
+  </data>
+  <data name="Usage Count" xml:space="preserve">
+    <value>使用回数</value>
+  </data>
+  <data name="VIP Required" xml:space="preserve">
+    <value>VIP が必要</value>
+  </data>
+
+</root>

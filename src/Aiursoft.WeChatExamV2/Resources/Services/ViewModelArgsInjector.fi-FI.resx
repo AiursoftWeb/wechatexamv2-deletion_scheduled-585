@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Accounting Reports" xml:space="preserve">
+    <value>Kirjanpitoraportit</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Ylläpitäjä</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Hallinto</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Anonyymi</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Artikkelit</value>
+  </data>
+  <data name="Ask Ollama" xml:space="preserve">
+    <value>Kysy Ollamalta</value>
+  </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>Taustatehtävät</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Kategoriat</value>
+  </data>
+  <data name="Change Avatar" xml:space="preserve">
+    <value>Vaihda avataria</value>
+  </data>
+  <data name="Change Password" xml:space="preserve">
+    <value>Vaihda salasana</value>
+  </data>
+  <data name="Change Profile" xml:space="preserve">
+    <value>Muokkaa profiilia</value>
+  </data>
+  <data name="Channel Details" xml:space="preserve">
+    <value>kanavan tiedot</value>
+  </data>
+  <data name="Click to login" xml:space="preserve">
+    <value>Klikkaa kirjautuaksesi</value>
+  </data>
+  <data name="Content Configuration Checks" xml:space="preserve">
+    <value>Sisällön määritysten tarkistukset</value>
+  </data>
+  <data name="Content Management" xml:space="preserve">
+    <value>Sisällönhallinta</value>
+  </data>
+  <data name="Create Coupon" xml:space="preserve">
+    <value>Luo kuponki</value>
+  </data>
+  <data name="Create Distribution Channel" xml:space="preserve">
+    <value>Luo jakelukanava</value>
+  </data>
+  <data name="Create Role" xml:space="preserve">
+    <value>Luo rooli</value>
+  </data>
+  <data name="Create Tag" xml:space="preserve">
+    <value>Luo tunniste</value>
+  </data>
+  <data name="Create Taxonomy" xml:space="preserve">
+    <value>Luo aineistoluokitus</value>
+  </data>
+  <data name="Create User" xml:space="preserve">
+    <value>Luo käyttäjä</value>
+  </data>
+  <data name="Create VIP Membership" xml:space="preserve">
+    <value>Luo VIP-jäsenyys</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Hallintapaneeli</value>
+  </data>
+  <data name="Database Management" xml:space="preserve">
+    <value>Tietokannan hallinta</value>
+  </data>
+  <data name="Delete Account" xml:space="preserve">
+    <value>Poista tili</value>
+  </data>
+  <data name="Delete Category" xml:space="preserve">
+    <value>Poista kategoria</value>
+  </data>
+  <data name="Delete Distribution Channel" xml:space="preserve">
+    <value>Poista jakokanava</value>
+  </data>
+  <data name="Delete Feedback" xml:space="preserve">
+    <value>Poista palautetta</value>
+  </data>
+  <data name="Delete KnowledgePoint" xml:space="preserve">
+    <value>Poista tietopiste</value>
+  </data>
+  <data name="Delete Role" xml:space="preserve">
+    <value>Poista rooli</value>
+  </data>
+  <data name="Delete Tag" xml:space="preserve">
+    <value>Poista tunniste</value>
+  </data>
+  <data name="Delete Taxonomy" xml:space="preserve">
+    <value>Poista kategoriat</value>
+  </data>
+  <data name="Delete User" xml:space="preserve">
+    <value>Poista käyttäjä</value>
+  </data>
+  <data name="Delete VIP Membership" xml:space="preserve">
+    <value>Poista VIP-jäsenyys</value>
+  </data>
+  <data name="Directory" xml:space="preserve">
+    <value>Hakemisto</value>
+  </data>
+  <data name="Distribution Channels" xml:space="preserve">
+    <value>Jakaumakanavat</value>
+  </data>
+  <data name="Edit Role" xml:space="preserve">
+    <value>Muokkaa roolia</value>
+  </data>
+  <data name="Edit Tag" xml:space="preserve">
+    <value>Muokkaa tunniste</value>
+  </data>
+  <data name="Edit Taxonomy" xml:space="preserve">
+    <value>Muokkaa kategorisointia</value>
+  </data>
+  <data name="Edit User" xml:space="preserve">
+    <value>Muokkaa käyttäjää</value>
+  </data>
+  <data name="Edit VIP Membership" xml:space="preserve">
+    <value>Muokkaa VIP-jäsenyyttä</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Virhe</value>
+  </data>
+  <data name="Exam Management" xml:space="preserve">
+    <value>Kokeiden hallinta</value>
+  </data>
+  <data name="Exams" xml:space="preserve">
+    <value>Kokeet</value>
+  </data>
+  <data name="Export Questions" xml:space="preserve">
+    <value>Vie kysymykset</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Ominaisuudet</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Palaute</value>
+  </data>
+  <data name="Finance Reports" xml:space="preserve">
+    <value>Talousraportit</value>
+  </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>Yleiset asetukset</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Koti</value>
+  </data>
+  <data name="Import Questions" xml:space="preserve">
+    <value>Tuo kysymykset</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Etusivu</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Tiedot</value>
+  </data>
+  <data name="Join Official Exam" xml:space="preserve">
+    <value>Liity viralliseen kokeeseen</value>
+  </data>
+  <data name="Knowledge Points" xml:space="preserve">
+    <value>Tietopisteet</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Lukitus</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Kirjaudu</value>
+  </data>
+  <data name="Login to get access to all features." xml:space="preserve">
+    <value>Kirjaudu sisään saadaksesi pääsyn kaikkiin ominaisuuksiin.</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Hallinnoi</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Markkinointi</value>
+  </data>
+  <data name="Marketing Management" xml:space="preserve">
+    <value>Markkinointin hallinta</value>
+  </data>
+  <data name="Monthly Finance Report Details" xml:space="preserve">
+    <value>Kuukausittaisen talousraportin yksityiskohdat</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Uutiset</value>
+  </data>
+  <data name="Papers" xml:space="preserve">
+    <value>Kokeet</value>
+  </data>
+  <data name="Payment Management" xml:space="preserve">
+    <value>Maksuhallinta</value>
+  </data>
+  <data name="Payment Orders" xml:space="preserve">
+    <value>Maksutilaukset</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Henkilökohtainen</value>
+  </data>
+  <data name="Practice Session" xml:space="preserve">
+    <value>Harjoituskäyttö</value>
+  </data>
+  <data name="Practice Test" xml:space="preserve">
+    <value>Harjoitustesti</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profiili</value>
+  </data>
+  <data name="Profile Settings" xml:space="preserve">
+    <value>Profiilin asetukset</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Kysymykset</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Rekisteröidy</value>
+  </data>
+  <data name="Role Details" xml:space="preserve">
+    <value>Roolin tiedot</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roolit</value>
+  </data>
+  <data name="Search Content" xml:space="preserve">
+    <value>Hae sisältöä</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Asetukset</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>Kirjaudu ulos</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Järjestelmä</value>
+  </data>
+  <data name="System Info" xml:space="preserve">
+    <value>Järjestelmän tiedot</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Tagit</value>
+  </data>
+  <data name="Taxonomies" xml:space="preserve">
+    <value>Luokat</value>
+  </data>
+  <data name="Taxonomies Management" xml:space="preserve">
+    <value>Verkostojen hallinta</value>
+  </data>
+  <data name="Test Papers" xml:space="preserve">
+    <value>Koe-aiheet</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Luvaton</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Käyttäjän tiedot</value>
+  </data>
+  <data name="User Feedbacks" xml:space="preserve">
+    <value>Käyttäjäpalautteet</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Käyttäjät</value>
+  </data>
+  <data name="VIP Change History" xml:space="preserve">
+    <value>VIP-muutoshistoria</value>
+  </data>
+  <data name="VIP Members" xml:space="preserve">
+    <value>VIP-jäsenet</value>
+  </data>
+  <data name="VIP Products" xml:space="preserve">
+    <value>VIP-tuotteet</value>
+  </data>
+
+</root>

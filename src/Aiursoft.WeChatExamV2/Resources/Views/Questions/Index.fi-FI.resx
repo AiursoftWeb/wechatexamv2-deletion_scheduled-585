@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>Toiminnot</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>Lisää kysymys</value>
+  </data>
+  <data name="AI Auto Categorize" xml:space="preserve">
+    <value>AI-autokategorointi</value>
+  </data>
+  <data name="AI Auto Tagging" xml:space="preserve">
+    <value>AI-automatisoitu tunnisteet</value>
+  </data>
+  <data name="AI Classify" xml:space="preserve">
+    <value>AI Luokitus</value>
+  </data>
+  <data name="AI Classify - Select Categories" xml:space="preserve">
+    <value>AI Classify - Valitse kategoriat</value>
+  </data>
+  <data name="AI Generate Answers" xml:space="preserve">
+    <value>AI Luo Vastaukset</value>
+  </data>
+  <data name="AI Generate Explanations" xml:space="preserve">
+    <value>AI-luotu selitykset</value>
+  </data>
+  <data name="All Categories" xml:space="preserve">
+    <value>Kaikki kategoriat</value>
+  </data>
+  <data name="All Types" xml:space="preserve">
+    <value>Kaikki tyypit</value>
+  </data>
+  <data name="An error occurred during deletion." xml:space="preserve">
+    <value>Virhe syntyi poistettaessa.</value>
+  </data>
+  <data name="An error occurred while starting AI answer generation." xml:space="preserve">
+    <value>Tapahtui virhe AI-vastauksen generoinnin käynnistyksessä.</value>
+  </data>
+  <data name="An error occurred while starting AI categorization." xml:space="preserve">
+    <value>Tapahtui virhe AI-luokittelun käynnistyksessä.</value>
+  </data>
+  <data name="An error occurred while starting AI generation." xml:space="preserve">
+    <value>AI-generointia aloittaessa tapahtui virhe.</value>
+  </data>
+  <data name="An error occurred while starting AI tagging." xml:space="preserve">
+    <value>Tapahtui virhe AI-merkintöjen käynnistyksessä.</value>
+  </data>
+  <data name="An error occurred while starting classification." xml:space="preserve">
+    <value>Tapahtui virhe luomassa luokittelua.</value>
+  </data>
+  <data name="Apply Filters" xml:space="preserve">
+    <value>Sovita Suodattimet</value>
+  </data>
+  <data name="Are you sure you want to delete" xml:space="preserve">
+    <value>Oletko varma, että haluat poistaa</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Peruuta</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategoria</value>
+  </data>
+  <data name="Confirm Batch Delete" xml:space="preserve">
+    <value>Vahvista sarjapoisto</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Sisältö</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Luotu</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Poista</value>
+  </data>
+  <data name="Delete Selected" xml:space="preserve">
+    <value>Poista valitut</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Yksityiskohdat</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Muokkaa</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>Loppupäivä</value>
+  </data>
+  <data name="Failed to delete questions. Please try again." xml:space="preserve">
+    <value>Kysymysten poisto epäonnistui. Yritä uudelleen.</value>
+  </data>
+  <data name="Failed to start AI answer generation." xml:space="preserve">
+    <value>Epäonnistui AI-vastauksen generoinnin käynnistäminen.</value>
+  </data>
+  <data name="Failed to start AI categorization." xml:space="preserve">
+    <value>AI-luokittelun käynnistäminen epäonnistui.</value>
+  </data>
+  <data name="Failed to start AI generation." xml:space="preserve">
+    <value>AI-generaationin käynnistäminen epäonnistui.</value>
+  </data>
+  <data name="Failed to start AI tagging." xml:space="preserve">
+    <value>Ei voitu käynnistää AI-tagiointia.</value>
+  </data>
+  <data name="Failed to start classification." xml:space="preserve">
+    <value>Luonnoksen aloittaminen epäonnistui.</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Suodata</value>
+  </data>
+  <data name="Filters &amp; Search" xml:space="preserve">
+    <value>Suodattimet &amp; Haku</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>Mene</value>
+  </data>
+  <data name="Items per page" xml:space="preserve">
+    <value>Näytettävät kohteet sivulla</value>
+  </data>
+  <data name="MTQL Query" xml:space="preserve">
+    <value>MTQL-kysely</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Seuraava</value>
+  </data>
+  <data name="No categories available. Please create categories first." xml:space="preserve">
+    <value>Ei kategorioita saatavilla. Luo kategorioita ensin.</value>
+  </data>
+  <data name="No questions found" xml:space="preserve">
+    <value>Kysymyksiä ei löytynyt</value>
+  </data>
+  <data name="No questions found matching your criteria" xml:space="preserve">
+    <value>Ei kysymyksiä löytynyt vastaamaan ehtoja</value>
+  </data>
+  <data name="Please enter a valid page number between 1 and" xml:space="preserve">
+    <value>Syötä kelvollinen sivunumero väliltä 1 ja</value>
+  </data>
+  <data name="Please select at least one category." xml:space="preserve">
+    <value>Valitse vähintään yksi kategoria.</value>
+  </data>
+  <data name="Please select at least one question." xml:space="preserve">
+    <value>Valitse vähintään yksi kysymys.</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Edellinen</value>
+  </data>
+  <data name="Question List" xml:space="preserve">
+    <value>Kysymyslista</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Kysymykset</value>
+  </data>
+  <data name="questions?" xml:space="preserve">
+    <value>kysymyksiä?</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Nollaa</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Hae</value>
+  </data>
+  <data name="Search Questions and Knowledge Points" xml:space="preserve">
+    <value>Hae kysymyksiä ja tietopisteitä</value>
+  </data>
+  <data name="Search questions and knowledge points..." xml:space="preserve">
+    <value>Hae kysymyksiä ja tietopisteitä...</value>
+  </data>
+  <data name="Select All / Deselect All" xml:space="preserve">
+    <value>Valitse kaikki / Poista valinta kaikista</value>
+  </data>
+  <data name="Select the candidate categories for AI classification. The AI will choose exactly one category for each question." xml:space="preserve">
+    <value>Valitse ehdokasluokat AI-luokitteluun. AI valitsee tarkalleen yhden luokan jokaiseen kysymykseen.</value>
+  </data>
+  <data name="selected" xml:space="preserve">
+    <value>valittu</value>
+  </data>
+  <data name="Start Classification" xml:space="preserve">
+    <value>Aloita luokittelu</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>Aloituspäivämäärä</value>
+  </data>
+  <data name="Submitting..." xml:space="preserve">
+    <value>Lähetetään...</value>
+  </data>
+  <data name="Tag" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Tagit</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Teksti</value>
+  </data>
+  <data name="This action cannot be undone." xml:space="preserve">
+    <value>Tätä toimintoa ei voi perua.</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tyyppi</value>
+  </data>
+
+</root>

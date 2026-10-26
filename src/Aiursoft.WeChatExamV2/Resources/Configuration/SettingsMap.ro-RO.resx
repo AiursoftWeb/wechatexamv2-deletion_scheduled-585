@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name=" The link to the brand&apos;s home page." xml:space="preserve">
+    <value>Linkul către pagina principală a mărcii.</value>
+  </data>
+  <data name="AI Prompt: Auto Categorize" xml:space="preserve">
+    <value>Prompt AI: Categorizare Automată</value>
+  </data>
+  <data name="AI Prompt: Auto Tagging" xml:space="preserve">
+    <value>Prompt AI: Etichetare automată</value>
+  </data>
+  <data name="AI Prompt: Base Explanation" xml:space="preserve">
+    <value>Prompt AI: Explicație de bază</value>
+  </data>
+  <data name="AI Prompt: Deep Explanation" xml:space="preserve">
+    <value>Prompt AI: Explicație Avansată</value>
+  </data>
+  <data name="AI Prompt: Default Extraction" xml:space="preserve">
+    <value>Prompt AI: Extracție Implicită</value>
+  </data>
+  <data name="AI Prompt: Default Grading" xml:space="preserve">
+    <value>Prompt AI: Evaluare implicită</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Blank)" xml:space="preserve">
+    <value>Prompt AI: Generează Răspuns (Gol)</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Bool)" xml:space="preserve">
+    <value>Prompt AI: Generare Răspuns (Bool)</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Choice)" xml:space="preserve">
+    <value>Prompt AI: Generează Răspuns (Opțiune)</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Subjective)" xml:space="preserve">
+    <value>Prompt AI: Generează Răspuns (Subiectiv)</value>
+  </data>
+  <data name="Allow User Adjust Nickname" xml:space="preserve">
+    <value>Permite utilizatorului să-și ajusteze nickname-ul</value>
+  </data>
+  <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
+    <value>Permite utilizatorilor să-și ajusteze nickname-ul în pagina de gestionare a profilului.</value>
+  </data>
+  <data name="Brand Home URL" xml:space="preserve">
+    <value>URL site web al mărcii</value>
+  </data>
+  <data name="Brand Name" xml:space="preserve">
+    <value>Numele mărcii</value>
+  </data>
+  <data name="Embedding API Token" xml:space="preserve">
+    <value>Token API pentru încorporări</value>
+  </data>
+  <data name="Embedding Endpoint" xml:space="preserve">
+    <value>Punct final pentru generarea vectorilor embedding</value>
+  </data>
+  <data name="Embedding Model" xml:space="preserve">
+    <value>Model de embedding</value>
+  </data>
+  <data name="Enable background embedding generation for questions and knowledge points." xml:space="preserve">
+    <value>Activați generarea în fundal a reprezentărilor vectoriale pentru întrebări și puncte de cunoaștere.</value>
+  </data>
+  <data name="Enable Embedding-Based Search" xml:space="preserve">
+    <value>Activați căutarea bazată pe embedderi</value>
+  </data>
+  <data name="ICP Number" xml:space="preserve">
+    <value>Număr ICP</value>
+  </data>
+  <data name="Optional bearer token for the embedding endpoint. Falls back to the OpenAI token when empty." xml:space="preserve">
+    <value>Token opțional de tip bearer pentru endpointul de embedding. Dacă este gol, se utilizează tokenul OpenAI.</value>
+  </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>Logo Proiect</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>Numele proiectului</value>
+  </data>
+  <data name="The AI prompt for auto categorizing questions. Use {0} for content, {1} for metadata, {2} for answer, {3} for tags, {4} for explanation, and {5} for categories list." xml:space="preserve">
+    <value>Prompt-ul AI pentru categorisirea automată a întrebărilor. Folosiți {0} pentru conținut, {1} pentru metadate, {2} pentru răspuns, {3} pentru etichete, {4} pentru explicație și {5} pentru lista de categorii.</value>
+  </data>
+  <data name="The AI prompt for auto tagging questions. Use {0} for type, {1} for category, {2} for content, {3} for answer, {4} for explanation, {5} for existing tags, and {6} for taxonomy instructions." xml:space="preserve">
+    <value>Prompt-ul AI pentru etichetarea automată a întrebărilor. Folosiți {0} pentru tip, {1} pentru categorie, {2} pentru conținut, {3} pentru răspuns, {4} pentru explicație, {5} pentru etichetele existente și {6} pentru instrucțiunile de taxonomie.</value>
+  </data>
+  <data name="The AI prompt for generating answers for blank-filling questions." xml:space="preserve">
+    <value>Promptul AI pentru generarea răspunsurilor la întrebările cu completarea spațiilor libere.</value>
+  </data>
+  <data name="The AI prompt for generating answers for choice questions." xml:space="preserve">
+    <value>Prompt-ul AI pentru generarea răspunsurilor la întrebările cu opțiuni.</value>
+  </data>
+  <data name="The AI prompt for generating answers for subjective questions (Short Answer, Essay, Noun Explanation)." xml:space="preserve">
+    <value>Prompt-ul AI pentru generarea răspunsurilor la întrebări subiective (Răspuns Scurt, Eseu, Explicație a Substantivelor).</value>
+  </data>
+  <data name="The AI prompt for generating answers for true/false questions." xml:space="preserve">
+    <value>Prompt-ul AI pentru generarea răspunsurilor la întrebările de tip adevărat/fals.</value>
+  </data>
+  <data name="The AI prompt for generating base explanations." xml:space="preserve">
+    <value>Prompt-ul AI pentru generarea explicațiilor de bază.</value>
+  </data>
+  <data name="The AI prompt for generating deep explanations." xml:space="preserve">
+    <value>Prompt-ul AI pentru generarea de explicații detaliate.</value>
+  </data>
+  <data name="The AI prompt for grading questions. Use {0} for content, {1} for standard answer, {2} for explanation, {3} for student answer, and {4} for max score." xml:space="preserve">
+    <value>Prompt-ul AI pentru evaluarea întrebărilor. Folosiți {0} pentru conținut, {1} pentru răspunsul standard, {2} pentru explicație, {3} pentru răspunsul elevului și {4} pentru scorul maxim.</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>Numele mărcii afișat în subsol.</value>
+  </data>
+  <data name="The default system prompt for extracting knowledge from material." xml:space="preserve">
+    <value>Promptul implicit al sistemului pentru extragerea cunoștințelor din material.</value>
+  </data>
+  <data name="The embedding model for questions and knowledge points. Existing vectors use the bge-m3 1024-dimension index contract." xml:space="preserve">
+    <value>Modelul de vectorizare pentru întrebări și puncte de cunoaștere. Vectorii existenți respectă contractul de indexare bge-m3 cu 1024 de dimensiuni.</value>
+  </data>
+  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
+    <value>Numărul de înregistrare ICP pentru utilizatorii din China continentală. Lăsați gol pentru a ascunde.</value>
+  </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>Logo-ul proiectului afișat în bara de navigare și în subsol. Suportă jpg, png, svg.</value>
+  </data>
+  <data name="The name of the project displayed in the frontend." xml:space="preserve">
+    <value>Numele proiectului afișat în interfața utilizatorului.</value>
+  </data>
+  <data name="The Ollama API base URL for embeddings. Only the host is used; /api/embed is appended automatically. Falls back to the OpenAI completion endpoint when empty." xml:space="preserve">
+    <value>Adresa URL de bază a API-ului Ollama pentru vectorizări. Se folosește doar gazda; /api/embed este adăugat automat. Dacă este goală, se folosește endpointul de completare OpenAI.</value>
+  </data>
+
+</root>

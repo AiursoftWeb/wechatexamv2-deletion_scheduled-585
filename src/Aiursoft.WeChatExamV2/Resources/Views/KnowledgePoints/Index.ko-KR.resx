@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>작업</value>
+  </data>
+  <data name="Add KnowledgePoint" xml:space="preserve">
+    <value>지식 포인트 추가</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>생성일</value>
+  </data>
+  <data name="Failed to render tree:" xml:space="preserve">
+    <value>트리 렌더링 실패:</value>
+  </data>
+  <data name="KnowledgePoint List" xml:space="preserve">
+    <value>지식 포인트 목록</value>
+  </data>
+  <data name="KnowledgePoints" xml:space="preserve">
+    <value>지식 포인트</value>
+  </data>
+  <data name="List View" xml:space="preserve">
+    <value>목록 보기</value>
+  </data>
+  <data name="No knowledgePoints found" xml:space="preserve">
+    <value>지식 포인트를 찾을 수 없습니다.</value>
+  </data>
+  <data name="Parent" xml:space="preserve">
+    <value>상위 항목</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="Search Questions and Knowledge Points" xml:space="preserve">
+    <value>문제 및 학습 항목 검색</value>
+  </data>
+  <data name="Search questions and knowledge points..." xml:space="preserve">
+    <value>질문과 지식을 검색하세요...</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>제목</value>
+  </data>
+  <data name="Visual Tree" xml:space="preserve">
+    <value>시각적 트리</value>
+  </data>
+
+</root>

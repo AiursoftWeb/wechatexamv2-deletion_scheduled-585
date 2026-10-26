@@ -1,0 +1,135 @@
+@using Aiursoft.WeChatExamV2.Authorization
+@using Aiursoft.WeChatExamV2.Models.ContentSearchViewModels
+@model Aiursoft.WeChatExamV2.Models.QuestionsViewModels.CreateViewModel
+
+<h1 class="h3 mb-3">@Localizer["Add Question"]</h1>
+
+<div class="row g-3">
+<div class="@(User.HasClaim(AppPermissions.Type, AppPermissionNames.CanReadQuestions) ? "col-xl-8" : "col-12")">
+<form asp-action="Create" method="post" data-content-editor>
+    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+    <input type="hidden" asp-for="ReturnUrl" />
+    <div class="card mb-3">
+        <div class="card-body">
+            <div class="mb-3">
+                <label asp-for="QuestionType" class="form-label">@Localizer["Type"]</label>
+                <select asp-for="QuestionType" asp-items="@(Enum.GetValues<Aiursoft.WeChatExamV2.Entities.QuestionType>().Select(t => new SelectListItem { Value = ((int)t).ToString(), Text = Localizer[t.GetDisplayName()].Value }))" class="form-select" required>
+                    <option value="">@Localizer["Select type"]</option>
+                </select>
+                <span asp-validation-for="QuestionType" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="GradingStrategy" class="form-label">@Localizer["Grading Strategy"]</label>
+                <select asp-for="GradingStrategy" asp-items="@(Enum.GetValues<Aiursoft.WeChatExamV2.Entities.GradingStrategy>().Select(t => new SelectListItem { Value = ((int)t).ToString(), Text = Localizer[t.GetDisplayName()].Value }))" class="form-select" required>
+                    <option value="">@Localizer["Select strategy"]</option>
+                </select>
+                <span asp-validation-for="GradingStrategy" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Content" class="form-label">@Localizer["Content"]</label>
+                <textarea asp-for="Content" class="form-control" rows="5" required></textarea>
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="CategoryId" class="form-label">@Localizer["Category"]</label>
+                <select asp-for="CategoryId" class="form-select" required>
+                    <option value="">@Localizer["Select category"]</option>
+                    @foreach (var category in Model.Categories)
+                    {
+                        if (Model.CategoryId == category.Id)
+                        {
+                            <option value="@category.Id" selected>@category.Title</option>
+                        }
+                        else
+                        {
+                            <option value="@category.Id">@category.Title</option>
+                        }
+                    }
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">@Localizer["Tags"]</label>
+                <input type="text" id="tagInputField" class="form-control" placeholder="@Localizer["Type to search or add tags..."]" autocomplete="off" />
+                <input type="hidden" asp-for="Tags" id="Tags" />
+                <small class="form-text text-muted">@Localizer["Press Space, Comma, Semicolon or Enter to add a tag. Click X to remove."]</small>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="OrderIndex" class="form-label">@Localizer["Order Index"]</label>
+                <input asp-for="OrderIndex" class="form-control" type="number" step="0.01" />
+                <span asp-validation-for="OrderIndex" class="text-danger"></span>
+                <small class="form-text text-muted">@Localizer["Custom order index. Lower numbers come first. Current max index is:"] @Model.CurrentMaxOrderIndex</small>
+            </div>
+
+            <!-- Options Section -->
+            <div id="options-section" class="mb-3" style="display:none;">
+                <label class="form-label">@Localizer["Options"]</label>
+                <div id="options-list">
+                    @for (var i = 0; i < Model.Options.Count; i++)
+                    {
+                        <div class="input-group mb-2 option-item">
+                            <div class="input-group-text">
+                                <input class="form-check-input mt-0 answer-radio" type="radio" name="StandardAnswer" value="@Model.Options[i]" @(Model.Options[i] == Model.StandardAnswer ? "checked" : "")>
+                            </div>
+                            <input type="text" class="form-control option-input" name="Options" value="@Model.Options[i]" placeholder="@Localizer["Option content"]" required>
+                            <button type="button" class="btn btn-outline-danger remove-option-btn">
+                                <i class="align-middle" data-lucide="trash-2"></i>
+                            </button>
+                        </div>
+                    }
+                </div>
+                <button type="button" id="add-option-btn" class="btn btn-sm btn-secondary">
+                    <i class="align-middle me-1" data-lucide="plus"></i> @Localizer["Add Option"]
+                </button>
+                <span asp-validation-for="Options" class="text-danger"></span>
+            </div>
+
+
+
+            <!-- Standard Answer (Textarea for others) -->
+            <div class="mb-3" id="standard-answer-text-section">
+                <label asp-for="StandardAnswer" class="form-label">@Localizer["Standard Answer"]</label>
+                <textarea asp-for="StandardAnswer" id="standard-answer-input" class="form-control" rows="8" placeholder='Correct Answer'></textarea>
+                <span asp-validation-for="StandardAnswer" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Explanation" class="form-label">@Localizer["Explanation"]</label>
+                <textarea asp-for="Explanation" class="form-control" rows="8"></textarea>
+                <span asp-validation-for="Explanation" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="card-footer text-end">
+            <button type="submit" class="btn btn-primary">@Localizer["Save"]</button>
+            <a href="@(string.IsNullOrWhiteSpace(Model.ReturnUrl) ? Url.Action("Index", new { categoryId = Model.CategoryId }) : Model.ReturnUrl)" class="btn btn-secondary ms-2">@Localizer["Cancel"]</a>
+        </div>
+    </div>
+</form>
+</div>
+@if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanReadQuestions))
+{
+    <aside class="col-xl-4">
+        @await Html.PartialAsync("_QuestionRecommendations", new QuestionRecommendationsViewModel { IsDraft = true })
+    </aside>
+}
+</div>
+
+@* Localization Data for JavaScript *@
+<div id="loc-data" hidden>
+    <span data-key="correct">@Localizer["Correct"]</span>
+    <span data-key="incorrect">@Localizer["Incorrect"]</span>
+    <span data-key="remove-option">@Localizer["Remove Option"]</span>
+    <span data-key="option-content">@Localizer["Option content"]</span>
+    <span data-key="type-choice">@((int)Aiursoft.WeChatExamV2.Entities.QuestionType.Choice)</span>
+    <span data-key="type-bool">@((int)Aiursoft.WeChatExamV2.Entities.QuestionType.Bool)</span>
+</div>
+
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section scripts {
+    <script src="~/js/tag-input.js" asp-append-version="true"></script>
+    <script src="~/js/content-editor.js" asp-append-version="true"></script>
+}

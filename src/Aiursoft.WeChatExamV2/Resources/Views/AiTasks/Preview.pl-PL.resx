@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Abandon" xml:space="preserve">
+    <value>Porzucić</value>
+  </data>
+  <data name="Adopt" xml:space="preserve">
+    <value>Przyjmij</value>
+  </data>
+  <data name="Adopt All" xml:space="preserve">
+    <value>Zaakceptuj wszystkie</value>
+  </data>
+  <data name="AI New Answer" xml:space="preserve">
+    <value>AI Nowa Odpowiedź</value>
+  </data>
+  <data name="AI New Explanation" xml:space="preserve">
+    <value>Nowe wyjaśnienie AI</value>
+  </data>
+  <data name="AI Task Preview" xml:space="preserve">
+    <value>Podgląd zadania AI</value>
+  </data>
+  <data name="Are you sure you want to adopt all AI suggestions?" xml:space="preserve">
+    <value>Czy na pewno chcesz zaakceptować wszystkie sugestie AI?</value>
+  </data>
+  <data name="Are you sure you want to cancel all pending tasks?" xml:space="preserve">
+    <value>Czy na pewno chcesz anulować wszystkie oczekujące zadania?</value>
+  </data>
+  <data name="Auto Categorize" xml:space="preserve">
+    <value>Automatyczne kategoryzowanie</value>
+  </data>
+  <data name="Auto Tagging" xml:space="preserve">
+    <value>Automatyczne tagowanie</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anuluj</value>
+  </data>
+  <data name="Cancel All" xml:space="preserve">
+    <value>Anuluj wszystko</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Zakończone</value>
+  </data>
+  <data name="Current Answer" xml:space="preserve">
+    <value>Aktualna odpowiedź</value>
+  </data>
+  <data name="Current Category" xml:space="preserve">
+    <value>Bieżąca kategoria</value>
+  </data>
+  <data name="Current Tags" xml:space="preserve">
+    <value>Aktualne tagi</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="Edit AI Explanation" xml:space="preserve">
+    <value>Edytuj wyjaśnienie AI</value>
+  </data>
+  <data name="Edit AI Suggestion" xml:space="preserve">
+    <value>Edytuj sugestię AI</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Błąd</value>
+  </data>
+  <data name="Failed to adopt suggestions." xml:space="preserve">
+    <value>Nie udało się przyjąć sugestii.</value>
+  </data>
+  <data name="Generate Answer" xml:space="preserve">
+    <value>Generuj odpowiedź</value>
+  </data>
+  <data name="Generate Explanation" xml:space="preserve">
+    <value>Generuj wyjaśnienie</value>
+  </data>
+  <data name="Old Explanation" xml:space="preserve">
+    <value>Stare wyjaśnienie</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Przetwarzanie...</value>
+  </data>
+  <data name="Save &amp; Adopt" xml:space="preserve">
+    <value>Zapisz i przyjmij</value>
+  </data>
+  <data name="Select Category" xml:space="preserve">
+    <value>Wybierz kategorię</value>
+  </data>
+  <data name="Suggested Category" xml:space="preserve">
+    <value>Zalecana kategoria</value>
+  </data>
+  <data name="Suggested Tags" xml:space="preserve">
+    <value>Zalecane tagi</value>
+  </data>
+  <data name="Tasks are still processing. Do you want to adopt completed ones and abandon the rest?" xml:space="preserve">
+    <value>Zadania są nadal przetwarzane. Czy chcesz zaakceptować zakończone i porzucić pozostałe?</value>
+  </data>
+  <data name="Too many requests, waiting 30s..." xml:space="preserve">
+    <value>Zbyt wiele żądań, czekanie 30s...</value>
+  </data>
+
+</root>

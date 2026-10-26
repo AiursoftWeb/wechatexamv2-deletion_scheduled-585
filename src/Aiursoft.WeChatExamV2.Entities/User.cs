@@ -1,0 +1,23 @@
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
+
+namespace Aiursoft.WeChatExamV2.Entities;
+
+public class User : IdentityUser
+{
+    public const string DefaultAvatarPath = "Workspace/avatar/default-avatar.jpg";
+
+    [MaxLength(30)]
+    [MinLength(2)]
+    public required string DisplayName { get; set; }
+
+    [MaxLength(150)] [MinLength(2)] public string AvatarRelativePath { get; set; } = DefaultAvatarPath;
+
+    [MaxLength(100)]
+    public string? MiniProgramOpenId { get; set; }
+
+    [MaxLength(100)]
+    public string? SessionKey { get; set; }
+
+    public DateTime CreationTime { get; init; } = DateTime.UtcNow;
+}

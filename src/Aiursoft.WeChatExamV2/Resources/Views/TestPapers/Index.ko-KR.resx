@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Administrator workspace" xml:space="preserve">
+    <value>관리자 워크스페이스</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>전체</value>
+  </data>
+  <data name="Available papers" xml:space="preserve">
+    <value>사용 가능한 시험지</value>
+  </data>
+  <data name="Create a paper and add questions before starting a browser test." xml:space="preserve">
+    <value>브라우저 테스트를 시작하기 전에 시험지를 생성하고 문제를 추가하세요.</value>
+  </data>
+  <data name="Create paper" xml:space="preserve">
+    <value>문제지 생성</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>초안</value>
+  </data>
+  <data name="Experience the current paper exactly as a candidate would. Test submissions use the production grading engine, including real AI grading." xml:space="preserve">
+    <value>지원자가 실제로 보는 것과 동일한 방식으로 현재 시험지를 체험해 보세요. 시험 제출은 실제 AI 채점을 포함한 프로덕션 채점 엔진을 사용합니다.</value>
+  </data>
+  <data name="Frozen" xml:space="preserve">
+    <value>동결됨</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>분</value>
+  </data>
+  <data name="No matching papers" xml:space="preserve">
+    <value>일치하는 시험지가 없습니다</value>
+  </data>
+  <data name="No papers yet" xml:space="preserve">
+    <value>아직 시험지가 없습니다</value>
+  </data>
+  <data name="No questions" xml:space="preserve">
+    <value>질문 없음</value>
+  </data>
+  <data name="Paper status filter" xml:space="preserve">
+    <value>시험지 상태 필터</value>
+  </data>
+  <data name="points" xml:space="preserve">
+    <value>점</value>
+  </data>
+  <data name="Publishable" xml:space="preserve">
+    <value>게시 가능</value>
+  </data>
+  <data name="questions" xml:space="preserve">
+    <value>문제</value>
+  </data>
+  <data name="Real exam" xml:space="preserve">
+    <value>실제 시험</value>
+  </data>
+  <data name="Search papers..." xml:space="preserve">
+    <value>시험지 검색...</value>
+  </data>
+  <data name="Start test" xml:space="preserve">
+    <value>테스트 시작</value>
+  </data>
+  <data name="Test Papers" xml:space="preserve">
+    <value>시험지</value>
+  </data>
+  <data name="Try another title or status filter." xml:space="preserve">
+    <value>다른 제목이나 상태 필터를 시도해 보세요.</value>
+  </data>
+
+</root>

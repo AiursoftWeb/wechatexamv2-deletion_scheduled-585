@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add" xml:space="preserve">
+    <value>Lägg till</value>
+  </data>
+  <data name="Add Selected" xml:space="preserve">
+    <value>Lägg till valda</value>
+  </data>
+  <data name="All Types" xml:space="preserve">
+    <value>Alla typer</value>
+  </data>
+  <data name="Associated Categories" xml:space="preserve">
+    <value>Associerade kategorier</value>
+  </data>
+  <data name="Associated Questions" xml:space="preserve">
+    <value>Relaterade frågor</value>
+  </data>
+  <data name="Associations are applied when you save this knowledge point." xml:space="preserve">
+    <value>Kopplingarna tillämpas när du sparar den här kunskapspunkten.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>Tillbaka till listan</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Innehåll</value>
+  </data>
+  <data name="Edit KnowledgePoint" xml:space="preserve">
+    <value>Redigera kunskapspunkt</value>
+  </data>
+  <data name="Enter MTQL query (e.g. content:&quot;math&quot;)" xml:space="preserve">
+    <value>Ange MTQL-fråga (t.ex. content:&quot;matte&quot;)</value>
+  </data>
+  <data name="Error:" xml:space="preserve">
+    <value>Fel:</value>
+  </data>
+  <data name="Hold Ctrl (Windows) or Command (Mac) to select multiple options." xml:space="preserve">
+    <value>Håll ned Ctrl (Windows) eller Command (Mac) för att välja flera alternativ.</value>
+  </data>
+  <data name="MTQL Question Finder" xml:space="preserve">
+    <value>MTQL-frågehittare</value>
+  </data>
+  <data name="No questions found." xml:space="preserve">
+    <value>Inga frågor hittades.</value>
+  </data>
+  <data name="Parent KnowledgePoint" xml:space="preserve">
+    <value>Överordnad kunskapspunkt</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Ta bort</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Spara</value>
+  </data>
+  <data name="Save and return to content checks" xml:space="preserve">
+    <value>Spara och återgå till innehållskontroller</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Sök</value>
+  </data>
+  <data name="Search results will appear here..." xml:space="preserve">
+    <value>Sökresultat kommer att visas här...</value>
+  </data>
+  <data name="Searching..." xml:space="preserve">
+    <value>Söker...</value>
+  </data>
+  <data name="Select a question to add..." xml:space="preserve">
+    <value>Välj en fråga att lägga till...</value>
+  </data>
+  <data name="Selected Questions" xml:space="preserve">
+    <value>Valda frågor</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="Top Level" xml:space="preserve">
+    <value>Toppnivå</value>
+  </data>
+
+</root>

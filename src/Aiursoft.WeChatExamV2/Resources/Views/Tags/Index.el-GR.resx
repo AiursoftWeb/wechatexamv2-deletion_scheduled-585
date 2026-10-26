@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="-- All Taxonomies --" xml:space="preserve">
+    <value>-- Όλα τα Ταξινομήματα --</value>
+  </data>
+  <data name="-- Uncategorized --" xml:space="preserve">
+    <value>-- Χωρίς κατηγορία --</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Ενέργειες</value>
+  </data>
+  <data name="An error occurred during deletion." xml:space="preserve">
+    <value>Προέκυψε σφάλμα κατά τη διαγραφή.</value>
+  </data>
+  <data name="Are you sure you want to delete" xml:space="preserve">
+    <value>Είστε βέβαιοι ότι θέλετε να διαγράψετε</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Ακύρωση</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Καθαρισμός</value>
+  </data>
+  <data name="Confirm Batch Delete" xml:space="preserve">
+    <value>Επιβεβαίωση Μαζικής Διαγραφής</value>
+  </data>
+  <data name="Create Tag" xml:space="preserve">
+    <value>Δημιουργία Ετικέτας</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Διαγραφή</value>
+  </data>
+  <data name="Delete Selected" xml:space="preserve">
+    <value>Διαγραφή Επιλεγμένων</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Επεξεργασία</value>
+  </data>
+  <data name="Edit / Categorize" xml:space="preserve">
+    <value>Επεξεργασία / Κατηγοριοποίηση</value>
+  </data>
+  <data name="Failed to delete tags:" xml:space="preserve">
+    <value>Αποτυχία διαγραφής ετικετών:</value>
+  </data>
+  <data name="Manage Taxonomies" xml:space="preserve">
+    <value>Διαχείριση Ταξινομιών</value>
+  </data>
+  <data name="No tags found matching your criteria." xml:space="preserve">
+    <value>Δεν βρέθηκαν ετικέτες που να ταιριάζουν με τα κριτήρια σας.</value>
+  </data>
+  <data name="No tags found. Tags will appear here once you create them when editing questions." xml:space="preserve">
+    <value>Δεν βρέθηκαν ετικέτες. Οι ετικέτες θα εμφανιστούν εδώ όταν τις δημιουργήσετε κατά την επεξεργασία ερωτήσεων.</value>
+  </data>
+  <data name="No tags in this taxonomy matching your search." xml:space="preserve">
+    <value>Δεν υπάρχουν ετικέτες σε αυτήν την ταξινόμηση που να ταιριάζουν με την αναζήτησή σας.</value>
+  </data>
+  <data name="No tags match your search query." xml:space="preserve">
+    <value>Δεν βρέθηκαν ετικέτες που να ταιριάζουν με την αναζήτησή σας.</value>
+  </data>
+  <data name="questions" xml:space="preserve">
+    <value>ερωτήσεις</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Αναζήτηση</value>
+  </data>
+  <data name="Search tags..." xml:space="preserve">
+    <value>Αναζήτηση ετικετών...</value>
+  </data>
+  <data name="selected" xml:space="preserve">
+    <value>επιλεγμένα</value>
+  </data>
+  <data name="selected tags? This action cannot be undone." xml:space="preserve">
+    <value>επιλεγμένα ετικέτες; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.</value>
+  </data>
+  <data name="Tag Name" xml:space="preserve">
+    <value>Όνομα ετικέτας</value>
+  </data>
+  <data name="Tags Management" xml:space="preserve">
+    <value>Διαχείριση Ετικετών</value>
+  </data>
+  <data name="These tags are not assigned to any taxonomy. Please categorize them for better organization." xml:space="preserve">
+    <value>Αυτά τα ετικέτες δεν έχουν αντιστοιχιστεί σε καμία ταξινόμηση. Παρακαλούμε κατηγοριοποιήστε τα για καλύτερη οργάνωση.</value>
+  </data>
+  <data name="Toggle Dropdown" xml:space="preserve">
+    <value>Εναλλαγή Μενού</value>
+  </data>
+  <data name="Uncategorized Tags" xml:space="preserve">
+    <value>Μη Κατηγοριοποιημένες Ετικέτες</value>
+  </data>
+  <data name="Usage Count" xml:space="preserve">
+    <value>Χρήση Μετρητή</value>
+  </data>
+  <data name="VIP Required" xml:space="preserve">
+    <value>Απαιτείται VIP</value>
+  </data>
+
+</root>

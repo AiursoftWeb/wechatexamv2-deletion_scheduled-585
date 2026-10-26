@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Accounting Reports" xml:space="preserve">
+    <value>Laporan Akuntansi</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administrasi</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Anonim</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Artikel</value>
+  </data>
+  <data name="Ask Ollama" xml:space="preserve">
+    <value>Tanya Ollama</value>
+  </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>Pekerjaan Latar Belakang</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="Change Avatar" xml:space="preserve">
+    <value>Ubah Avatar</value>
+  </data>
+  <data name="Change Password" xml:space="preserve">
+    <value>Ubah Kata Sandi</value>
+  </data>
+  <data name="Change Profile" xml:space="preserve">
+    <value>Ubah Profil</value>
+  </data>
+  <data name="Channel Details" xml:space="preserve">
+    <value>Detail Saluran</value>
+  </data>
+  <data name="Click to login" xml:space="preserve">
+    <value>Klik untuk masuk</value>
+  </data>
+  <data name="Content Configuration Checks" xml:space="preserve">
+    <value>Pemeriksaan Konfigurasi Konten</value>
+  </data>
+  <data name="Content Management" xml:space="preserve">
+    <value>Manajemen Konten</value>
+  </data>
+  <data name="Create Coupon" xml:space="preserve">
+    <value>Buat Kupon</value>
+  </data>
+  <data name="Create Distribution Channel" xml:space="preserve">
+    <value>Buat Saluran Distribusi</value>
+  </data>
+  <data name="Create Role" xml:space="preserve">
+    <value>Buat Peran</value>
+  </data>
+  <data name="Create Tag" xml:space="preserve">
+    <value>Buat Tag</value>
+  </data>
+  <data name="Create Taxonomy" xml:space="preserve">
+    <value>Buat Taxonomy</value>
+  </data>
+  <data name="Create User" xml:space="preserve">
+    <value>Buat Pengguna</value>
+  </data>
+  <data name="Create VIP Membership" xml:space="preserve">
+    <value>Buat Keanggotaan VIP</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dasbor</value>
+  </data>
+  <data name="Database Management" xml:space="preserve">
+    <value>Manajemen Basis Data</value>
+  </data>
+  <data name="Delete Account" xml:space="preserve">
+    <value>Hapus Akun</value>
+  </data>
+  <data name="Delete Category" xml:space="preserve">
+    <value>Hapus Kategori</value>
+  </data>
+  <data name="Delete Distribution Channel" xml:space="preserve">
+    <value>Hapus Saluran Distribusi</value>
+  </data>
+  <data name="Delete Feedback" xml:space="preserve">
+    <value>Hapus Umpan Balik</value>
+  </data>
+  <data name="Delete KnowledgePoint" xml:space="preserve">
+    <value>Hapus Titik Pengetahuan</value>
+  </data>
+  <data name="Delete Role" xml:space="preserve">
+    <value>Hapus Peran</value>
+  </data>
+  <data name="Delete Tag" xml:space="preserve">
+    <value>Hapus Tag</value>
+  </data>
+  <data name="Delete Taxonomy" xml:space="preserve">
+    <value>Hapus Taxonomy</value>
+  </data>
+  <data name="Delete User" xml:space="preserve">
+    <value>Hapus Pengguna</value>
+  </data>
+  <data name="Delete VIP Membership" xml:space="preserve">
+    <value>Hapus Keanggotaan VIP</value>
+  </data>
+  <data name="Directory" xml:space="preserve">
+    <value>Direktori</value>
+  </data>
+  <data name="Distribution Channels" xml:space="preserve">
+    <value>Saluran Distribusi</value>
+  </data>
+  <data name="Edit Role" xml:space="preserve">
+    <value>Edit Peran</value>
+  </data>
+  <data name="Edit Tag" xml:space="preserve">
+    <value>Edit Tag</value>
+  </data>
+  <data name="Edit Taxonomy" xml:space="preserve">
+    <value>Edit Taxonomy</value>
+  </data>
+  <data name="Edit User" xml:space="preserve">
+    <value>Edit Pengguna</value>
+  </data>
+  <data name="Edit VIP Membership" xml:space="preserve">
+    <value>Edit Keanggotaan VIP</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Kesalahan</value>
+  </data>
+  <data name="Exam Management" xml:space="preserve">
+    <value>Manajemen Ujian</value>
+  </data>
+  <data name="Exams" xml:space="preserve">
+    <value>Ujian</value>
+  </data>
+  <data name="Export Questions" xml:space="preserve">
+    <value>Ekspor Pertanyaan</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Fitur</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Umpan Balik</value>
+  </data>
+  <data name="Finance Reports" xml:space="preserve">
+    <value>Laporan Keuangan</value>
+  </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>Pengaturan Global</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Beranda</value>
+  </data>
+  <data name="Import Questions" xml:space="preserve">
+    <value>Impor Pertanyaan</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Indeks</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Informasi</value>
+  </data>
+  <data name="Join Official Exam" xml:space="preserve">
+    <value>Gabung Ujian Resmi</value>
+  </data>
+  <data name="Knowledge Points" xml:space="preserve">
+    <value>Poin Pengetahuan</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Kunci Akun</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Masuk</value>
+  </data>
+  <data name="Login to get access to all features." xml:space="preserve">
+    <value>Masuk untuk mendapatkan akses ke semua fitur.</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Kelola</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Pemasaran</value>
+  </data>
+  <data name="Marketing Management" xml:space="preserve">
+    <value>Manajemen Pemasaran</value>
+  </data>
+  <data name="Monthly Finance Report Details" xml:space="preserve">
+    <value>Rincian Laporan Keuangan Bulanan</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Berita</value>
+  </data>
+  <data name="Papers" xml:space="preserve">
+    <value>Kertas</value>
+  </data>
+  <data name="Payment Management" xml:space="preserve">
+    <value>Pengelolaan Pembayaran</value>
+  </data>
+  <data name="Payment Orders" xml:space="preserve">
+    <value>Pesanan Pembayaran</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Pribadi</value>
+  </data>
+  <data name="Practice Session" xml:space="preserve">
+    <value>Sesi Latihan</value>
+  </data>
+  <data name="Practice Test" xml:space="preserve">
+    <value>Ujian Latihan</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profile Settings" xml:space="preserve">
+    <value>Pengaturan Profil</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Pertanyaan</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Daftar</value>
+  </data>
+  <data name="Role Details" xml:space="preserve">
+    <value>Detail Peran</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Peran</value>
+  </data>
+  <data name="Search Content" xml:space="preserve">
+    <value>Cari Konten</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Pengaturan</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>Keluar</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="System Info" xml:space="preserve">
+    <value>Informasi Sistem</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="Taxonomies" xml:space="preserve">
+    <value>Taxonomies</value>
+  </data>
+  <data name="Taxonomies Management" xml:space="preserve">
+    <value>Manajemen Taksonomi</value>
+  </data>
+  <data name="Test Papers" xml:space="preserve">
+    <value>Kertas Ujian</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Tidak Diizinkan</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Detail Pengguna</value>
+  </data>
+  <data name="User Feedbacks" xml:space="preserve">
+    <value>Umpan Balik Pengguna</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Pengguna</value>
+  </data>
+  <data name="VIP Change History" xml:space="preserve">
+    <value>Riwayat Perubahan VIP</value>
+  </data>
+  <data name="VIP Members" xml:space="preserve">
+    <value>Anggota VIP</value>
+  </data>
+  <data name="VIP Products" xml:space="preserve">
+    <value>Produk VIP</value>
+  </data>
+
+</root>

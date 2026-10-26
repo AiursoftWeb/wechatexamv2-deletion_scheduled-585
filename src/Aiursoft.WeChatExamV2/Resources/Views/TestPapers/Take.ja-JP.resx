@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Administrator paper test" xml:space="preserve">
+    <value>管理者用試験</value>
+  </data>
+  <data name="AI grading" xml:space="preserve">
+    <value>AI採点</value>
+  </data>
+  <data name="AI questions are sent to the configured model after submission." xml:space="preserve">
+    <value>AI問題は、提出後、設定されたモデルに送信されます。</value>
+  </data>
+  <data name="Answer sheet" xml:space="preserve">
+    <value>回答用シート</value>
+  </data>
+  <data name="Answered" xml:space="preserve">
+    <value>回答済み</value>
+  </data>
+  <data name="Answers are saved in this browser." xml:space="preserve">
+    <value>回答はこのブラウザに保存されます。</value>
+  </data>
+  <data name="Continue reviewing" xml:space="preserve">
+    <value>確認を続ける</value>
+  </data>
+  <data name="Enter your answer" xml:space="preserve">
+    <value>回答を入力してください</value>
+  </data>
+  <data name="Exit test" xml:space="preserve">
+    <value>テストを終了</value>
+  </data>
+  <data name="Flag for review" xml:space="preserve">
+    <value>確認フラグ</value>
+  </data>
+  <data name="Flagged" xml:space="preserve">
+    <value>フラグ済み</value>
+  </data>
+  <data name="Grading..." xml:space="preserve">
+    <value>採点中...</value>
+  </data>
+  <data name="Live grading preview" xml:space="preserve">
+    <value>リアルタイム採点プレビュー</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="No time limit" xml:space="preserve">
+    <value>時間制限なし</value>
+  </data>
+  <data name="Paper Test" xml:space="preserve">
+    <value>試験</value>
+  </data>
+  <data name="points" xml:space="preserve">
+    <value>点</value>
+  </data>
+  <data name="Progress" xml:space="preserve">
+    <value>進捗</value>
+  </data>
+  <data name="questions" xml:space="preserve">
+    <value>問</value>
+  </data>
+  <data name="Ready to submit?" xml:space="preserve">
+    <value>提出してもよろしいですか？</value>
+  </data>
+  <data name="Real AI grading" xml:space="preserve">
+    <value>リアルAI採点</value>
+  </data>
+  <data name="Review flagged questions before asking the grading engine for a result." xml:space="preserve">
+    <value>採点エンジンに結果を依頼する前に、フラグ付きの質問を確認してください。</value>
+  </data>
+  <data name="Saved in this browser" xml:space="preserve">
+    <value>このブラウザに保存済み</value>
+  </data>
+  <data name="Saving..." xml:space="preserve">
+    <value>保存中...</value>
+  </data>
+  <data name="Submit and grade" xml:space="preserve">
+    <value>提出して採点する</value>
+  </data>
+  <data name="Submit paper" xml:space="preserve">
+    <value>試験を提出</value>
+  </data>
+  <data name="Submit this paper?" xml:space="preserve">
+    <value>この論文を提出しますか？</value>
+  </data>
+  <data name="The grading engine will score every question. AI-graded answers may take a little longer." xml:space="preserve">
+    <value>採点エンジンがすべての質問に採点を行います。AI採点の回答には少し時間がかかる場合があります。</value>
+  </data>
+  <data name="Time remaining" xml:space="preserve">
+    <value>残り時間</value>
+  </data>
+  <data name="Write your answer here..." xml:space="preserve">
+    <value>ここに回答を入力してください...</value>
+  </data>
+
+</root>

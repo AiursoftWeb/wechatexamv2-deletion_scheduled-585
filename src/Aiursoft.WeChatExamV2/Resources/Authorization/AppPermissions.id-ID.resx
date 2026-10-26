@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Any KnowledgePoint" xml:space="preserve">
+    <value>Tambahkan Poin Pengetahuan Apapun</value>
+  </data>
+  <data name="Add Articles" xml:space="preserve">
+    <value>Tambah Artikel</value>
+  </data>
+  <data name="Add Distribution Channels" xml:space="preserve">
+    <value>Tambah Saluran Distribusi</value>
+  </data>
+  <data name="Add Exams" xml:space="preserve">
+    <value>Tambah Ujian</value>
+  </data>
+  <data name="Add New Roles" xml:space="preserve">
+    <value>Tambah Peran Baru</value>
+  </data>
+  <data name="Add New Users" xml:space="preserve">
+    <value>Tambahkan Pengguna Baru</value>
+  </data>
+  <data name="Add Papers" xml:space="preserve">
+    <value>Tambah Kertas</value>
+  </data>
+  <data name="Add Questions" xml:space="preserve">
+    <value>Tambahkan Pertanyaan</value>
+  </data>
+  <data name="Add VIP Products" xml:space="preserve">
+    <value>Tambah Produk VIP</value>
+  </data>
+  <data name="Allows adding of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penambahan knowledgePoint apa pun, terlepas dari kepemilikannya.</value>
+  </data>
+  <data name="Allows adding of articles, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penambahan artikel, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows adding of exams, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penambahan ujian, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows adding of papers, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penambahan dokumen, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows adding of questions, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penambahan pertanyaan, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows assigning or removing roles for any user." xml:space="preserve">
+    <value>Memungkinkan menetapkan atau mencabut peran untuk pengguna mana pun.</value>
+  </data>
+  <data name="Allows creating new VIP products with category, price, and duration settings." xml:space="preserve">
+    <value>Memungkinkan pembuatan produk VIP baru dengan pengaturan kategori, harga, dan durasi.</value>
+  </data>
+  <data name="Allows deleting tags from the system. Note that deleting a tag will not delete associated questions." xml:space="preserve">
+    <value>Memungkinkan penghapusan tag dari sistem. Catatan bahwa menghapus tag tidak akan menghapus pertanyaan yang terkait.</value>
+  </data>
+  <data name="Allows deleting user feedbacks." xml:space="preserve">
+    <value>Mengizinkan penghapusan umpan balik pengguna.</value>
+  </data>
+  <data name="Allows deletion of any category, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penghapusan kategori apa pun, terlepas dari kepemilikannya.</value>
+  </data>
+  <data name="Allows deletion of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penghapusan knowledgePoint apa pun, terlepas dari kepemilikannya.</value>
+  </data>
+  <data name="Allows deletion of articles, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penghapusan artikel, tanpa memandang kepemilikan.</value>
+  </data>
+  <data name="Allows deletion of exams, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penghapusan ujian, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows deletion of papers, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penghapusan dokumen, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows deletion of questions, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan penghapusan pertanyaan, terlepas dari kepemilikannya.</value>
+  </data>
+  <data name="Allows editing of any category, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan pengeditan kategori apa pun, terlepas dari kepemilikannya.</value>
+  </data>
+  <data name="Allows editing of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan pengeditan knowledgePoint apa pun, terlepas dari kepemilikannya.</value>
+  </data>
+  <data name="Allows editing of articles, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan pengeditan artikel, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows editing of exams, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan pengeditan ujian, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows editing of papers, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan pengeditan dokumen, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows editing of questions, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan pengeditan pertanyaan, terlepas dari kepemilikannya.</value>
+  </data>
+  <data name="Allows extracting knowledge points, questions, tags from articles using AI." xml:space="preserve">
+    <value>Memungkinkan mengekstraksi poin pengetahuan, pertanyaan, dan tag dari artikel menggunakan AI.</value>
+  </data>
+  <data name="Allows managing accounting." xml:space="preserve">
+    <value>Memungkinkan pengelolaan akuntansi.</value>
+  </data>
+  <data name="Allows modification of distribution channel details and enabling/disabling channels." xml:space="preserve">
+    <value>Memungkinkan modifikasi detail saluran distribusi dan mengaktifkan/menonaktifkan saluran.</value>
+  </data>
+  <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
+    <value>Memungkinkan modifikasi nama peran dan izin yang ditetapkan padanya.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>Memungkinkan modifikasi detail pengguna seperti email dan peran, serta dapat mengatur ulang kata sandi pengguna.</value>
+  </data>
+  <data name="Allows modifying global system settings." xml:space="preserve">
+    <value>Memungkinkan modifikasi pengaturan sistem global.</value>
+  </data>
+  <data name="Allows modifying VIP product settings including price, duration, and enabled status." xml:space="preserve">
+    <value>Memungkinkan pengeditan pengaturan produk VIP termasuk harga, durasi, dan status aktif.</value>
+  </data>
+  <data name="Allows Reading of exams, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan pembacaan ujian, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows reading of questions, regardless of ownership." xml:space="preserve">
+    <value>Memungkinkan pembacaan pertanyaan, terlepas dari kepemilikan.</value>
+  </data>
+  <data name="Allows the permanent deletion of distribution channels." xml:space="preserve">
+    <value>Memungkinkan penghapusan permanen saluran distribusi.</value>
+  </data>
+  <data name="Allows the permanent deletion of roles." xml:space="preserve">
+    <value>Memungkinkan penghapusan permanen peran.</value>
+  </data>
+  <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
+    <value>Memungkinkan penghapusan permanen akun pengguna.</value>
+  </data>
+  <data name="Allows the permanent deletion of VIP products." xml:space="preserve">
+    <value>Mengizinkan penghapusan permanen produk VIP.</value>
+  </data>
+  <data name="Allows triggering background jobs to optimize question answers and explanations using AI." xml:space="preserve">
+    <value>Memungkinkan memicu pekerjaan latar belakang untuk mengoptimalkan jawaban dan penjelasan pertanyaan menggunakan AI.</value>
+  </data>
+  <data name="Allows updating the status of user feedbacks." xml:space="preserve">
+    <value>Memungkinkan pembaruan status umpan balik pengguna.</value>
+  </data>
+  <data name="Allows viewing and managing background job queues and their execution status." xml:space="preserve">
+    <value>Memungkinkan melihat dan mengelola antrian pekerjaan latar belakang serta status eksekusi mereka.</value>
+  </data>
+  <data name="Allows viewing payment orders, payment details, and user payment history." xml:space="preserve">
+    <value>Memungkinkan penelusuran pesanan pembayaran, detail pembayaran, dan riwayat pembayaran pengguna.</value>
+  </data>
+  <data name="Allows viewing system-level information and settings." xml:space="preserve">
+    <value>Memungkinkan melihat informasi dan pengaturan tingkat sistem.</value>
+  </data>
+  <data name="Allows viewing the list of all users." xml:space="preserve">
+    <value>Memungkinkan melihat daftar semua pengguna.</value>
+  </data>
+  <data name="Allows viewing the list of distribution channels and their statistics." xml:space="preserve">
+    <value>Memungkinkan melihat daftar saluran distribusi dan statistiknya.</value>
+  </data>
+  <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
+    <value>Memungkinkan melihat daftar peran dan izin yang ditetapkan.</value>
+  </data>
+  <data name="Allows viewing the list of user feedbacks." xml:space="preserve">
+    <value>Memungkinkan melihat daftar umpan balik pengguna.</value>
+  </data>
+  <data name="Allows viewing VIP products and their configuration." xml:space="preserve">
+    <value>Memungkinkan penelusuran produk VIP dan konfigurasinya.</value>
+  </data>
+  <data name="Allows viewing, adding, and deleting VIP memberships for users." xml:space="preserve">
+    <value>Memungkinkan melihat, menambahkan, dan menghapus keanggotaan VIP untuk pengguna.</value>
+  </data>
+  <data name="Assign Roles to Users" xml:space="preserve">
+    <value>Tetapkan Peran ke Pengguna</value>
+  </data>
+  <data name="Delete Any Category" xml:space="preserve">
+    <value>Hapus Kategori Apa Saja</value>
+  </data>
+  <data name="Delete Any KnowledgePoint" xml:space="preserve">
+    <value>Hapus Poin Pengetahuan Apa Saja</value>
+  </data>
+  <data name="Delete Articles" xml:space="preserve">
+    <value>Hapus Artikel</value>
+  </data>
+  <data name="Delete Distribution Channels" xml:space="preserve">
+    <value>Hapus Saluran Distribusi</value>
+  </data>
+  <data name="Delete Exams" xml:space="preserve">
+    <value>Hapus Ujian</value>
+  </data>
+  <data name="Delete Feedbacks" xml:space="preserve">
+    <value>Hapus Umpan Balik</value>
+  </data>
+  <data name="Delete Papers" xml:space="preserve">
+    <value>Hapus Kertas</value>
+  </data>
+  <data name="Delete Questions" xml:space="preserve">
+    <value>Hapus Pertanyaan</value>
+  </data>
+  <data name="Delete Roles" xml:space="preserve">
+    <value>Hapus Peran</value>
+  </data>
+  <data name="Delete Users" xml:space="preserve">
+    <value>Hapus Pengguna</value>
+  </data>
+  <data name="Delete VIP Products" xml:space="preserve">
+    <value>Hapus Produk VIP</value>
+  </data>
+  <data name="Edit Any Category" xml:space="preserve">
+    <value>Edit Kategori Apa Saja</value>
+  </data>
+  <data name="Edit Any KnowledgePoint" xml:space="preserve">
+    <value>Edit Poin Pengetahuan Apa Saja</value>
+  </data>
+  <data name="Edit Articles" xml:space="preserve">
+    <value>Sunting Artikel</value>
+  </data>
+  <data name="Edit Distribution Channels" xml:space="preserve">
+    <value>Edit Saluran Distribusi</value>
+  </data>
+  <data name="Edit Exams" xml:space="preserve">
+    <value>Edit Ujian</value>
+  </data>
+  <data name="Edit Feedbacks" xml:space="preserve">
+    <value>Edit Masukan</value>
+  </data>
+  <data name="Edit Papers" xml:space="preserve">
+    <value>Edit Kertas Kerja</value>
+  </data>
+  <data name="Edit Questions" xml:space="preserve">
+    <value>Edit Pertanyaan</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>Edit Informasi Peran</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>Edit Informasi Pengguna</value>
+  </data>
+  <data name="Edit VIP Products" xml:space="preserve">
+    <value>Edit Produk VIP</value>
+  </data>
+  <data name="Grants permission to create new distribution channels." xml:space="preserve">
+    <value>Memberikan izin untuk membuat saluran distribusi baru.</value>
+  </data>
+  <data name="Grants permission to create new roles." xml:space="preserve">
+    <value>Memberikan izin untuk membuat peran baru.</value>
+  </data>
+  <data name="Grants permission to create new user accounts." xml:space="preserve">
+    <value>Memberikan izin untuk membuat akun pengguna baru.</value>
+  </data>
+  <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
+    <value>Memberikan izin untuk memulai ulang instance aplikasi. Dapat menyebabkan gangguan ketersediaan, tetapi semua pengaturan dan cache akan dimuat ulang.</value>
+  </data>
+  <data name="Manage Accounting" xml:space="preserve">
+    <value>Kelola Akuntansi</value>
+  </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>Kelola Pengaturan Global</value>
+  </data>
+  <data name="Manage Tags" xml:space="preserve">
+    <value>Kelola Tag</value>
+  </data>
+  <data name="Manage VIP Members" xml:space="preserve">
+    <value>Kelola Anggota VIP</value>
+  </data>
+  <data name="Read Distribution Channels" xml:space="preserve">
+    <value>Baca Saluran Distribusi</value>
+  </data>
+  <data name="Read Exams" xml:space="preserve">
+    <value>Baca Ujian</value>
+  </data>
+  <data name="Read Feedbacks" xml:space="preserve">
+    <value>Baca Umpan Balik</value>
+  </data>
+  <data name="Read Payment Orders" xml:space="preserve">
+    <value>Baca Pesanan Pembayaran</value>
+  </data>
+  <data name="Read Questions" xml:space="preserve">
+    <value>Baca Pertanyaan</value>
+  </data>
+  <data name="Read Roles" xml:space="preserve">
+    <value>Lihat Peran</value>
+  </data>
+  <data name="Read Users" xml:space="preserve">
+    <value>Membaca Pengguna</value>
+  </data>
+  <data name="Read VIP Products" xml:space="preserve">
+    <value>Baca Produk VIP</value>
+  </data>
+  <data name="Reboot This App" xml:space="preserve">
+    <value>Mulai Ulang Aplikasi Ini</value>
+  </data>
+  <data name="Trigger Optimization Jobs" xml:space="preserve">
+    <value>Jalankan Pekerjaan Optimalisasi</value>
+  </data>
+  <data name="Use AI Extractor" xml:space="preserve">
+    <value>Gunakan AI Extractor</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>Lihat Pekerjaan Latar Belakang</value>
+  </data>
+  <data name="View System Context" xml:space="preserve">
+    <value>Lihat Konteks Sistem</value>
+  </data>
+
+</root>
