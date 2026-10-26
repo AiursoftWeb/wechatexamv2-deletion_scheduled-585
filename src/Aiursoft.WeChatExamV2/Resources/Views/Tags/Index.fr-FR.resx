@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="-- All Taxonomies --" xml:space="preserve">
+    <value>-- Toutes les taxonomies --</value>
+  </data>
+  <data name="-- Uncategorized --" xml:space="preserve">
+    <value>-- Non catégorisé --</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="An error occurred during deletion." xml:space="preserve">
+    <value>Une erreur s&apos;est produite lors de la suppression.</value>
+  </data>
+  <data name="Are you sure you want to delete" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir supprimer</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="Confirm Batch Delete" xml:space="preserve">
+    <value>Confirmer la suppression par lots</value>
+  </data>
+  <data name="Create Tag" xml:space="preserve">
+    <value>Créer une balise</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="Delete Selected" xml:space="preserve">
+    <value>Supprimer les éléments sélectionnés</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="Edit / Categorize" xml:space="preserve">
+    <value>Modifier / Catégoriser</value>
+  </data>
+  <data name="Failed to delete tags:" xml:space="preserve">
+    <value>Échec de la suppression des balises :</value>
+  </data>
+  <data name="Manage Taxonomies" xml:space="preserve">
+    <value>Gérer les taxonomies</value>
+  </data>
+  <data name="No tags found matching your criteria." xml:space="preserve">
+    <value>Aucune étiquette trouvée correspondant à vos critères.</value>
+  </data>
+  <data name="No tags found. Tags will appear here once you create them when editing questions." xml:space="preserve">
+    <value>Aucun tag trouvé. Les tags apparaîtront ici une fois que vous en aurez créé en modifiant les questions.</value>
+  </data>
+  <data name="No tags in this taxonomy matching your search." xml:space="preserve">
+    <value>Aucune étiquette dans cette taxonomie correspondant à votre recherche.</value>
+  </data>
+  <data name="No tags match your search query." xml:space="preserve">
+    <value>Aucune étiquette ne correspond à votre requête de recherche.</value>
+  </data>
+  <data name="questions" xml:space="preserve">
+    <value>questions</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="Search tags..." xml:space="preserve">
+    <value>Rechercher des balises...</value>
+  </data>
+  <data name="selected" xml:space="preserve">
+    <value>sélectionnés</value>
+  </data>
+  <data name="selected tags? This action cannot be undone." xml:space="preserve">
+    <value>balises sélectionnées ? Cette action ne peut pas être annulée.</value>
+  </data>
+  <data name="Tag Name" xml:space="preserve">
+    <value>Nom de balise</value>
+  </data>
+  <data name="Tags Management" xml:space="preserve">
+    <value>Gestion des balises</value>
+  </data>
+  <data name="These tags are not assigned to any taxonomy. Please categorize them for better organization." xml:space="preserve">
+    <value>Ces balises ne sont pas attribuées à une taxonomie. Veuillez les catégoriser pour une meilleure organisation.</value>
+  </data>
+  <data name="Toggle Dropdown" xml:space="preserve">
+    <value>Basculer le menu déroulant</value>
+  </data>
+  <data name="Uncategorized Tags" xml:space="preserve">
+    <value>Balises non catégorisées</value>
+  </data>
+  <data name="Usage Count" xml:space="preserve">
+    <value>Nombre d&apos;utilisations</value>
+  </data>
+  <data name="VIP Required" xml:space="preserve">
+    <value>Accès réservé aux membres VIP</value>
+  </data>
+
+</root>

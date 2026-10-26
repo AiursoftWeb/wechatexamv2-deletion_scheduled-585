@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Option" xml:space="preserve">
+    <value>옵션 추가</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>카테고리</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>내용</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>정답</value>
+  </data>
+  <data name="Custom order index. Lower numbers come first. Current max index is:" xml:space="preserve">
+    <value>사용자 정의 순서 인덱스입니다. 낮은 숫자가 먼저 표시됩니다. 현재 최대 인덱스:</value>
+  </data>
+  <data name="Edit Question" xml:space="preserve">
+    <value>질문 수정</value>
+  </data>
+  <data name="Explanation" xml:space="preserve">
+    <value>해설</value>
+  </data>
+  <data name="Fill In" xml:space="preserve">
+    <value>빈칸 채우기</value>
+  </data>
+  <data name="Fill In Correct (for fill in, JSON array)" xml:space="preserve">
+    <value>빈칸 채우기 정답 (빈칸 채우기용, JSON 배열)</value>
+  </data>
+  <data name="Grading Strategy" xml:space="preserve">
+    <value>채점 전략</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>잘못됨</value>
+  </data>
+  <data name="Metadata (e.g. Choices JSON)" xml:space="preserve">
+    <value>메타데이터 (예: 선택지 JSON)</value>
+  </data>
+  <data name="Option content" xml:space="preserve">
+    <value>옵션 내용</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>옵션</value>
+  </data>
+  <data name="Options (for single choice, JSON array)" xml:space="preserve">
+    <value>옵션 (단일 선택용, JSON 배열)</value>
+  </data>
+  <data name="Order Index" xml:space="preserve">
+    <value>순서 인덱스</value>
+  </data>
+  <data name="Press Enter to add a tag, or select from suggestions. Click X to remove." xml:space="preserve">
+    <value>Enter를 눌러 태그를 추가하거나 제안된 항목 중에서 선택하세요. X를 클릭하여 삭제하세요.</value>
+  </data>
+  <data name="Remove Option" xml:space="preserve">
+    <value>옵션 제거</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>저장</value>
+  </data>
+  <data name="Save and return to content checks" xml:space="preserve">
+    <value>저장하고 콘텐츠 확인으로 돌아가기</value>
+  </data>
+  <data name="Select category" xml:space="preserve">
+    <value>카테고리 선택</value>
+  </data>
+  <data name="Select strategy" xml:space="preserve">
+    <value>전략 선택</value>
+  </data>
+  <data name="Select type" xml:space="preserve">
+    <value>유형 선택</value>
+  </data>
+  <data name="Single Choice" xml:space="preserve">
+    <value>단일 선택</value>
+  </data>
+  <data name="Single Correct (for single choice)" xml:space="preserve">
+    <value>단일 정답 (단일 선택용)</value>
+  </data>
+  <data name="Standard Answer" xml:space="preserve">
+    <value>표준 정답</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>태그</value>
+  </data>
+  <data name="Tags (space separated)" xml:space="preserve">
+    <value>태그 (공백으로 구분)</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>텍스트</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>유형</value>
+  </data>
+  <data name="Type to search or add tags..." xml:space="preserve">
+    <value>태그를 검색하거나 추가하려면 입력하세요...</value>
+  </data>
+
+</root>

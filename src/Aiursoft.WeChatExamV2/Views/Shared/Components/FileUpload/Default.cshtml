@@ -1,0 +1,122 @@
+@using Aiursoft.WeChatExamV2.Services.FileStorage
+@model Aiursoft.WeChatExamV2.Views.Shared.Components.FileUpload.FileUploadViewModel
+@inject IViewLocalizer Localizer
+@inject StorageService Storage
+@inject IHtmlGenerator HtmlGenerator
+@{
+    var fileInputId = $"file-input-{Model.UniqueId}";
+    var progressId = $"progress-{Model.UniqueId}";
+    var progressbarId = $"progressbar-{Model.UniqueId}";
+
+    var extensionAttributes = " ";
+    if (!string.IsNullOrWhiteSpace(Model.AllowedExtensions))
+    {
+        extensionAttributes += $"data-allowed-file-extensions=\"{Model.AllowedExtensions}\" ";
+    }
+    var defaultValue = Model.AspFor.Model as string;
+    if (!string.IsNullOrWhiteSpace(defaultValue))
+    {
+        extensionAttributes += $"data-default-file=\"{Storage.RelativePathToInternetUrl(defaultValue, Model.IsVault)}\" ";
+    }
+    if (Model.MaxSizeInMb > 0)
+    {
+        extensionAttributes += $"data-max-file-size=\"{Model.MaxSizeInMb}M\"";
+    }
+
+    // Use custom FieldName if provided, otherwise use AspFor.Name
+    var fieldName = Model.FieldName ?? Model.AspFor.Name;
+    
+    var hiddenInputTag = HtmlGenerator.GenerateTextBox(
+        ViewContext,
+        Model.AspFor.ModelExplorer,
+        fieldName,  // Use the override name if provided
+        Model.AspFor.Model,
+        format: null,
+        htmlAttributes: new { style = "width:0;height:0;padding:0;border:none;" });
+}
+
+<input
+    form="fakeForm"
+    type="file"
+    id="@fileInputId"
+    class="dropify"
+    data-show-remove="false"
+    @Html.Raw(extensionAttributes) />
+<div id="@progressId" class="progress mb-3 mt-3 d-none">
+    <div id="@progressbarId" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
+</div>
+@hiddenInputTag
+
+@* Configuration and Localization Data for JavaScript *@
+<div id="fileupload-config-@Model.UniqueId" hidden
+     data-file-input-id="@fileInputId"
+     data-progress-id="@progressId"
+     data-progressbar-id="@progressbarId"
+     data-field-name="@fieldName"
+     data-size-in-mb="@Model.MaxSizeInMb"
+     data-valid-extensions="@Model.AllowedExtensions"
+     data-upload-url="@Model.UploadEndpoint"
+     data-msg-default="@Localizer["Drag and drop a file here or click"]"
+     data-msg-replace="@Localizer["Drag and drop or click to replace"]"
+     data-msg-remove="@Localizer["Remove"]"
+     data-msg-error="@Localizer["Ooops, something wrong happended."]"
+     data-err-file-size="@Localizer["The file size is too big ({{ value }} max)."]"
+     data-err-min-width="@Localizer["The image width is too small ({{ value }}px min)."]"
+     data-err-max-width="@Localizer["The image width is too big ({{ value }}px max)."]"
+     data-err-min-height="@Localizer["The image height is too small ({{ value }}px min)."]"
+     data-err-max-height="@Localizer["The image height is too big ({{ value }}px max)."]"
+     data-err-image-format="@Localizer["The image format is not allowed ({{ value }} only)."]"
+     data-err-file-extension="@Localizer["The file is not allowed ({{ value }} only)."]">
+</div>
+
+<script type="module">
+    import Uploader from "/scripts/uploader.js";
+    window.addEventListener('load', function () {
+        const config = document.getElementById('fileupload-config-@Model.UniqueId').dataset;
+
+        const fileInput = $(`#${config.fileInputId}`);
+        const progress = $(`#${config.progressId}`);
+        const progressbar = $(`#${config.progressbarId}`);
+
+        const addressInput = $(`[name="${config.fieldName}"]`);
+
+        new Uploader({
+            fileInput: fileInput,
+            progress: progress,
+            progressbar: progressbar,
+            addressInput: addressInput,
+
+            sizeInMb: parseFloat(config.sizeInMb),
+            validExtensions: (config.validExtensions || '').split(' ').filter(Boolean),
+            uploadUrl: config.uploadUrl
+        }).init({
+            messages: {
+                'default': config.msgDefault,
+                'replace': config.msgReplace,
+                'remove':  config.msgRemove,
+                'error':   config.msgError
+            },
+            error: {
+                'fileSize': config.errFileSize,
+                'minWidth': config.errMinWidth,
+                'maxWidth': config.errMaxWidth,
+                'minHeight': config.errMinHeight,
+                'maxHeight': config.errMaxHeight,
+                'imageFormat': config.errImageFormat,
+                'fileExtension': config.errFileExtension
+            }
+        });
+    })
+</script>
+
+@* @Localizer["Drag and drop a file here or click"] *@
+@* @Localizer["Drag and drop or click to replace"] *@
+@* @Localizer["Remove"] *@
+@* @Localizer["Ooops, something wrong happended."] *@
+@* @Localizer["The file size is too big ({{ value }} max)."] *@
+@* @Localizer["The image width is too small ({{ value }}px min)."] *@
+@* @Localizer["The image width is too big ({{ value }}px max)."] *@
+@* @Localizer["The image height is too small ({{ value }}px min)."] *@
+@* @Localizer["The image height is too big ({{ value }}px max)."] *@
+@* @Localizer["The image format is not allowed ({{ value }} only)."] *@
+@* @Localizer["The file is not allowed ({{ value }} only)."] *@

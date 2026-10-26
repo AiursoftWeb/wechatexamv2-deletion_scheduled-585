@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Option" xml:space="preserve">
+    <value>Seçenek Ekle</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>Soru Ekle</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>İçerik</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Doğru</value>
+  </data>
+  <data name="Custom order index. Lower numbers come first. Current max index is:" xml:space="preserve">
+    <value>Özel sıralama indeksi. Daha düşük sayılar önce gelir. Mevcut maksimum indeks:</value>
+  </data>
+  <data name="Explanation" xml:space="preserve">
+    <value>Açıklama</value>
+  </data>
+  <data name="Fill In" xml:space="preserve">
+    <value>Boşluk Doldurma</value>
+  </data>
+  <data name="Fill In Correct (for fill in, JSON array)" xml:space="preserve">
+    <value>Doğru Doldurma (doldurma için, JSON dizisi)</value>
+  </data>
+  <data name="Grading Strategy" xml:space="preserve">
+    <value>Değerlendirme Stratejisi</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Yanlış</value>
+  </data>
+  <data name="Metadata (e.g. Choices JSON)" xml:space="preserve">
+    <value>Meta Veri (örneğin: Seçenekler JSON)</value>
+  </data>
+  <data name="Option content" xml:space="preserve">
+    <value>Seçenek içeriği</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Seçenekler</value>
+  </data>
+  <data name="Options (for single choice, JSON array)" xml:space="preserve">
+    <value>Seçenekler (tek seçim için, JSON dizisi)</value>
+  </data>
+  <data name="Order Index" xml:space="preserve">
+    <value>Sıra Dizini</value>
+  </data>
+  <data name="Press Space, Comma, Semicolon or Enter to add a tag. Click X to remove." xml:space="preserve">
+    <value>Etiket eklemek için Boşluk, Virgül, Noktalı Virgül veya Enter tuşuna basın. Kaldırmak için X&apos;e tıklayın.</value>
+  </data>
+  <data name="Remove Option" xml:space="preserve">
+    <value>Seçeneği Kaldır</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="Select category" xml:space="preserve">
+    <value>Kategori seçin</value>
+  </data>
+  <data name="Select strategy" xml:space="preserve">
+    <value>Strateji seç</value>
+  </data>
+  <data name="Select type" xml:space="preserve">
+    <value>Tür seçin</value>
+  </data>
+  <data name="Single Choice" xml:space="preserve">
+    <value>Tek Seçim</value>
+  </data>
+  <data name="Single Correct (for single choice)" xml:space="preserve">
+    <value>Tek Doğru (tek seçim için)</value>
+  </data>
+  <data name="Standard Answer" xml:space="preserve">
+    <value>Standart Cevap</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Etiketler</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Metin</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tür</value>
+  </data>
+  <data name="Type to search or add tags..." xml:space="preserve">
+    <value>Etiketleri aramak veya eklemek için yazın...</value>
+  </data>
+
+</root>

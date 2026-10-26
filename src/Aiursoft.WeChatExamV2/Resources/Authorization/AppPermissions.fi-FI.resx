@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Any KnowledgePoint" xml:space="preserve">
+    <value>Lisää mikä tahansa tietopiste</value>
+  </data>
+  <data name="Add Articles" xml:space="preserve">
+    <value>Lisää artikkelit</value>
+  </data>
+  <data name="Add Distribution Channels" xml:space="preserve">
+    <value>Lisää jakelukanavia</value>
+  </data>
+  <data name="Add Exams" xml:space="preserve">
+    <value>Lisää kokeet</value>
+  </data>
+  <data name="Add New Roles" xml:space="preserve">
+    <value>Lisää uusia rooleja</value>
+  </data>
+  <data name="Add New Users" xml:space="preserve">
+    <value>Lisää uusia käyttäjiä</value>
+  </data>
+  <data name="Add Papers" xml:space="preserve">
+    <value>Lisää artikkeleita</value>
+  </data>
+  <data name="Add Questions" xml:space="preserve">
+    <value>Lisää kysymyksiä</value>
+  </data>
+  <data name="Add VIP Products" xml:space="preserve">
+    <value>Lisää VIP-tuotteita</value>
+  </data>
+  <data name="Allows adding of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>Sallii minkä tahansa knowledgePointin lisäämisen, riippumatta omistajuudesta.</value>
+  </data>
+  <data name="Allows adding of articles, regardless of ownership." xml:space="preserve">
+    <value>Sallii artikkeleiden lisäämisen, riippumatta omistuksesta.</value>
+  </data>
+  <data name="Allows adding of exams, regardless of ownership." xml:space="preserve">
+    <value>Sallii kokeiden lisäämisen, vaikka omistajaksi ei olisi.</value>
+  </data>
+  <data name="Allows adding of papers, regardless of ownership." xml:space="preserve">
+    <value>Sallii paperien lisäämisen, riippumatta omistajuudesta.</value>
+  </data>
+  <data name="Allows adding of questions, regardless of ownership." xml:space="preserve">
+    <value>Sallii kysymysten lisäämisen omistajuudesta riippumatta.</value>
+  </data>
+  <data name="Allows assigning or removing roles for any user." xml:space="preserve">
+    <value>Mahdollistaa roolien määrittämisen tai poistamisen mille tahansa käyttäjälle.</value>
+  </data>
+  <data name="Allows creating new VIP products with category, price, and duration settings." xml:space="preserve">
+    <value>Mahdollistaa uusien VIP-tuotteiden luomisen kategori-, hinta- ja kestoasetusten kanssa.</value>
+  </data>
+  <data name="Allows deleting tags from the system. Note that deleting a tag will not delete associated questions." xml:space="preserve">
+    <value>Sallii tunnisteiden poistamisen järjestelmästä. Huomaa, että tunnisteiden poistaminen ei poista liittyviä kysymyksiä.</value>
+  </data>
+  <data name="Allows deleting user feedbacks." xml:space="preserve">
+    <value>Sallii käyttäjän palautteiden poistamisen.</value>
+  </data>
+  <data name="Allows deletion of any category, regardless of ownership." xml:space="preserve">
+    <value>Sallii minkä tahansa kategorian poistamisen, omistajuudesta riippumatta.</value>
+  </data>
+  <data name="Allows deletion of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>Sallii minkä tahansa knowledgePointin poistamisen, riippumatta omistajuudesta.</value>
+  </data>
+  <data name="Allows deletion of articles, regardless of ownership." xml:space="preserve">
+    <value>Sallii artikkelien poistamisen, riippumatta omistuksesta.</value>
+  </data>
+  <data name="Allows deletion of exams, regardless of ownership." xml:space="preserve">
+    <value>Sallii kokeiden poistamisen, riippumatta omistajuudesta.</value>
+  </data>
+  <data name="Allows deletion of papers, regardless of ownership." xml:space="preserve">
+    <value>Sallii asioiden poistamisen, riippumatta omistajuudesta.</value>
+  </data>
+  <data name="Allows deletion of questions, regardless of ownership." xml:space="preserve">
+    <value>Sallii kysymysten poistamisen omistajuudesta riippumatta.</value>
+  </data>
+  <data name="Allows editing of any category, regardless of ownership." xml:space="preserve">
+    <value>Sallii minkä tahansa kategorian muokkaamisen omistajuudesta riippumatta.</value>
+  </data>
+  <data name="Allows editing of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>Sallii minkä tahansa knowledgePointin muokkaamisen omistajuudesta riippumatta.</value>
+  </data>
+  <data name="Allows editing of articles, regardless of ownership." xml:space="preserve">
+    <value>Sallii artikkelien muokkaamisen riippumatta omistuksesta.</value>
+  </data>
+  <data name="Allows editing of exams, regardless of ownership." xml:space="preserve">
+    <value>Sallii kokeiden muokkaamisen, riippumatta omistajuudesta.</value>
+  </data>
+  <data name="Allows editing of papers, regardless of ownership." xml:space="preserve">
+    <value>Sallii paperien muokkaamisen, riippumatta omistajuudesta.</value>
+  </data>
+  <data name="Allows editing of questions, regardless of ownership." xml:space="preserve">
+    <value>Sallii kysymysten muokkaamisen omistajuudesta riippumatta.</value>
+  </data>
+  <data name="Allows extracting knowledge points, questions, tags from articles using AI." xml:space="preserve">
+    <value>Sallii tiedon pisteiden, kysymysten ja tunnisteiden poimimisen artikkeleista käyttäen tekoälyä.</value>
+  </data>
+  <data name="Allows managing accounting." xml:space="preserve">
+    <value>Mahdollistaa kirjanpidon hallinnan.</value>
+  </data>
+  <data name="Allows modification of distribution channel details and enabling/disabling channels." xml:space="preserve">
+    <value>Sallii jakelukanavien tietojen muokkaamisen sekä kanavien ottamisen käyttöön ja poistamisen käytöstä.</value>
+  </data>
+  <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
+    <value>Sallii roolien nimien ja niihin liitettyjen käyttöoikeuksien muokkaamisen.</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>Sallii käyttäjätietojen, kuten sähköpostiosoitteen ja roolien, muokkaamisen sekä käyttäjien salasanojen nollaamisen.</value>
+  </data>
+  <data name="Allows modifying global system settings." xml:space="preserve">
+    <value>Sallii globaalien järjestelmäasetusten muokkaamisen.</value>
+  </data>
+  <data name="Allows modifying VIP product settings including price, duration, and enabled status." xml:space="preserve">
+    <value>Sallii VIP-tuotteen asetusten muokkaamisen, mukaan lukien hinnan, keston ja käytön tilan.</value>
+  </data>
+  <data name="Allows Reading of exams, regardless of ownership." xml:space="preserve">
+    <value>Salli kokeiden lukemisen, riippumatta omistajuudesta.</value>
+  </data>
+  <data name="Allows reading of questions, regardless of ownership." xml:space="preserve">
+    <value>Sallii kysymysten lukemisen, riippumatta omistajuudesta.</value>
+  </data>
+  <data name="Allows the permanent deletion of distribution channels." xml:space="preserve">
+    <value>Sallii jakaumakanavien pysyvän poistamisen.</value>
+  </data>
+  <data name="Allows the permanent deletion of roles." xml:space="preserve">
+    <value>Sallii roolien pysyvän poistamisen.</value>
+  </data>
+  <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
+    <value>Sallii käyttäjätilien pysyvän poistamisen.</value>
+  </data>
+  <data name="Allows the permanent deletion of VIP products." xml:space="preserve">
+    <value>Sallii VIP-tuotteiden pysyvän poistamisen.</value>
+  </data>
+  <data name="Allows triggering background jobs to optimize question answers and explanations using AI." xml:space="preserve">
+    <value>Sallii taustatehtävien käynnistämisen kysymysten vastausten ja selitysten optimointiin tekoälyä käyttäen.</value>
+  </data>
+  <data name="Allows updating the status of user feedbacks." xml:space="preserve">
+    <value>Salli käyttäjän palautteen tilan päivittämisen.</value>
+  </data>
+  <data name="Allows viewing and managing background job queues and their execution status." xml:space="preserve">
+    <value>Sallii taustatehtävien jonon tarkastelun ja hallinnan sekä niiden suoritusvalmiuden tarkkailun.</value>
+  </data>
+  <data name="Allows viewing payment orders, payment details, and user payment history." xml:space="preserve">
+    <value>Mahdollistaa maksutilauksien, maksutietojen ja käyttäjän maksuhistorian näkemisen.</value>
+  </data>
+  <data name="Allows viewing system-level information and settings." xml:space="preserve">
+    <value>Mahdollistaa järjestelmätason tietojen ja asetusten tarkastelemisen.</value>
+  </data>
+  <data name="Allows viewing the list of all users." xml:space="preserve">
+    <value>Mahdollistaa kaikkien käyttäjien luettelon katsomisen.</value>
+  </data>
+  <data name="Allows viewing the list of distribution channels and their statistics." xml:space="preserve">
+    <value>Sallii jakokanavien ja niiden tilastojen tarkastelun.</value>
+  </data>
+  <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
+    <value>Mahdollistaa rooliluettelon ja niihin liitettyjen käyttöoikeuksien tarkastelemisen.</value>
+  </data>
+  <data name="Allows viewing the list of user feedbacks." xml:space="preserve">
+    <value>Sallii käyttäjän palautteen listan näyttämisen.</value>
+  </data>
+  <data name="Allows viewing VIP products and their configuration." xml:space="preserve">
+    <value>Sallii VIP-tuotteiden ja niiden konfiguraation näkemisen.</value>
+  </data>
+  <data name="Allows viewing, adding, and deleting VIP memberships for users." xml:space="preserve">
+    <value>Sallii VIP-jäsenyyksien katselun, lisäämisen ja poistamisen käyttäjille.</value>
+  </data>
+  <data name="Assign Roles to Users" xml:space="preserve">
+    <value>Anna roolit käyttäjille</value>
+  </data>
+  <data name="Delete Any Category" xml:space="preserve">
+    <value>Poista mikä tahansa kategoria</value>
+  </data>
+  <data name="Delete Any KnowledgePoint" xml:space="preserve">
+    <value>Poista mikä tahansa KnowledgePoint</value>
+  </data>
+  <data name="Delete Articles" xml:space="preserve">
+    <value>Poista artikkelit</value>
+  </data>
+  <data name="Delete Distribution Channels" xml:space="preserve">
+    <value>Poista jakelukanavat</value>
+  </data>
+  <data name="Delete Exams" xml:space="preserve">
+    <value>Poista kokeet</value>
+  </data>
+  <data name="Delete Feedbacks" xml:space="preserve">
+    <value>Poista palautteet</value>
+  </data>
+  <data name="Delete Papers" xml:space="preserve">
+    <value>Poista artikkelit</value>
+  </data>
+  <data name="Delete Questions" xml:space="preserve">
+    <value>Poista kysymyksiä</value>
+  </data>
+  <data name="Delete Roles" xml:space="preserve">
+    <value>Poista roolit</value>
+  </data>
+  <data name="Delete Users" xml:space="preserve">
+    <value>Poista käyttäjiä</value>
+  </data>
+  <data name="Delete VIP Products" xml:space="preserve">
+    <value>Poista VIP-tuotteet</value>
+  </data>
+  <data name="Edit Any Category" xml:space="preserve">
+    <value>Muokkaa mitä tahansa kategoriaa</value>
+  </data>
+  <data name="Edit Any KnowledgePoint" xml:space="preserve">
+    <value>Muokkaa mitä tahansa tietopistettä</value>
+  </data>
+  <data name="Edit Articles" xml:space="preserve">
+    <value>Muokkaa artikkeleita</value>
+  </data>
+  <data name="Edit Distribution Channels" xml:space="preserve">
+    <value>Muokkaa jakelukanavia</value>
+  </data>
+  <data name="Edit Exams" xml:space="preserve">
+    <value>Muokkaa kokeita</value>
+  </data>
+  <data name="Edit Feedbacks" xml:space="preserve">
+    <value>Muokkaa palautetta</value>
+  </data>
+  <data name="Edit Papers" xml:space="preserve">
+    <value>Muokkaa kohteita</value>
+  </data>
+  <data name="Edit Questions" xml:space="preserve">
+    <value>Muokkaa kysymyksiä</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>Muokkaa roolitietoja</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>Muokkaa käyttäjätietoja</value>
+  </data>
+  <data name="Edit VIP Products" xml:space="preserve">
+    <value>Muokkaa VIP-tuotteita</value>
+  </data>
+  <data name="Grants permission to create new distribution channels." xml:space="preserve">
+    <value>Antaa oikeuden luoda uusia jakaumakanavia.</value>
+  </data>
+  <data name="Grants permission to create new roles." xml:space="preserve">
+    <value>Antaa oikeuden luoda uusia rooleja.</value>
+  </data>
+  <data name="Grants permission to create new user accounts." xml:space="preserve">
+    <value>Antaa oikeuden luoda uusia käyttäjätilejä.</value>
+  </data>
+  <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
+    <value>Antaa luvan sovelluksen uudelleenkäynnistämiseen. Saattaa aiheuttaa käyttökatkoksia, mutta kaikki asetukset ja välimuisti ladataan uudelleen.</value>
+  </data>
+  <data name="Manage Accounting" xml:space="preserve">
+    <value>Hallitse kirjanpitoa</value>
+  </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>Hallinnoi yleisiä asetuksia</value>
+  </data>
+  <data name="Manage Tags" xml:space="preserve">
+    <value>Hallinnoi tunnuksia</value>
+  </data>
+  <data name="Manage VIP Members" xml:space="preserve">
+    <value>Hallitse VIP-jäseniä</value>
+  </data>
+  <data name="Read Distribution Channels" xml:space="preserve">
+    <value>Lue jakokanavat</value>
+  </data>
+  <data name="Read Exams" xml:space="preserve">
+    <value>Lue kokeet</value>
+  </data>
+  <data name="Read Feedbacks" xml:space="preserve">
+    <value>Lue palautteet</value>
+  </data>
+  <data name="Read Payment Orders" xml:space="preserve">
+    <value>Lue maksutapahtumat</value>
+  </data>
+  <data name="Read Questions" xml:space="preserve">
+    <value>Lue kysymykset</value>
+  </data>
+  <data name="Read Roles" xml:space="preserve">
+    <value>Lue roolit</value>
+  </data>
+  <data name="Read Users" xml:space="preserve">
+    <value>Lue käyttäjiä</value>
+  </data>
+  <data name="Read VIP Products" xml:space="preserve">
+    <value>Lue VIP-tuotteet</value>
+  </data>
+  <data name="Reboot This App" xml:space="preserve">
+    <value>Käynnistä tämä sovellus uudelleen</value>
+  </data>
+  <data name="Trigger Optimization Jobs" xml:space="preserve">
+    <value>Käynnistä optimointitehtävät</value>
+  </data>
+  <data name="Use AI Extractor" xml:space="preserve">
+    <value>Käytä AI-erottajaa</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>Näytä taustatehtävät</value>
+  </data>
+  <data name="View System Context" xml:space="preserve">
+    <value>Näytä järjestelmän konteksti</value>
+  </data>
+
+</root>

@@ -1,0 +1,24 @@
+using Aiursoft.UiStack.Layout;
+using Aiursoft.WeChatExamV2.Entities;
+
+namespace Aiursoft.WeChatExamV2.Models.CategoriesViewModels;
+
+public class DeleteViewModel : UiStackLayoutViewModel
+{
+    public DeleteViewModel()
+    {
+        PageTitle = "Delete Category";
+    }
+
+    public required Category Category { get; set; }
+
+    /// <summary>
+    /// 指示分类是否有子分类
+    /// </summary>
+    public bool HasChildren { get; set; }
+
+    /// <summary>
+    /// 指示分类是否有相关联的问题
+    /// </summary>
+    public bool HasQuestions { get; set; }
+}

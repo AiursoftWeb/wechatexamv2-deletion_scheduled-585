@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name=" The link to the brand&apos;s home page." xml:space="preserve">
+    <value>ลิงก์ไปยังหน้าหลักของแบรนด์</value>
+  </data>
+  <data name="AI Prompt: Auto Categorize" xml:space="preserve">
+    <value>คำสั่ง AI: จัดหมวดหมู่อัตโนมัติ</value>
+  </data>
+  <data name="AI Prompt: Auto Tagging" xml:space="preserve">
+    <value>คำสั่ง AI: การติดแท็กอัตโนมัติ</value>
+  </data>
+  <data name="AI Prompt: Base Explanation" xml:space="preserve">
+    <value>คำสั่ง AI: คำอธิบายพื้นฐาน</value>
+  </data>
+  <data name="AI Prompt: Deep Explanation" xml:space="preserve">
+    <value>คำสั่ง AI: คำอธิบายเชิงลึก</value>
+  </data>
+  <data name="AI Prompt: Default Extraction" xml:space="preserve">
+    <value>คำสั่ง AI: การสกัดข้อมูลเริ่มต้น</value>
+  </data>
+  <data name="AI Prompt: Default Grading" xml:space="preserve">
+    <value>AI Prompt: การให้คะแนนเริ่มต้น</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Blank)" xml:space="preserve">
+    <value>คำสั่ง AI: สร้างคำตอบ (เติมคำในช่องว่าง)</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Bool)" xml:space="preserve">
+    <value>คำสั่ง AI: สร้างคำตอบ (แบบถูก/ผิด)</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Choice)" xml:space="preserve">
+    <value>คำสั่ง AI: สร้างคำตอบ (แบบเลือกตอบ)</value>
+  </data>
+  <data name="AI Prompt: Generate Answer (Subjective)" xml:space="preserve">
+    <value>คำสั่ง AI: สร้างคำตอบ (อัตนัย)</value>
+  </data>
+  <data name="Allow User Adjust Nickname" xml:space="preserve">
+    <value>อนุญาตให้ผู้ใช้แก้ไขชื่อเล่น</value>
+  </data>
+  <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
+    <value>อนุญาตให้ผู้ใช้ปรับชื่อเล่นของตนเองในหน้าจัดการโปรไฟล์</value>
+  </data>
+  <data name="Brand Home URL" xml:space="preserve">
+    <value>URL หน้าหลักของแบรนด์</value>
+  </data>
+  <data name="Brand Name" xml:space="preserve">
+    <value>ชื่อแบรนด์</value>
+  </data>
+  <data name="Embedding API Token" xml:space="preserve">
+    <value>โทเค็น API สำหรับการสร้างเวกเตอร์ฝัง</value>
+  </data>
+  <data name="Embedding Endpoint" xml:space="preserve">
+    <value>ปลายทางสำหรับเวกเตอร์ฝังตัว</value>
+  </data>
+  <data name="Embedding Model" xml:space="preserve">
+    <value>โมเดลการฝังเวกเตอร์</value>
+  </data>
+  <data name="Enable background embedding generation for questions and knowledge points." xml:space="preserve">
+    <value>เปิดใช้งานการสร้างเวกเตอร์ฝังตัวในเบื้องหลังสำหรับคำถามและหัวข้อความรู้</value>
+  </data>
+  <data name="Enable Embedding-Based Search" xml:space="preserve">
+    <value>เปิดใช้การค้นหาด้วยเวกเตอร์ฝังตัว</value>
+  </data>
+  <data name="ICP Number" xml:space="preserve">
+    <value>เลขที่ ICP</value>
+  </data>
+  <data name="Optional bearer token for the embedding endpoint. Falls back to the OpenAI token when empty." xml:space="preserve">
+    <value>โทเค็น Bearer สำหรับปลายทางการสร้างเวกเตอร์ (ไม่บังคับ) หากเว้นว่างไว้ ระบบจะใช้โทเค็น OpenAI แทน</value>
+  </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>โลโก้โครงการ</value>
+  </data>
+  <data name="Project Name" xml:space="preserve">
+    <value>ชื่อโปรเจกต์</value>
+  </data>
+  <data name="The AI prompt for auto categorizing questions. Use {0} for content, {1} for metadata, {2} for answer, {3} for tags, {4} for explanation, and {5} for categories list." xml:space="preserve">
+    <value>คำสั่ง AI สำหรับจัดหมวดหมู่คำถามอัตโนมัติ ใช้ {0} สำหรับเนื้อหา {1} สำหรับข้อมูลเมตา {2} สำหรับคำตอบ {3} สำหรับแท็ก {4} สำหรับคำอธิบาย และ {5} สำหรับรายการหมวดหมู่</value>
+  </data>
+  <data name="The AI prompt for auto tagging questions. Use {0} for type, {1} for category, {2} for content, {3} for answer, {4} for explanation, {5} for existing tags, and {6} for taxonomy instructions." xml:space="preserve">
+    <value>คำสั่ง AI สำหรับการติดแท็กคำถามอัตโนมัติ ใช้ {0} สำหรับประเภท {1} สำหรับหมวดหมู่ {2} สำหรับเนื้อหา {3} สำหรับคำตอบ {4} สำหรับคำอธิบาย {5} สำหรับแท็กที่มีอยู่ และ {6} สำหรับคำแนะนำการจัดหมวดหมู่</value>
+  </data>
+  <data name="The AI prompt for generating answers for blank-filling questions." xml:space="preserve">
+    <value>คำสั่ง AI สำหรับสร้างคำตอบสำหรับคำถามเติมคำในช่องว่าง</value>
+  </data>
+  <data name="The AI prompt for generating answers for choice questions." xml:space="preserve">
+    <value>คำสั่ง AI สำหรับสร้างคำตอบสำหรับคำถามแบบเลือกตอบ</value>
+  </data>
+  <data name="The AI prompt for generating answers for subjective questions (Short Answer, Essay, Noun Explanation)." xml:space="preserve">
+    <value>คำสั่ง AI สำหรับสร้างคำตอบสำหรับคำถามเชิงอัตนัย (คำตอบสั้น, บทความ, คำอธิบายคำศัพท์)</value>
+  </data>
+  <data name="The AI prompt for generating answers for true/false questions." xml:space="preserve">
+    <value>คำสั่ง AI สำหรับสร้างคำตอบสำหรับคำถามถูก/ผิด</value>
+  </data>
+  <data name="The AI prompt for generating base explanations." xml:space="preserve">
+    <value>คำสั่ง AI สำหรับสร้างคำอธิบายพื้นฐาน</value>
+  </data>
+  <data name="The AI prompt for generating deep explanations." xml:space="preserve">
+    <value>คำสั่ง AI สำหรับสร้างคำอธิบายเชิงลึก</value>
+  </data>
+  <data name="The AI prompt for grading questions. Use {0} for content, {1} for standard answer, {2} for explanation, {3} for student answer, and {4} for max score." xml:space="preserve">
+    <value>คำสั่ง AI สำหรับให้คะแนนคำถาม ใช้ {0} สำหรับเนื้อหา {1} สำหรับคำตอบมาตรฐาน {2} สำหรับคำอธิบาย {3} สำหรับคำตอบของนักเรียน และ {4} สำหรับคะแนนเต็ม</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>ชื่อแบรนด์ที่แสดงในส่วนท้ายหน้าเว็บ</value>
+  </data>
+  <data name="The default system prompt for extracting knowledge from material." xml:space="preserve">
+    <value>คำสั่งระบบเริ่มต้นสำหรับการสกัดความรู้จากวัสดุ</value>
+  </data>
+  <data name="The embedding model for questions and knowledge points. Existing vectors use the bge-m3 1024-dimension index contract." xml:space="preserve">
+    <value>โมเดล embedding สำหรับคำถามและจุดความรู้ เวกเตอร์ที่มีอยู่ใช้ข้อกำหนดดัชนี bge-m3 ขนาด 1024 มิติ</value>
+  </data>
+  <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
+    <value>หมายเลขใบอนุญาต ICP สำหรับผู้ใช้ในจีนแผ่นดินใหญ่ ปล่อยว่างเพื่อซ่อน</value>
+  </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>โลโก้ของโครงการที่แสดงในแถบเมนูด้านบนและฟุตเตอร์ รองรับไฟล์ jpg, png, svg</value>
+  </data>
+  <data name="The name of the project displayed in the frontend." xml:space="preserve">
+    <value>ชื่อโปรเจกต์ที่แสดงในหน้าแสดงผลด้านหน้า</value>
+  </data>
+  <data name="The Ollama API base URL for embeddings. Only the host is used; /api/embed is appended automatically. Falls back to the OpenAI completion endpoint when empty." xml:space="preserve">
+    <value>URL ฐานของ API ของ Ollama สำหรับการสร้างเวกเตอร์ฝังตัว จะใช้เฉพาะโฮสต์เท่านั้น โดยระบบจะเพิ่ม /api/embed ให้อัตโนมัติ หากเว้นว่างไว้ จะใช้เอนด์พอยต์สำหรับ completion ของ OpenAI แทน</value>
+  </data>
+
+</root>

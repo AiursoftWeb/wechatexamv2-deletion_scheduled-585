@@ -1,0 +1,403 @@
+@model Aiursoft.WeChatExamV2.Models.HomeViewModels.IndexViewModel
+@* ReSharper disable once Razor.SectionNotResolved *@
+@section styles {
+    <link rel="stylesheet" href="~/styles/site.css" xmlns="http://www.w3.org/1999/html"/>
+}
+
+<vc:marketing-navbar></vc:marketing-navbar>
+
+<section class="landing-intro text-bg-dark pt-5 pt-lg-6 pb-5 pb-lg-7">
+    <div class="landing-intro-content container h-100">
+        <div class="row align-items-center h-100">
+            <div class="col-lg-5 mx-auto">
+                <span class="badge badge-subtle-primary p-1">@Localizer["Open Source"]</span>
+                <span class="badge badge-subtle-primary p-1">@Localizer["Free"]</span>
+                <span class="badge badge-subtle-primary p-1">@Localizer["MIT Licence"]</span>
+                <h1 id="main-slogan" class="my-4 text-white" style="font-size: 3rem;">
+                    @Localizer["Online Exam Platform,"] <span class='text-primary'>@Localizer["Powered by WeChat"]</span>
+                </h1>
+                <p class="text-lg text-white-50">@Localizer["A comprehensive online examination system with WeChat integration. Create papers, organize knowledge points, tag questions, and deliver exams seamlessly through WeChat."]</p>
+                <div class="my-4">
+                    <a asp-controller="Dashboard" asp-action="Index" class="btn btn-outline-primary btn-lg btn-pill">
+                        <i class="align-middle" data-lucide="grid"></i> @Localizer["Go to dashboard"]
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-7 d-none d-lg-flex mx-auto text-center">
+                <div class="landing-intro-screenshot">
+                    <img src="~/images/screenshot.png" alt="WeChatExamV2 Screenshot" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-6">
+    <div class="container">
+        <div class="mb-5 text-center">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Features"]</span>
+            <h2 class="h1">@Localizer["Why use WeChatExamV2?"]</h2>
+            <p class="text-muted fs-lg">@Localizer["A modern, flexible, and comprehensive platform for creating and managing online examinations."]</p>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["WeChat Integration"]</h4>
+                        <p class="fs-lg">@Localizer["Seamlessly integrate with the WeChat ecosystem. Users can log in, take exams, and receive results directly through WeChat Official Accounts and Mini Programs."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Paper Templates & Snapshots"]</h4>
+                        <p class="fs-lg">@Localizer["Create reusable paper templates. When an exam starts, a snapshot freezes the content so every student sees the same questions even if the template is updated later."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="search-code"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["MTQL Query Language"]</h4>
+                        <p class="fs-lg">@Localizer["Use Mark-to-Query Language (MTQL), a powerful DSL, to filter questions with boolean logic like \"(difficulty:hard || source:textbook) && not year:2020\" for precise question selection."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="git-branch"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Hierarchical Knowledge Points"]</h4>
+                        <p class="fs-lg">@Localizer["Organize educational content in a hierarchical tree of categories and knowledge points. Map questions to specific learning objectives and track what each question assesses."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="tags"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Flexible Tagging System"]</h4>
+                        <p class="fs-lg">@Localizer["Group tags by taxonomies like Difficulty, Source, or Year. Apply multiple tags to each question for flexible categorization and advanced filtering."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="clipboard-check"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Exam Records & Analytics"]</h4>
+                        <p class="fs-lg">@Localizer["Track every student attempt with detailed answer records. Review individual answers, analyze performance, and identify knowledge gaps across your student base."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="key-round"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["OpenID Connect Authentication"]</h4>
+                        <p class="fs-lg">@Localizer["Built-in OpenID Connect support for seamless authentication. Integrate with any OIDC provider alongside WeChat login, with automatic role synchronization."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["AI-Powered Assistance"]</h4>
+                        <p class="fs-lg">@Localizer["Integrated with Ollama for AI-powered question assistance. Get help generating questions, explaining answers, or reviewing exam content."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["RBAC Authorization"]</h4>
+                        <p class="fs-lg">@Localizer["Fine-grained Role-Based Access Control for managing teachers, students, and administrators with distinct permissions and capabilities."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="credit-card"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["WeChat Payment"]</h4>
+                        <p class="fs-lg">@Localizer["Integrated WeChat Pay (TenpayV3) for monetizing exams. Charge for premium exam access, certifications, or course materials directly through WeChat."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Multiple Database Support"]</h4>
+                        <p class="fs-lg">@Localizer["Easily switch between SQLite, MySQL, SQL Server, and in-memory database providers to match your deployment needs from development to production."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="ship"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Docker-Ready Deployment"]</h4>
+                        <p class="fs-lg">@Localizer["Full Docker support with pre-built images on Docker Hub. Deploy with a single command, or use the install script for Ubuntu servers with systemd integration."]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-6 bg-white">
+    <div class="container position-relative z-3">
+        <div class="row">
+            <div class="col-md-12 mx-auto text-center">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-9 mx-auto">
+                        <div class="mb-4">
+                            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["How It Works"]</span>
+                            <h2 class="h1 mb-3">@Localizer["From Questions to Exams in Minutes"]</h2>
+                            <p class="text-muted fs-lg">
+                                @Localizer["Build your question bank, organize by knowledge points, create paper templates, and deliver exams to students — all within one integrated platform."]
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 py-3">
+                        <div class="card border h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="landing-feature mx-auto mb-3">
+                                    <i data-lucide="library"></i>
+                                </div>
+                                <h4 class="mt-0">@Localizer["1. Build Question Bank"]</h4>
+                                <p class="fs-lg">@Localizer["Create questions organized by hierarchical categories and knowledge points. Tag them with taxonomies for advanced filtering."]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <div class="card border h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="landing-feature mx-auto mb-3">
+                                    <i data-lucide="pen-tool"></i>
+                                </div>
+                                <h4 class="mt-0">@Localizer["2. Design Paper Templates"]</h4>
+                                <p class="fs-lg">@Localizer["Use MTQL to select questions by tags and knowledge points. Define the exam structure, duration, and scoring rules."]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <div class="card border h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="landing-feature mx-auto mb-3">
+                                    <i data-lucide="users"></i>
+                                </div>
+                                <h4 class="mt-0">@Localizer["3. Deliver to Students"]</h4>
+                                <p class="fs-lg">@Localizer["Publish exams with start/end times. Students access via WeChat or web, answer with frozen snapshots ensuring fairness."]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-6">
+    <div class="container">
+        <div class="mb-5 text-center">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["Use Cases"]</span>
+            <h2 class="h1">@Localizer["Built for Education"]</h2>
+            <p class="text-muted fs-lg">@Localizer["WeChatExamV2 adapts to a wide range of educational and assessment scenarios."]</p>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Schools & Universities"]</h4>
+                        <p class="fs-lg">@Localizer["Run midterms, finals, and quizzes with structured knowledge point tracking and detailed performance analytics for each student."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Professional Certifications"]</h4>
+                        <p class="fs-lg">@Localizer["Create certification exams with time-limited access, randomized question selection, and WeChat Pay integration for exam fees."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="building-2"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Corporate Training"]</h4>
+                        <p class="fs-lg">@Localizer["Assess employee knowledge with internal training exams. Track progress over time and identify areas needing additional training investment."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="smartphone"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["WeChat Mini Programs"]</h4>
+                        <p class="fs-lg">@Localizer["Embed exams directly into WeChat Mini Programs. Students take assessments without leaving WeChat, with instant results and sharing capabilities."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Online Courses"]</h4>
+                        <p class="fs-lg">@Localizer["Pair with online course platforms to deliver lesson quizzes, chapter tests, and final assessments with automatic grading and feedback."]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="d-flex align-items-start py-3">
+                    <div class="landing-feature">
+                        <i data-lucide="bar-chart-3"></i>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h4 class="mt-0">@Localizer["Surveys & Polls"]</h4>
+                        <p class="fs-lg">@Localizer["Beyond exams, use the platform for surveys, polls, and feedback collection with WeChat distribution for high response rates."]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-6 bg-white">
+    <div class="container">
+        <div class="mb-5 text-center">
+            <span class="text-uppercase text-primary text-sm fw-medium mb-1 d-block">@Localizer["FAQ"]</span>
+            <h2 class="h1">@Localizer["Frequently asked questions"]</h2>
+            <p class="text-muted fs-lg">@Localizer["Here are some of the answers you might be looking for."]</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+                <div class="accordion" id="accordionFaq">
+                    <div class="card border mb-3">
+                        <div class="card-header cursor-pointer" id="faqZero" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="false" aria-controls="collapseZero">
+                            <h6 class="mb-0">@Localizer["Is WeChatExamV2 free to use?"]</h6>
+                        </div>
+                        <div id="collapseZero" class="collapse" aria-labelledby="faqZero" data-bs-parent="#accordionFaq">
+                            <div class="card-body py-3">
+                                @Localizer["Yes, WeChatExamV2 is completely free and open-source under the MIT License. You can use it for personal, educational, and commercial purposes without any cost."]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border mb-3">
+                        <div class="card-header cursor-pointer" id="faqOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h6 class="mb-0">@Localizer["Do I need a WeChat Official Account to use it?"]</h6>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="faqOne" data-bs-parent="#accordionFaq">
+                            <div class="card-body py-3">
+                                @Localizer["WeChat integration is optional. The platform works fully as a standalone web application. You only need WeChat credentials if you want to enable WeChat login, Mini Program access, or WeChat Pay."]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border mb-3">
+                        <div class="card-header cursor-pointer" id="faqTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h6 class="mb-0">@Localizer["What is MTQL and how does it work?"]</h6>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="faqTwo" data-bs-parent="#accordionFaq">
+                            <div class="card-body py-3">
+                                @Localizer["MTQL (Mark-to-Query Language) is a domain-specific language for filtering questions by their tags. You write expressions like \"(difficulty:hard && source:textbook) || knowledge_point:calculus\" to precisely select which questions appear in a paper. It supports AND, OR, NOT, and parenthesized grouping."]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border mb-3">
+                        <div class="card-header cursor-pointer" id="faqThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h6 class="mb-0">@Localizer["How do paper snapshots ensure fairness?"]</h6>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="faqThree" data-bs-parent="#accordionFaq">
+                            <div class="card-body py-3">
+                                @Localizer["When an exam starts, the system creates an immutable snapshot of the paper and its questions. All students see the exact same content, even if the original paper template or questions are modified later. This guarantees a fair and consistent assessment experience."]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border mb-3">
+                        <div class="card-header cursor-pointer" id="faqFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h6 class="mb-0">@Localizer["How do I deploy WeChatExamV2?"]</h6>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="faqFour" data-bs-parent="#accordionFaq">
+                            <div class="card-body py-3">
+                                @Localizer["You can deploy via Docker with a single command, use the Ubuntu install script for automated systemd setup, or run it manually with the .NET SDK. See the README on GitHub for detailed deployment instructions."]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-6">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                <h2 class="h1 mb-3">
+                    @Localizer["Ready to build your exam platform?"]
+                </h2>
+                <p class="text-muted fs-lg mb-4">@Localizer["Get started with WeChatExamV2 today. Deploy in minutes with Docker."]</p>
+                <a href="https://github.com/aiursoftweb/wechatexamv2" class="align-middle btn btn-dark btn-pill btn-lg mt-n1" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <span class="ms-1">@Localizer["View on GitHub"]</span>
+                </a>
+                <a href="https://hub.docker.com/r/aiursoft/wechatexamv2" class="align-middle btn btn-primary btn-pill btn-lg mt-n1" target="_blank">
+                    <i class="fa-brands fa-docker"></i>
+                    <span class="ms-1">@Localizer["Docker Hub"]</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<vc:marketing-footer></vc:marketing-footer>

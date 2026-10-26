@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Accounting Reports" xml:space="preserve">
+    <value>Rapoarte contabile</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Administrare</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Anonim</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Articole</value>
+  </data>
+  <data name="Ask Ollama" xml:space="preserve">
+    <value>Întreabă Ollama</value>
+  </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>Joburi în fundal</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Categorii</value>
+  </data>
+  <data name="Change Avatar" xml:space="preserve">
+    <value>Schimbă Avatarul</value>
+  </data>
+  <data name="Change Password" xml:space="preserve">
+    <value>Schimbare parolă</value>
+  </data>
+  <data name="Change Profile" xml:space="preserve">
+    <value>Modifică Profilul</value>
+  </data>
+  <data name="Channel Details" xml:space="preserve">
+    <value>Detalii canal</value>
+  </data>
+  <data name="Click to login" xml:space="preserve">
+    <value>Apasă pentru a te autentifica</value>
+  </data>
+  <data name="Content Configuration Checks" xml:space="preserve">
+    <value>Verificări ale configurării conținutului</value>
+  </data>
+  <data name="Content Management" xml:space="preserve">
+    <value>Gestionarea conținutului</value>
+  </data>
+  <data name="Create Coupon" xml:space="preserve">
+    <value>Creează cupon</value>
+  </data>
+  <data name="Create Distribution Channel" xml:space="preserve">
+    <value>Creează canal de distribuție</value>
+  </data>
+  <data name="Create Role" xml:space="preserve">
+    <value>Creează Rol</value>
+  </data>
+  <data name="Create Tag" xml:space="preserve">
+    <value>Creează etichetă</value>
+  </data>
+  <data name="Create Taxonomy" xml:space="preserve">
+    <value>Creare taxonomie</value>
+  </data>
+  <data name="Create User" xml:space="preserve">
+    <value>Creează utilizator</value>
+  </data>
+  <data name="Create VIP Membership" xml:space="preserve">
+    <value>Creează membru VIP</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Panou de control</value>
+  </data>
+  <data name="Database Management" xml:space="preserve">
+    <value>Gestionarea bazei de date</value>
+  </data>
+  <data name="Delete Account" xml:space="preserve">
+    <value>Șterge contul</value>
+  </data>
+  <data name="Delete Category" xml:space="preserve">
+    <value>Șterge Categorie</value>
+  </data>
+  <data name="Delete Distribution Channel" xml:space="preserve">
+    <value>Șterge canalul de distribuție</value>
+  </data>
+  <data name="Delete Feedback" xml:space="preserve">
+    <value>Ștergeți feedback-ul</value>
+  </data>
+  <data name="Delete KnowledgePoint" xml:space="preserve">
+    <value>Șterge Punctul de Cunoaștere</value>
+  </data>
+  <data name="Delete Role" xml:space="preserve">
+    <value>Șterge Rol</value>
+  </data>
+  <data name="Delete Tag" xml:space="preserve">
+    <value>Șterge eticheta</value>
+  </data>
+  <data name="Delete Taxonomy" xml:space="preserve">
+    <value>Șterge Taxonomie</value>
+  </data>
+  <data name="Delete User" xml:space="preserve">
+    <value>Șterge utilizator</value>
+  </data>
+  <data name="Delete VIP Membership" xml:space="preserve">
+    <value>Ștergeți Abonamentul VIP</value>
+  </data>
+  <data name="Directory" xml:space="preserve">
+    <value>Director</value>
+  </data>
+  <data name="Distribution Channels" xml:space="preserve">
+    <value>Canale de distribuție</value>
+  </data>
+  <data name="Edit Role" xml:space="preserve">
+    <value>Editează Rol</value>
+  </data>
+  <data name="Edit Tag" xml:space="preserve">
+    <value>Editare etichetă</value>
+  </data>
+  <data name="Edit Taxonomy" xml:space="preserve">
+    <value>Editare Taxonomie</value>
+  </data>
+  <data name="Edit User" xml:space="preserve">
+    <value>Editează Utilizator</value>
+  </data>
+  <data name="Edit VIP Membership" xml:space="preserve">
+    <value>Editează membrul VIP</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Eroare</value>
+  </data>
+  <data name="Exam Management" xml:space="preserve">
+    <value>Gestionarea examenelor</value>
+  </data>
+  <data name="Exams" xml:space="preserve">
+    <value>Examen</value>
+  </data>
+  <data name="Export Questions" xml:space="preserve">
+    <value>Export Întrebări</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Caracteristici</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="Finance Reports" xml:space="preserve">
+    <value>Rapoarte Financiare</value>
+  </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>Setări globale</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Acasă</value>
+  </data>
+  <data name="Import Questions" xml:space="preserve">
+    <value>Importă întrebări</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Informații</value>
+  </data>
+  <data name="Join Official Exam" xml:space="preserve">
+    <value>Alătură-te Examenului Oficial</value>
+  </data>
+  <data name="Knowledge Points" xml:space="preserve">
+    <value>Puncte de cunoștințe</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Blocare</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Autentificare</value>
+  </data>
+  <data name="Login to get access to all features." xml:space="preserve">
+    <value>Conectează-te pentru a accesa toate funcționalitățile.</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Gestionează</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Marketing</value>
+  </data>
+  <data name="Marketing Management" xml:space="preserve">
+    <value>Gestionarea marketingului</value>
+  </data>
+  <data name="Monthly Finance Report Details" xml:space="preserve">
+    <value>Detalii Raport Financiar Lunar</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Noutăți</value>
+  </data>
+  <data name="Papers" xml:space="preserve">
+    <value>Lucrări</value>
+  </data>
+  <data name="Payment Management" xml:space="preserve">
+    <value>Gestiunea Plăților</value>
+  </data>
+  <data name="Payment Orders" xml:space="preserve">
+    <value>Comenzi de plată</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="Practice Session" xml:space="preserve">
+    <value>Sesiune de antrenament</value>
+  </data>
+  <data name="Practice Test" xml:space="preserve">
+    <value>Test de antrenament</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profile Settings" xml:space="preserve">
+    <value>Setări Profil</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Întrebări</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Înregistrare</value>
+  </data>
+  <data name="Role Details" xml:space="preserve">
+    <value>Detalii Rol</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roluri</value>
+  </data>
+  <data name="Search Content" xml:space="preserve">
+    <value>Căutați conținut</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Setări</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>Deconectare</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="System Info" xml:space="preserve">
+    <value>Informații despre Sistem</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Etichete</value>
+  </data>
+  <data name="Taxonomies" xml:space="preserve">
+    <value>Taxonomii</value>
+  </data>
+  <data name="Taxonomies Management" xml:space="preserve">
+    <value>Gestionarea taxonomiilor</value>
+  </data>
+  <data name="Test Papers" xml:space="preserve">
+    <value>Teste</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Neautorizat</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Detalii Utilizator</value>
+  </data>
+  <data name="User Feedbacks" xml:space="preserve">
+    <value>Feedback-uri de la utilizatori</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Utilizatori</value>
+  </data>
+  <data name="VIP Change History" xml:space="preserve">
+    <value>Istoricul modificărilor VIP</value>
+  </data>
+  <data name="VIP Members" xml:space="preserve">
+    <value>Membri VIP</value>
+  </data>
+  <data name="VIP Products" xml:space="preserve">
+    <value>Produse VIP</value>
+  </data>
+
+</root>

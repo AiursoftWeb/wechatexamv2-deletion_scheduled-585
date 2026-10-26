@@ -1,0 +1,36 @@
+@model Aiursoft.WeChatExamV2.Models.ExtractViewModels.ExtractIndexViewModel
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">@Localizer["Extract Knowledge from Material"]</h6>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Extract" method="post">
+                        @Html.AntiForgeryToken()
+                        <div class="mb-3">
+                            <label asp-for="CategoryId" class="form-label"></label>
+                            <select asp-for="CategoryId" asp-items="Model.Categories" class="form-select">
+                                <option value="">-- @Localizer["Select Category"] --</option>
+                            </select>
+                            <span asp-validation-for="CategoryId" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Material" class="form-label"></label>
+                            <textarea asp-for="Material" class="form-control" rows="15" placeholder="@Localizer["Paste your study material, articles, or notes here..."]"></textarea>
+                            <span asp-validation-for="Material" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-magic"></i> @Localizer["Extract with AI"]
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

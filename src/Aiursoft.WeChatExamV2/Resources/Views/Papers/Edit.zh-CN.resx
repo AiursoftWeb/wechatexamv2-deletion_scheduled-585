@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="-- Select --" xml:space="preserve">
+    <value>-- 选择 --</value>
+  </data>
+  <data name="-- Select Category (Optional) --" xml:space="preserve">
+    <value>-- 选择分类（可选）--</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>添加问题</value>
+  </data>
+  <data name="Add Selected" xml:space="preserve">
+    <value>添加选中项</value>
+  </data>
+  <data name="Add Selected ({0})" xml:space="preserve">
+    <value>添加所选项（{0}）</value>
+  </data>
+  <data name="Advanced: Tag Expression (MTQL)" xml:space="preserve">
+    <value>高级：标签表达式（MTQL）</value>
+  </data>
+  <data name="AI Semantic Search" xml:space="preserve">
+    <value>AI 语义搜索</value>
+  </data>
+  <data name="AI semantic search was not used. Showing keyword results." xml:space="preserve">
+    <value>未使用 AI 语义搜索。显示关键词搜索结果。</value>
+  </data>
+  <data name="All Types" xml:space="preserve">
+    <value>所有类型</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>答案</value>
+  </data>
+  <data name="Batch Add via MTQL" xml:space="preserve">
+    <value>批量添加（通过 MTQL）</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>类别</value>
+  </data>
+  <data name="Combine tags, for example: rock &amp;&amp; not metal" xml:space="preserve">
+    <value>组合标签，例如：rock &amp;&amp; 非 metal</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Default Score" xml:space="preserve">
+    <value>默认分值</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>草稿</value>
+  </data>
+  <data name="e.g. rock &amp;&amp; not metal" xml:space="preserve">
+    <value>例如：rock &amp;&amp; not metal</value>
+  </data>
+  <data name="Edit Paper" xml:space="preserve">
+    <value>编辑试卷</value>
+  </data>
+  <data name="Enter a few words to find questions." xml:space="preserve">
+    <value>输入几个词以查找题目。</value>
+  </data>
+  <data name="Enter a topic or a few words..." xml:space="preserve">
+    <value>请输入主题或几个关键词...</value>
+  </data>
+  <data name="Exam Question Type" xml:space="preserve">
+    <value>试题类型</value>
+  </data>
+  <data name="Find exact words and related meanings." xml:space="preserve">
+    <value>查找准确的词语及其相关含义。</value>
+  </data>
+  <data name="Find Questions" xml:space="preserve">
+    <value>查找题目</value>
+  </data>
+  <data name="Find Similar Questions" xml:space="preserve">
+    <value>查找相似题目</value>
+  </data>
+  <data name="Free Paper" xml:space="preserve">
+    <value>免费试卷</value>
+  </data>
+  <data name="Freeze" xml:space="preserve">
+    <value>冻结</value>
+  </data>
+  <data name="Keyword Search" xml:space="preserve">
+    <value>关键词搜索</value>
+  </data>
+  <data name="Mark as Publishable" xml:space="preserve">
+    <value>设为可发布</value>
+  </data>
+  <data name="Match words in the question text, answers and explanations." xml:space="preserve">
+    <value>匹配题目文本、答案和解析中的词语。</value>
+  </data>
+  <data name="No questions found." xml:space="preserve">
+    <value>未找到问题。</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>序号</value>
+  </data>
+  <data name="Paper Info" xml:space="preserve">
+    <value>试卷信息</value>
+  </data>
+  <data name="Press Enter to add a tag, or select from suggestions. Click X to remove." xml:space="preserve">
+    <value>按 Enter 键添加标签，或从建议中选择。点击 X 移除。</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="Publish Snapshot" xml:space="preserve">
+    <value>发布快照</value>
+  </data>
+  <data name="Publishable" xml:space="preserve">
+    <value>可发布</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>题目</value>
+  </data>
+  <data name="Questions in Paper" xml:space="preserve">
+    <value>试卷题目</value>
+  </data>
+  <data name="Real Exam" xml:space="preserve">
+    <value>真实考试</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>移除</value>
+  </data>
+  <data name="Revert to Draft" xml:space="preserve">
+    <value>转为草稿</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Save and return to checkup" xml:space="preserve">
+    <value>保存并返回检查页面</value>
+  </data>
+  <data name="Save and return to content checks" xml:space="preserve">
+    <value>保存并返回内容检查</value>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>分数</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="Search &amp; Add Questions" xml:space="preserve">
+    <value>搜索并添加题目</value>
+  </data>
+  <data name="Search is unavailable. Please try again." xml:space="preserve">
+    <value>搜索暂不可用，请重试。</value>
+  </data>
+  <data name="Search Mode" xml:space="preserve">
+    <value>搜索模式</value>
+  </data>
+  <data name="Searching..." xml:space="preserve">
+    <value>正在搜索...</value>
+  </data>
+  <data name="Select All Results" xml:space="preserve">
+    <value>选择所有结果</value>
+  </data>
+  <data name="Select Question" xml:space="preserve">
+    <value>选择题目</value>
+  </data>
+  <data name="Selected Questions" xml:space="preserve">
+    <value>已选题目</value>
+  </data>
+  <data name="Selecting a category will filter available questions." xml:space="preserve">
+    <value>选择类别将筛选可用题目。</value>
+  </data>
+  <data name="Selections are kept when you search again. Add them when you are ready." xml:space="preserve">
+    <value>再次搜索时，已选内容会保留。准备好后即可添加。</value>
+  </data>
+  <data name="Similar questions are unavailable. Please try again later." xml:space="preserve">
+    <value>相似问题暂不可用，请稍后重试。</value>
+  </data>
+  <data name="Similar to: {0}" xml:space="preserve">
+    <value>与 {0} 相似</value>
+  </data>
+  <data name="Smart Search (Default)" xml:space="preserve">
+    <value>智能搜索（默认）</value>
+  </data>
+  <data name="Starting Order" xml:space="preserve">
+    <value>起始顺序</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Status Actions" xml:space="preserve">
+    <value>状态操作</value>
+  </data>
+  <data name="Tag Expression Search (MTQL)" xml:space="preserve">
+    <value>标签表达式搜索 (MTQL)</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>标签</value>
+  </data>
+  <data name="Time Limit (minutes)" xml:space="preserve">
+    <value>时间限制（分钟）</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>标题</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="Type to search or add tags..." xml:space="preserve">
+    <value>输入以搜索或添加标签...</value>
+  </data>
+  <data name="Up to five similar questions in the selected category, or all categories if none is selected. Existing paper questions are excluded. Select candidates to add; the original question stays unchanged." xml:space="preserve">
+    <value>最多显示所选类别中的 5 个相似问题；如果未选择类别，则显示所有类别中的相似问题。已添加到试卷中的问题不会显示。选择要添加的问题；原问题保持不变。</value>
+  </data>
+
+</root>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Administrator workspace" xml:space="preserve">
+    <value>管理員工作區</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="Available papers" xml:space="preserve">
+    <value>可用試卷</value>
+  </data>
+  <data name="Create a paper and add questions before starting a browser test." xml:space="preserve">
+    <value>請先建立試卷並新增題目，再開始瀏覽器測試。</value>
+  </data>
+  <data name="Create paper" xml:space="preserve">
+    <value>建立試卷</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>草稿</value>
+  </data>
+  <data name="Experience the current paper exactly as a candidate would. Test submissions use the production grading engine, including real AI grading." xml:space="preserve">
+    <value>體驗目前的試卷，感受與考生完全相同的體驗。測試提交將使用正式環境的評分引擎，包括真實的 AI 評分。</value>
+  </data>
+  <data name="Frozen" xml:space="preserve">
+    <value>凍結</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>分鐘</value>
+  </data>
+  <data name="No matching papers" xml:space="preserve">
+    <value>沒有相符的試卷</value>
+  </data>
+  <data name="No papers yet" xml:space="preserve">
+    <value>尚未建立試題</value>
+  </data>
+  <data name="No questions" xml:space="preserve">
+    <value>沒有題目</value>
+  </data>
+  <data name="Paper status filter" xml:space="preserve">
+    <value>試卷狀態篩選</value>
+  </data>
+  <data name="points" xml:space="preserve">
+    <value>分</value>
+  </data>
+  <data name="Publishable" xml:space="preserve">
+    <value>可發布</value>
+  </data>
+  <data name="questions" xml:space="preserve">
+    <value>題</value>
+  </data>
+  <data name="Real exam" xml:space="preserve">
+    <value>正式考試</value>
+  </data>
+  <data name="Search papers..." xml:space="preserve">
+    <value>搜尋試卷...</value>
+  </data>
+  <data name="Start test" xml:space="preserve">
+    <value>開始測驗</value>
+  </data>
+  <data name="Test Papers" xml:space="preserve">
+    <value>試卷</value>
+  </data>
+  <data name="Try another title or status filter." xml:space="preserve">
+    <value>請嘗試其他標題或狀態篩選條件。</value>
+  </data>
+
+</root>

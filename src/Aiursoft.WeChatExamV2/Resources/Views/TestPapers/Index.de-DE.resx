@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Administrator workspace" xml:space="preserve">
+    <value>Administrator-Bereich</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="Available papers" xml:space="preserve">
+    <value>Verfügbare Klausuren</value>
+  </data>
+  <data name="Create a paper and add questions before starting a browser test." xml:space="preserve">
+    <value>Erstellen Sie eine Prüfung und fügen Sie Fragen hinzu, bevor Sie einen Browser-Test starten.</value>
+  </data>
+  <data name="Create paper" xml:space="preserve">
+    <value>Prüfung erstellen</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Entwurf</value>
+  </data>
+  <data name="Experience the current paper exactly as a candidate would. Test submissions use the production grading engine, including real AI grading." xml:space="preserve">
+    <value>Erleben Sie die aktuelle Prüfung genau so, wie es ein Kandidat tun würde. Testeinsendungen nutzen die produktionsreife Bewertungsmaschine, einschließlich der echten KI-Bewertung.</value>
+  </data>
+  <data name="Frozen" xml:space="preserve">
+    <value>Gefroren</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>Minuten</value>
+  </data>
+  <data name="No matching papers" xml:space="preserve">
+    <value>Keine passenden Klausuren</value>
+  </data>
+  <data name="No papers yet" xml:space="preserve">
+    <value>Noch keine Prüfungsaufgaben</value>
+  </data>
+  <data name="No questions" xml:space="preserve">
+    <value>Keine Fragen</value>
+  </data>
+  <data name="Paper status filter" xml:space="preserve">
+    <value>Prüfungsstatusfilter</value>
+  </data>
+  <data name="points" xml:space="preserve">
+    <value>Punkte</value>
+  </data>
+  <data name="Publishable" xml:space="preserve">
+    <value>Veröffentlichbar</value>
+  </data>
+  <data name="questions" xml:space="preserve">
+    <value>Fragen</value>
+  </data>
+  <data name="Real exam" xml:space="preserve">
+    <value>Echte Prüfung</value>
+  </data>
+  <data name="Search papers..." xml:space="preserve">
+    <value>Prüfungen suchen...</value>
+  </data>
+  <data name="Start test" xml:space="preserve">
+    <value>Test starten</value>
+  </data>
+  <data name="Test Papers" xml:space="preserve">
+    <value>Testprüfungen</value>
+  </data>
+  <data name="Try another title or status filter." xml:space="preserve">
+    <value>Versuche einen anderen Titel oder Statusfilter.</value>
+  </data>
+
+</root>

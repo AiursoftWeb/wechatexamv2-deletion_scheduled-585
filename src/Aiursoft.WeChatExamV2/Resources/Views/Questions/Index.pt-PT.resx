@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>Ações</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>Adicionar Pergunta</value>
+  </data>
+  <data name="AI Auto Categorize" xml:space="preserve">
+    <value>IA Categorização Automática</value>
+  </data>
+  <data name="AI Auto Tagging" xml:space="preserve">
+    <value>IA Marcação Automática</value>
+  </data>
+  <data name="AI Classify" xml:space="preserve">
+    <value>Classificação por IA</value>
+  </data>
+  <data name="AI Classify - Select Categories" xml:space="preserve">
+    <value>Classificação por IA - Selecionar Categorias</value>
+  </data>
+  <data name="AI Generate Answers" xml:space="preserve">
+    <value>Gerar Respostas com IA</value>
+  </data>
+  <data name="AI Generate Explanations" xml:space="preserve">
+    <value>Gerar Explicações com IA</value>
+  </data>
+  <data name="All Categories" xml:space="preserve">
+    <value>Todas as Categorias</value>
+  </data>
+  <data name="All Types" xml:space="preserve">
+    <value>Todos os Tipos</value>
+  </data>
+  <data name="An error occurred during deletion." xml:space="preserve">
+    <value>Ocorreu um erro durante a eliminação.</value>
+  </data>
+  <data name="An error occurred while starting AI answer generation." xml:space="preserve">
+    <value>Ocorreu um erro ao iniciar a geração de respostas por IA.</value>
+  </data>
+  <data name="An error occurred while starting AI categorization." xml:space="preserve">
+    <value>Ocorreu um erro ao iniciar a categorização por IA.</value>
+  </data>
+  <data name="An error occurred while starting AI generation." xml:space="preserve">
+    <value>Ocorreu um erro ao iniciar a geração de IA.</value>
+  </data>
+  <data name="An error occurred while starting AI tagging." xml:space="preserve">
+    <value>Ocorreu um erro ao iniciar a marcação com IA.</value>
+  </data>
+  <data name="An error occurred while starting classification." xml:space="preserve">
+    <value>Ocorreu um erro ao iniciar a classificação.</value>
+  </data>
+  <data name="Apply Filters" xml:space="preserve">
+    <value>Aplicar Filtros</value>
+  </data>
+  <data name="Are you sure you want to delete" xml:space="preserve">
+    <value>Tem a certeza que deseja eliminar</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="Confirm Batch Delete" xml:space="preserve">
+    <value>Confirmar Eliminação em Lote</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Conteúdo</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Criado</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="Delete Selected" xml:space="preserve">
+    <value>Eliminar Selecionados</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>Data Final</value>
+  </data>
+  <data name="Failed to delete questions. Please try again." xml:space="preserve">
+    <value>Falha ao eliminar as perguntas. Por favor, tente novamente.</value>
+  </data>
+  <data name="Failed to start AI answer generation." xml:space="preserve">
+    <value>Falhou ao iniciar a geração de respostas por IA.</value>
+  </data>
+  <data name="Failed to start AI categorization." xml:space="preserve">
+    <value>Falhou ao iniciar a categorização por IA.</value>
+  </data>
+  <data name="Failed to start AI generation." xml:space="preserve">
+    <value>Falha ao iniciar a geração de IA.</value>
+  </data>
+  <data name="Failed to start AI tagging." xml:space="preserve">
+    <value>Falhou ao iniciar a marcação com IA.</value>
+  </data>
+  <data name="Failed to start classification." xml:space="preserve">
+    <value>Falhou a inicialização da classificação.</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filtrar</value>
+  </data>
+  <data name="Filters &amp; Search" xml:space="preserve">
+    <value>Filtros e Pesquisa</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>Ir</value>
+  </data>
+  <data name="Items per page" xml:space="preserve">
+    <value>Itens por página</value>
+  </data>
+  <data name="MTQL Query" xml:space="preserve">
+    <value>Consulta MTQL</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Seguinte</value>
+  </data>
+  <data name="No categories available. Please create categories first." xml:space="preserve">
+    <value>Não existem categorias disponíveis. Crie categorias primeiro.</value>
+  </data>
+  <data name="No questions found" xml:space="preserve">
+    <value>Não foram encontradas questões</value>
+  </data>
+  <data name="No questions found matching your criteria" xml:space="preserve">
+    <value>Nenhum questionário encontrado que corresponda aos critérios</value>
+  </data>
+  <data name="Please enter a valid page number between 1 and" xml:space="preserve">
+    <value>Introduza um número de página válido entre 1 e</value>
+  </data>
+  <data name="Please select at least one category." xml:space="preserve">
+    <value>Por favor, selecione pelo menos uma categoria.</value>
+  </data>
+  <data name="Please select at least one question." xml:space="preserve">
+    <value>Por favor, selecione pelo menos uma pergunta.</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="Question List" xml:space="preserve">
+    <value>Lista de Perguntas</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Questões</value>
+  </data>
+  <data name="questions?" xml:space="preserve">
+    <value>questões?</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reiniciar</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Pesquisar</value>
+  </data>
+  <data name="Search Questions and Knowledge Points" xml:space="preserve">
+    <value>Pesquisar perguntas e pontos de conhecimento</value>
+  </data>
+  <data name="Search questions and knowledge points..." xml:space="preserve">
+    <value>Pesquisar questões e pontos de conhecimento...</value>
+  </data>
+  <data name="Select All / Deselect All" xml:space="preserve">
+    <value>Selecionar Tudo / Deselecionar Tudo</value>
+  </data>
+  <data name="Select the candidate categories for AI classification. The AI will choose exactly one category for each question." xml:space="preserve">
+    <value>Selecione as categorias candidatas para a classificação por IA. A IA irá escolher exatamente uma categoria para cada pergunta.</value>
+  </data>
+  <data name="selected" xml:space="preserve">
+    <value>selecionados</value>
+  </data>
+  <data name="Start Classification" xml:space="preserve">
+    <value>Iniciar Classificação</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>Data de Início</value>
+  </data>
+  <data name="Submitting..." xml:space="preserve">
+    <value>A enviar...</value>
+  </data>
+  <data name="Tag" xml:space="preserve">
+    <value>Etiqueta</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Etiquetas</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="This action cannot be undone." xml:space="preserve">
+    <value>Esta ação não pode ser desfeita.</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+
+</root>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Account Settings" xml:space="preserve">
+    <value>Cài đặt Tài khoản</value>
+  </data>
+  <data name="Accounting Reports" xml:space="preserve">
+    <value>Báo cáo Kế toán</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Quản trị viên</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Quản trị</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>Ẩn danh</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>Bài viết</value>
+  </data>
+  <data name="Ask Ollama" xml:space="preserve">
+    <value>Hỏi Ollama</value>
+  </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>Các nhiệm vụ nền</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="Change Avatar" xml:space="preserve">
+    <value>Thay đổi Ảnh đại diện</value>
+  </data>
+  <data name="Change Password" xml:space="preserve">
+    <value>Đổi Mật khẩu</value>
+  </data>
+  <data name="Change Profile" xml:space="preserve">
+    <value>Thay đổi Hồ sơ</value>
+  </data>
+  <data name="Channel Details" xml:space="preserve">
+    <value>Chi tiết kênh phân phối</value>
+  </data>
+  <data name="Click to login" xml:space="preserve">
+    <value>Nhấp để đăng nhập</value>
+  </data>
+  <data name="Content Configuration Checks" xml:space="preserve">
+    <value>Kiểm tra cấu hình nội dung</value>
+  </data>
+  <data name="Content Management" xml:space="preserve">
+    <value>Quản lý nội dung</value>
+  </data>
+  <data name="Create Coupon" xml:space="preserve">
+    <value>Tạo Phiếu Giảm Giá</value>
+  </data>
+  <data name="Create Distribution Channel" xml:space="preserve">
+    <value>Tạo kênh phân phối</value>
+  </data>
+  <data name="Create Role" xml:space="preserve">
+    <value>Tạo Vai Trò</value>
+  </data>
+  <data name="Create Tag" xml:space="preserve">
+    <value>Tạo thẻ</value>
+  </data>
+  <data name="Create Taxonomy" xml:space="preserve">
+    <value>Tạo phân loại</value>
+  </data>
+  <data name="Create User" xml:space="preserve">
+    <value>Tạo Người Dùng</value>
+  </data>
+  <data name="Create VIP Membership" xml:space="preserve">
+    <value>Tạo thành viên VIP</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Bảng điều khiển</value>
+  </data>
+  <data name="Database Management" xml:space="preserve">
+    <value>Quản lý Cơ sở dữ liệu</value>
+  </data>
+  <data name="Delete Account" xml:space="preserve">
+    <value>Xóa tài khoản</value>
+  </data>
+  <data name="Delete Category" xml:space="preserve">
+    <value>Xóa danh mục</value>
+  </data>
+  <data name="Delete Distribution Channel" xml:space="preserve">
+    <value>Xóa kênh phân phối</value>
+  </data>
+  <data name="Delete Feedback" xml:space="preserve">
+    <value>Xóa phản hồi</value>
+  </data>
+  <data name="Delete KnowledgePoint" xml:space="preserve">
+    <value>Xóa Điểm Kiến Thức</value>
+  </data>
+  <data name="Delete Role" xml:space="preserve">
+    <value>Xóa Vai trò</value>
+  </data>
+  <data name="Delete Tag" xml:space="preserve">
+    <value>Xóa Thẻ</value>
+  </data>
+  <data name="Delete Taxonomy" xml:space="preserve">
+    <value>Xóa phân loại</value>
+  </data>
+  <data name="Delete User" xml:space="preserve">
+    <value>Xóa Người Dùng</value>
+  </data>
+  <data name="Delete VIP Membership" xml:space="preserve">
+    <value>Xóa thành viên VIP</value>
+  </data>
+  <data name="Directory" xml:space="preserve">
+    <value>Thư mục</value>
+  </data>
+  <data name="Distribution Channels" xml:space="preserve">
+    <value>Kênh phân phối</value>
+  </data>
+  <data name="Edit Role" xml:space="preserve">
+    <value>Chỉnh sửa Vai trò</value>
+  </data>
+  <data name="Edit Tag" xml:space="preserve">
+    <value>Chỉnh sửa thẻ</value>
+  </data>
+  <data name="Edit Taxonomy" xml:space="preserve">
+    <value>Sửa đổi phân loại</value>
+  </data>
+  <data name="Edit User" xml:space="preserve">
+    <value>Chỉnh sửa Người dùng</value>
+  </data>
+  <data name="Edit VIP Membership" xml:space="preserve">
+    <value>Chỉnh sửa thành viên VIP</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="Exam Management" xml:space="preserve">
+    <value>Quản lý bài thi</value>
+  </data>
+  <data name="Exams" xml:space="preserve">
+    <value>Bài kiểm tra</value>
+  </data>
+  <data name="Export Questions" xml:space="preserve">
+    <value>Xuất câu hỏi</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Tính năng</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Phản hồi</value>
+  </data>
+  <data name="Finance Reports" xml:space="preserve">
+    <value>Báo cáo Tài chính</value>
+  </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>Cài đặt chung</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Trang Chủ</value>
+  </data>
+  <data name="Import Questions" xml:space="preserve">
+    <value>Nhập câu hỏi</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Thông tin</value>
+  </data>
+  <data name="Join Official Exam" xml:space="preserve">
+    <value>Tham gia Kỳ thi Chính thức</value>
+  </data>
+  <data name="Knowledge Points" xml:space="preserve">
+    <value>Điểm Kiến Thức</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>Khóa tài khoản</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="Login to get access to all features." xml:space="preserve">
+    <value>Đăng nhập để truy cập tất cả các tính năng.</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>Quản lý</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>Tiếp thị</value>
+  </data>
+  <data name="Marketing Management" xml:space="preserve">
+    <value>Quản lý Tiếp thị</value>
+  </data>
+  <data name="Monthly Finance Report Details" xml:space="preserve">
+    <value>Chi Tiết Báo Cáo Tài Chính Hàng Tháng</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>Tin tức</value>
+  </data>
+  <data name="Papers" xml:space="preserve">
+    <value>Bài kiểm tra</value>
+  </data>
+  <data name="Payment Management" xml:space="preserve">
+    <value>Quản lý thanh toán</value>
+  </data>
+  <data name="Payment Orders" xml:space="preserve">
+    <value>Đơn Thanh Toán</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Cá nhân</value>
+  </data>
+  <data name="Practice Session" xml:space="preserve">
+    <value>Buổi luyện tập</value>
+  </data>
+  <data name="Practice Test" xml:space="preserve">
+    <value>Bài kiểm tra thực hành</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Hồ sơ</value>
+  </data>
+  <data name="Profile Settings" xml:space="preserve">
+    <value>Cài đặt Hồ sơ</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Câu hỏi</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Đăng ký</value>
+  </data>
+  <data name="Role Details" xml:space="preserve">
+    <value>Chi tiết Vai trò</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Vai trò</value>
+  </data>
+  <data name="Search Content" xml:space="preserve">
+    <value>Tìm kiếm nội dung</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="System Info" xml:space="preserve">
+    <value>Thông tin Hệ thống</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Thẻ</value>
+  </data>
+  <data name="Taxonomies" xml:space="preserve">
+    <value>Các phân loại</value>
+  </data>
+  <data name="Taxonomies Management" xml:space="preserve">
+    <value>Quản lý phân loại</value>
+  </data>
+  <data name="Test Papers" xml:space="preserve">
+    <value>Đề thi</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Không được ủy quyền</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>Thông tin người dùng</value>
+  </data>
+  <data name="User Feedbacks" xml:space="preserve">
+    <value>Phản hồi của người dùng</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Người dùng</value>
+  </data>
+  <data name="VIP Change History" xml:space="preserve">
+    <value>Lịch sử thay đổi VIP</value>
+  </data>
+  <data name="VIP Members" xml:space="preserve">
+    <value>Thành viên VIP</value>
+  </data>
+  <data name="VIP Products" xml:space="preserve">
+    <value>Sản phẩm VIP</value>
+  </data>
+
+</root>

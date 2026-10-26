@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Account Settings" xml:space="preserve">
+    <value>帳戶設定</value>
+  </data>
+  <data name="Accounting Reports" xml:space="preserve">
+    <value>會計報告</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>管理員</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="Anonymous" xml:space="preserve">
+    <value>匿名</value>
+  </data>
+  <data name="Articles" xml:space="preserve">
+    <value>文章</value>
+  </data>
+  <data name="Ask Ollama" xml:space="preserve">
+    <value>向 Ollama 提問</value>
+  </data>
+  <data name="Background Jobs" xml:space="preserve">
+    <value>背景工作</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>分類</value>
+  </data>
+  <data name="Change Avatar" xml:space="preserve">
+    <value>更改頭像</value>
+  </data>
+  <data name="Change Password" xml:space="preserve">
+    <value>更改密碼</value>
+  </data>
+  <data name="Change Profile" xml:space="preserve">
+    <value>更改個人資料</value>
+  </data>
+  <data name="Channel Details" xml:space="preserve">
+    <value>頻道詳情</value>
+  </data>
+  <data name="Click to login" xml:space="preserve">
+    <value>點擊登入</value>
+  </data>
+  <data name="Content Configuration Checks" xml:space="preserve">
+    <value>內容設定檢查</value>
+  </data>
+  <data name="Content Management" xml:space="preserve">
+    <value>內容管理</value>
+  </data>
+  <data name="Create Coupon" xml:space="preserve">
+    <value>建立優惠券</value>
+  </data>
+  <data name="Create Distribution Channel" xml:space="preserve">
+    <value>建立分發渠道</value>
+  </data>
+  <data name="Create Role" xml:space="preserve">
+    <value>建立角色</value>
+  </data>
+  <data name="Create Tag" xml:space="preserve">
+    <value>建立標籤</value>
+  </data>
+  <data name="Create Taxonomy" xml:space="preserve">
+    <value>建立分類法</value>
+  </data>
+  <data name="Create User" xml:space="preserve">
+    <value>建立用戶</value>
+  </data>
+  <data name="Create VIP Membership" xml:space="preserve">
+    <value>建立 VIP 會員資格</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>儀表板</value>
+  </data>
+  <data name="Database Management" xml:space="preserve">
+    <value>資料庫管理</value>
+  </data>
+  <data name="Delete Account" xml:space="preserve">
+    <value>刪除帳戶</value>
+  </data>
+  <data name="Delete Category" xml:space="preserve">
+    <value>刪除分類</value>
+  </data>
+  <data name="Delete Distribution Channel" xml:space="preserve">
+    <value>刪除分發管道</value>
+  </data>
+  <data name="Delete Feedback" xml:space="preserve">
+    <value>刪除反饋</value>
+  </data>
+  <data name="Delete KnowledgePoint" xml:space="preserve">
+    <value>刪除知識點</value>
+  </data>
+  <data name="Delete Role" xml:space="preserve">
+    <value>刪除角色</value>
+  </data>
+  <data name="Delete Tag" xml:space="preserve">
+    <value>刪除標籤</value>
+  </data>
+  <data name="Delete Taxonomy" xml:space="preserve">
+    <value>刪除分類法</value>
+  </data>
+  <data name="Delete User" xml:space="preserve">
+    <value>刪除用戶</value>
+  </data>
+  <data name="Delete VIP Membership" xml:space="preserve">
+    <value>刪除 VIP 會員資格</value>
+  </data>
+  <data name="Directory" xml:space="preserve">
+    <value>目錄</value>
+  </data>
+  <data name="Distribution Channels" xml:space="preserve">
+    <value>分發渠道</value>
+  </data>
+  <data name="Edit Role" xml:space="preserve">
+    <value>編輯角色</value>
+  </data>
+  <data name="Edit Tag" xml:space="preserve">
+    <value>編輯標籤</value>
+  </data>
+  <data name="Edit Taxonomy" xml:space="preserve">
+    <value>編輯分類法</value>
+  </data>
+  <data name="Edit User" xml:space="preserve">
+    <value>編輯用戶</value>
+  </data>
+  <data name="Edit VIP Membership" xml:space="preserve">
+    <value>編輯 VIP 會員資格</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="Exam Management" xml:space="preserve">
+    <value>考試管理</value>
+  </data>
+  <data name="Exams" xml:space="preserve">
+    <value>考試</value>
+  </data>
+  <data name="Export Questions" xml:space="preserve">
+    <value>匯出題目</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>功能</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>反饋</value>
+  </data>
+  <data name="Finance Reports" xml:space="preserve">
+    <value>財務報告</value>
+  </data>
+  <data name="Global Settings" xml:space="preserve">
+    <value>全球設定</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>首頁</value>
+  </data>
+  <data name="Import Questions" xml:space="preserve">
+    <value>匯入問題</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>索引</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>資訊</value>
+  </data>
+  <data name="Join Official Exam" xml:space="preserve">
+    <value>參加正式考試</value>
+  </data>
+  <data name="Knowledge Points" xml:space="preserve">
+    <value>知識要點</value>
+  </data>
+  <data name="Lockout" xml:space="preserve">
+    <value>帳戶被鎖定</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登入</value>
+  </data>
+  <data name="Login to get access to all features." xml:space="preserve">
+    <value>登入以使用所有功能。</value>
+  </data>
+  <data name="Manage" xml:space="preserve">
+    <value>管理</value>
+  </data>
+  <data name="Marketing" xml:space="preserve">
+    <value>市場推廣</value>
+  </data>
+  <data name="Marketing Management" xml:space="preserve">
+    <value>市場推廣管理</value>
+  </data>
+  <data name="Monthly Finance Report Details" xml:space="preserve">
+    <value>每月財務報告詳情</value>
+  </data>
+  <data name="News" xml:space="preserve">
+    <value>新聞</value>
+  </data>
+  <data name="Papers" xml:space="preserve">
+    <value>試卷</value>
+  </data>
+  <data name="Payment Management" xml:space="preserve">
+    <value>付款管理</value>
+  </data>
+  <data name="Payment Orders" xml:space="preserve">
+    <value>付款訂單</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>個人</value>
+  </data>
+  <data name="Practice Session" xml:space="preserve">
+    <value>練習會話</value>
+  </data>
+  <data name="Practice Test" xml:space="preserve">
+    <value>練習測驗</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>個人檔案</value>
+  </data>
+  <data name="Profile Settings" xml:space="preserve">
+    <value>檔案設定</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>問題</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="Role Details" xml:space="preserve">
+    <value>角色詳情</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>角色</value>
+  </data>
+  <data name="Search Content" xml:space="preserve">
+    <value>搜尋內容</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Sign out" xml:space="preserve">
+    <value>登出</value>
+  </data>
+  <data name="System" xml:space="preserve">
+    <value>系統</value>
+  </data>
+  <data name="System Info" xml:space="preserve">
+    <value>系統資訊</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>標籤</value>
+  </data>
+  <data name="Taxonomies" xml:space="preserve">
+    <value>分類法</value>
+  </data>
+  <data name="Taxonomies Management" xml:space="preserve">
+    <value>分類管理</value>
+  </data>
+  <data name="Test Papers" xml:space="preserve">
+    <value>試卷</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>未獲授權</value>
+  </data>
+  <data name="User Details" xml:space="preserve">
+    <value>用戶詳情</value>
+  </data>
+  <data name="User Feedbacks" xml:space="preserve">
+    <value>用戶反饋</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>用戶</value>
+  </data>
+  <data name="VIP Change History" xml:space="preserve">
+    <value>VIP 更改記錄</value>
+  </data>
+  <data name="VIP Members" xml:space="preserve">
+    <value>VIP 會員</value>
+  </data>
+  <data name="VIP Products" xml:space="preserve">
+    <value>VIP 產品</value>
+  </data>
+
+</root>

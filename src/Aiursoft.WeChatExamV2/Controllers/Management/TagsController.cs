@@ -1,0 +1,266 @@
+using Aiursoft.UiStack.Navigation;
+using Aiursoft.WebTools.Attributes;
+using Aiursoft.WeChatExamV2.Authorization;
+using Aiursoft.WeChatExamV2.Entities;
+using Aiursoft.WeChatExamV2.Models.TagsViewModels;
+using Aiursoft.WeChatExamV2.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Aiursoft.WeChatExamV2.Controllers.Management;
+
+[Authorize]
+[LimitPerMin]
+public class TagsController(
+    WeChatExamV2DbContext context, 
+    ITagService tagService,
+    ITaxonomyService taxonomyService) : Controller
+{
+    [RenderInNavBar(
+        NavGroupName = "Administration",
+        NavGroupOrder = 9999,
+        CascadedLinksGroupName = "Content Management",
+        CascadedLinksIcon = "folder-tree",
+        CascadedLinksOrder = 1,
+        LinkText = "Tags",
+        LinkOrder = 6)]
+    public async Task<IActionResult> Index(string? search, int? taxonomyId)
+    {
+        var tags = await tagService.SearchTagsAsync(search, taxonomyId);
+
+        // Get usage counts for each tag
+        var tagUsageCounts = new Dictionary<int, int>();
+        foreach (var tag in tags)
+        {
+            var count = await context.QuestionTags.CountAsync(qt => qt.TagId == tag.Id);
+            tagUsageCounts[tag.Id] = count;
+        }
+
+        var taxonomies = await taxonomyService.GetAllTaxonomiesAsync(includeCategory: true);
+
+        return this.StackView(new IndexViewModel
+        {
+            Tags = tags,
+            AllTaxonomies = taxonomies,
+            TagUsageCounts = tagUsageCounts,
+            SearchQuery = search,
+            TaxonomyId = taxonomyId,
+            AvailableTaxonomies = taxonomies.Select(t =>
+            {
+                var firstCategory = t.CategoryTaxonomies.FirstOrDefault()?.Category;
+                return new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = t.Id.ToString(),
+                    Text = firstCategory != null ? $"{t.Name} ({firstCategory.Title})" : t.Name,
+                    Selected = t.Id == taxonomyId
+                };
+            })
+        });
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanManageTags)]
+    public async Task<IActionResult> Create()
+    {
+        var taxonomies = await taxonomyService.GetAllTaxonomiesAsync(includeCategory: true);
+
+        return this.StackView(new CreateViewModel
+        {
+            AvailableTaxonomies = taxonomies.Select(t =>
+            {
+                var firstCategory = t.CategoryTaxonomies.FirstOrDefault()?.Category;
+                return new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = t.Id.ToString(),
+                    Text = firstCategory != null ? $"{t.Name} ({firstCategory.Title})" : t.Name
+                };
+            })
+        });
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanManageTags)]
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Create(CreateViewModel model)
+    {
+        if (!ModelState.IsValid)
+        {
+            var taxonomies = await taxonomyService.GetAllTaxonomiesAsync(includeCategory: true);
+            model.AvailableTaxonomies = taxonomies.Select(t =>
+            {
+                var firstCategory = t.CategoryTaxonomies.FirstOrDefault()?.Category;
+                return new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = t.Id.ToString(),
+                    Text = firstCategory != null ? $"{t.Name} ({firstCategory.Title})" : t.Name
+                };
+            });
+            return this.StackView(model);
+        }
+
+        var tag = new Tag
+        {
+            DisplayName = model.DisplayName,
+            NormalizedName = model.DisplayName.Trim().ToUpperInvariant(),
+            TaxonomyId = model.TaxonomyId,
+            IsFree = model.IsFree,
+            OrderIndex = (await context.Tags.Where(t => t.TaxonomyId == model.TaxonomyId).MaxAsync(t => (int?)t.OrderIndex) ?? -1) + 1
+        };
+
+        await tagService.CreateTagAsync(tag);
+
+        return RedirectToAction(nameof(Index));
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanManageTags)]
+    [HttpPost]
+    public async Task<IActionResult> UpdateOrder([FromBody] int[] ids)
+    {
+        for (var i = 0; i < ids.Length; i++)
+        {
+            var tag = await context.Tags.FindAsync(ids[i]);
+            if (tag != null)
+            {
+                tag.OrderIndex = i;
+            }
+        }
+        await context.SaveChangesAsync();
+        return Ok();
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanManageTags)]
+    public async Task<IActionResult> Edit(int? id, string? checkReturnUrl = null)
+    {
+        ViewData["CheckReturnUrl"] = Url.IsLocalUrl(checkReturnUrl) ? checkReturnUrl : null;
+        if (id == null) return NotFound();
+
+        var tag = await tagService.GetTagByIdAsync(id.Value);
+        if (tag == null) return NotFound();
+
+        var taxonomies = await taxonomyService.GetAllTaxonomiesAsync(includeCategory: true);
+
+        return this.StackView(new EditViewModel
+        {
+            Id = tag.Id,
+            DisplayName = tag.DisplayName,
+            TaxonomyId = tag.TaxonomyId,
+            IsFree = tag.IsFree,
+            AvailableTaxonomies = taxonomies.Select(t =>
+            {
+                var firstCategory = t.CategoryTaxonomies.FirstOrDefault()?.Category;
+                return new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = t.Id.ToString(),
+                    Text = firstCategory != null ? $"{t.Name} ({firstCategory.Title})" : t.Name
+                };
+            })
+        });
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanManageTags)]
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(EditViewModel model, string? checkReturnUrl = null)
+    {
+        ViewData["CheckReturnUrl"] = Url.IsLocalUrl(checkReturnUrl) ? checkReturnUrl : null;
+        if (!ModelState.IsValid)
+        {
+            var taxonomies = await taxonomyService.GetAllTaxonomiesAsync(includeCategory: true);
+            model.AvailableTaxonomies = taxonomies.Select(t =>
+            {
+                var firstCategory = t.CategoryTaxonomies.FirstOrDefault()?.Category;
+                return new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = t.Id.ToString(),
+                    Text = firstCategory != null ? $"{t.Name} ({firstCategory.Title})" : t.Name
+                };
+            });
+            return this.StackView(model);
+        }
+
+        var tag = await tagService.GetTagByIdAsync(model.Id);
+        if (tag == null) return NotFound();
+
+        if (tag.TaxonomyId != model.TaxonomyId)
+        {
+            tag.OrderIndex = (await context.Tags.Where(t => t.TaxonomyId == model.TaxonomyId).MaxAsync(t => (int?)t.OrderIndex) ?? -1) + 1;
+        }
+
+        tag.DisplayName = model.DisplayName;
+        tag.NormalizedName = model.DisplayName.Trim().ToUpperInvariant();
+        tag.TaxonomyId = model.TaxonomyId;
+        tag.IsFree = model.IsFree;
+
+        await tagService.UpdateTagAsync(tag);
+
+        if (Url.IsLocalUrl(checkReturnUrl)) return LocalRedirect(checkReturnUrl);
+
+        return RedirectToAction(nameof(Index));
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanManageTags)]
+    public async Task<IActionResult> Delete(int? id)
+    {
+        if (id == null) return NotFound();
+
+        var tag = await tagService.GetTagByIdAsync(id.Value);
+        if (tag == null) return NotFound();
+
+        var usageCount = await context.QuestionTags.CountAsync(qt => qt.TagId == id.Value);
+
+        return this.StackView(new DeleteViewModel
+        {
+            Tag = tag,
+            UsageCount = usageCount
+        });
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanManageTags)]
+    [HttpPost]
+    [ActionName("Delete")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> DeleteConfirmed(int id)
+    {
+        await tagService.DeleteTagAsync(id);
+        return RedirectToAction(nameof(Index));
+    }
+
+    [Authorize(Policy = AppPermissionNames.CanManageTags)]
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> BatchDelete([FromBody] BatchDeleteRequest request)
+    {
+        if (!request.TagIds.Any())
+        {
+            return BadRequest("No tags selected for deletion.");
+        }
+
+        var deletedIds = new List<int>();
+        foreach (var tagId in request.TagIds)
+        {
+            try
+            {
+                await tagService.DeleteTagAsync(tagId);
+                deletedIds.Add(tagId);
+            }
+            catch (Exception)
+            {
+                // Skip tags that cannot be deleted (e.g. maybe due to constraints if any, though DeleteTagAsync should handle it)
+            }
+        }
+
+        return Json(new BatchDeleteResult
+        {
+            DeletedCount = deletedIds.Count,
+            DeletedIds = deletedIds.ToArray()
+        });
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Autocomplete(string query)
+    {
+        var tags = await tagService.SearchTagsAsync(query);
+        var result = tags.Select(t => new { t.Id, t.DisplayName }).Take(10).ToList();
+        return Json(result);
+    }
+}

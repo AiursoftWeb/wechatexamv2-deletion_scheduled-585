@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Abandon" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="Adopt" xml:space="preserve">
+    <value>Godkänn</value>
+  </data>
+  <data name="Adopt All" xml:space="preserve">
+    <value>Anta alla</value>
+  </data>
+  <data name="AI New Answer" xml:space="preserve">
+    <value>AI nytt svar</value>
+  </data>
+  <data name="AI New Explanation" xml:space="preserve">
+    <value>AI ny förklaring</value>
+  </data>
+  <data name="AI Task Preview" xml:space="preserve">
+    <value>AI-uppgiftsförhandsgranskning</value>
+  </data>
+  <data name="Are you sure you want to adopt all AI suggestions?" xml:space="preserve">
+    <value>Är du säker på att du vill anta alla AI-förslag?</value>
+  </data>
+  <data name="Are you sure you want to cancel all pending tasks?" xml:space="preserve">
+    <value>Är du säker på att du vill avbryta alla pågående uppgifter?</value>
+  </data>
+  <data name="Auto Categorize" xml:space="preserve">
+    <value>Automatisk kategorisering</value>
+  </data>
+  <data name="Auto Tagging" xml:space="preserve">
+    <value>Automatisk taggning</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Tillbaka</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Avbryt</value>
+  </data>
+  <data name="Cancel All" xml:space="preserve">
+    <value>Avbryt alla</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Slutförd</value>
+  </data>
+  <data name="Current Answer" xml:space="preserve">
+    <value>Aktuellt svar</value>
+  </data>
+  <data name="Current Category" xml:space="preserve">
+    <value>Aktuell kategori</value>
+  </data>
+  <data name="Current Tags" xml:space="preserve">
+    <value>Aktuella taggar</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Redigera</value>
+  </data>
+  <data name="Edit AI Explanation" xml:space="preserve">
+    <value>Redigera AI-förklaring</value>
+  </data>
+  <data name="Edit AI Suggestion" xml:space="preserve">
+    <value>Redigera AI-förslag</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fel</value>
+  </data>
+  <data name="Failed to adopt suggestions." xml:space="preserve">
+    <value>Misslyckades med att anta förslag.</value>
+  </data>
+  <data name="Generate Answer" xml:space="preserve">
+    <value>Generera svar</value>
+  </data>
+  <data name="Generate Explanation" xml:space="preserve">
+    <value>Generera förklaring</value>
+  </data>
+  <data name="Old Explanation" xml:space="preserve">
+    <value>Gammal förklaring</value>
+  </data>
+  <data name="Processing..." xml:space="preserve">
+    <value>Bearbetar...</value>
+  </data>
+  <data name="Save &amp; Adopt" xml:space="preserve">
+    <value>Spara &amp; Adoptera</value>
+  </data>
+  <data name="Select Category" xml:space="preserve">
+    <value>Välj kategori</value>
+  </data>
+  <data name="Suggested Category" xml:space="preserve">
+    <value>Föreslagen kategori</value>
+  </data>
+  <data name="Suggested Tags" xml:space="preserve">
+    <value>Förslagna taggar</value>
+  </data>
+  <data name="Tasks are still processing. Do you want to adopt completed ones and abandon the rest?" xml:space="preserve">
+    <value>Uppgifterna bearbetas fortfarande. Vill du anta de färdiga och avbryta resten?</value>
+  </data>
+  <data name="Too many requests, waiting 30s..." xml:space="preserve">
+    <value>För många förfrågningar, väntar 30s...</value>
+  </data>
+
+</root>

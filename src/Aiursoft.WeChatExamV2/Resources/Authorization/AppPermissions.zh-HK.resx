@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Any KnowledgePoint" xml:space="preserve">
+    <value>新增任何知識點</value>
+  </data>
+  <data name="Add Articles" xml:space="preserve">
+    <value>新增文章</value>
+  </data>
+  <data name="Add Distribution Channels" xml:space="preserve">
+    <value>新增分發渠道</value>
+  </data>
+  <data name="Add Exams" xml:space="preserve">
+    <value>新增考試</value>
+  </data>
+  <data name="Add New Roles" xml:space="preserve">
+    <value>新增角色</value>
+  </data>
+  <data name="Add New Users" xml:space="preserve">
+    <value>新增使用者</value>
+  </data>
+  <data name="Add Papers" xml:space="preserve">
+    <value>新增論文</value>
+  </data>
+  <data name="Add Questions" xml:space="preserve">
+    <value>新增題目</value>
+  </data>
+  <data name="Add VIP Products" xml:space="preserve">
+    <value>新增 VIP 產品</value>
+  </data>
+  <data name="Allows adding of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>允許新增任何知識點，不論其擁有者為何。</value>
+  </data>
+  <data name="Allows adding of articles, regardless of ownership." xml:space="preserve">
+    <value>允許新增文章，不論擁有權。</value>
+  </data>
+  <data name="Allows adding of exams, regardless of ownership." xml:space="preserve">
+    <value>允許新增考試，不論擁有權。</value>
+  </data>
+  <data name="Allows adding of papers, regardless of ownership." xml:space="preserve">
+    <value>允許添加試卷，不論所有權。</value>
+  </data>
+  <data name="Allows adding of questions, regardless of ownership." xml:space="preserve">
+    <value>允許新增題目，不論擁有權。</value>
+  </data>
+  <data name="Allows assigning or removing roles for any user." xml:space="preserve">
+    <value>允許為任何用戶分配或移除角色。</value>
+  </data>
+  <data name="Allows creating new VIP products with category, price, and duration settings." xml:space="preserve">
+    <value>允許建立具有類別、價格及有效期設定之新 VIP 產品。</value>
+  </data>
+  <data name="Allows deleting tags from the system. Note that deleting a tag will not delete associated questions." xml:space="preserve">
+    <value>允許從系統中刪除標籤。注意：刪除標籤不會刪除相關問題。</value>
+  </data>
+  <data name="Allows deleting user feedbacks." xml:space="preserve">
+    <value>允許刪除用戶反饋。</value>
+  </data>
+  <data name="Allows deletion of any category, regardless of ownership." xml:space="preserve">
+    <value>允許刪除任何類別，不論其擁有者為何。</value>
+  </data>
+  <data name="Allows deletion of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>允許刪除任何知識點，不論其擁有者為何。</value>
+  </data>
+  <data name="Allows deletion of articles, regardless of ownership." xml:space="preserve">
+    <value>允許刪除文章，不論所有權。</value>
+  </data>
+  <data name="Allows deletion of exams, regardless of ownership." xml:space="preserve">
+    <value>允許刪除試卷，不論擁有權屬。</value>
+  </data>
+  <data name="Allows deletion of papers, regardless of ownership." xml:space="preserve">
+    <value>允許刪除試卷，不論所有權。</value>
+  </data>
+  <data name="Allows deletion of questions, regardless of ownership." xml:space="preserve">
+    <value>允許刪除問題，不論擁有權。</value>
+  </data>
+  <data name="Allows editing of any category, regardless of ownership." xml:space="preserve">
+    <value>允許編輯任何類別，不論擁有權。</value>
+  </data>
+  <data name="Allows editing of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>允許編輯任何知識點，不論其擁有者。</value>
+  </data>
+  <data name="Allows editing of articles, regardless of ownership." xml:space="preserve">
+    <value>允許編輯文章，不論所有權。</value>
+  </data>
+  <data name="Allows editing of exams, regardless of ownership." xml:space="preserve">
+    <value>允許編輯試卷，不論所有權歸屬。</value>
+  </data>
+  <data name="Allows editing of papers, regardless of ownership." xml:space="preserve">
+    <value>允許編輯文件，不論所有權。</value>
+  </data>
+  <data name="Allows editing of questions, regardless of ownership." xml:space="preserve">
+    <value>允許編輯問題，不論擁有權。</value>
+  </data>
+  <data name="Allows extracting knowledge points, questions, tags from articles using AI." xml:space="preserve">
+    <value>容許利用人工智能從文章中提取知識要點、問題及標籤。</value>
+  </data>
+  <data name="Allows managing accounting." xml:space="preserve">
+    <value>允許管理會計。</value>
+  </data>
+  <data name="Allows modification of distribution channel details and enabling/disabling channels." xml:space="preserve">
+    <value>允許修改分發管道詳情及啟用/停用管道。</value>
+  </data>
+  <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
+    <value>允許修改角色名稱及其分配的權限。</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>允許修改使用者詳細資料，例如電郵地址和角色，並可重設使用者密碼。</value>
+  </data>
+  <data name="Allows modifying global system settings." xml:space="preserve">
+    <value>允許修改系統的全域設定。</value>
+  </data>
+  <data name="Allows modifying VIP product settings including price, duration, and enabled status." xml:space="preserve">
+    <value>允許修改 VIP 產品設定，包括價格、時長及啟用狀態。</value>
+  </data>
+  <data name="Allows Reading of exams, regardless of ownership." xml:space="preserve">
+    <value>允許閱讀試卷，不論所有權歸屬。</value>
+  </data>
+  <data name="Allows reading of questions, regardless of ownership." xml:space="preserve">
+    <value>允許閱讀問題，不論擁有權屬。</value>
+  </data>
+  <data name="Allows the permanent deletion of distribution channels." xml:space="preserve">
+    <value>容許永久刪除分發管道。</value>
+  </data>
+  <data name="Allows the permanent deletion of roles." xml:space="preserve">
+    <value>允許永久刪除角色。</value>
+  </data>
+  <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
+    <value>允許永久刪除用戶帳戶。</value>
+  </data>
+  <data name="Allows the permanent deletion of VIP products." xml:space="preserve">
+    <value>允許永久刪除 VIP 產品。</value>
+  </data>
+  <data name="Allows triggering background jobs to optimize question answers and explanations using AI." xml:space="preserve">
+    <value>容許觸發背景作業，利用人工智能優化問題答案及解釋。</value>
+  </data>
+  <data name="Allows updating the status of user feedbacks." xml:space="preserve">
+    <value>允許更新用戶反饋的狀態。</value>
+  </data>
+  <data name="Allows viewing and managing background job queues and their execution status." xml:space="preserve">
+    <value>允許檢視及管理背景作業佇列及其執行狀態。</value>
+  </data>
+  <data name="Allows viewing payment orders, payment details, and user payment history." xml:space="preserve">
+    <value>允許查看付款訂單、付款詳情及用戶付款記錄。</value>
+  </data>
+  <data name="Allows viewing system-level information and settings." xml:space="preserve">
+    <value>允許查看系統級資訊和設定。</value>
+  </data>
+  <data name="Allows viewing the list of all users." xml:space="preserve">
+    <value>允許查看所有用戶列表。</value>
+  </data>
+  <data name="Allows viewing the list of distribution channels and their statistics." xml:space="preserve">
+    <value>允許檢視分發渠道清單及其統計數據。</value>
+  </data>
+  <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
+    <value>允許查看角色列表及其分配的權限。</value>
+  </data>
+  <data name="Allows viewing the list of user feedbacks." xml:space="preserve">
+    <value>允許檢視用戶反饋清單。</value>
+  </data>
+  <data name="Allows viewing VIP products and their configuration." xml:space="preserve">
+    <value>允許查看 VIP 產品及其配置。</value>
+  </data>
+  <data name="Allows viewing, adding, and deleting VIP memberships for users." xml:space="preserve">
+    <value>允許查看、新增及刪除用戶的 VIP 會員資格。</value>
+  </data>
+  <data name="Assign Roles to Users" xml:space="preserve">
+    <value>為用戶分配角色</value>
+  </data>
+  <data name="Delete Any Category" xml:space="preserve">
+    <value>刪除任何類別</value>
+  </data>
+  <data name="Delete Any KnowledgePoint" xml:space="preserve">
+    <value>刪除任何知識點</value>
+  </data>
+  <data name="Delete Articles" xml:space="preserve">
+    <value>刪除文章</value>
+  </data>
+  <data name="Delete Distribution Channels" xml:space="preserve">
+    <value>刪除分發渠道</value>
+  </data>
+  <data name="Delete Exams" xml:space="preserve">
+    <value>刪除測驗</value>
+  </data>
+  <data name="Delete Feedbacks" xml:space="preserve">
+    <value>刪除反饋</value>
+  </data>
+  <data name="Delete Papers" xml:space="preserve">
+    <value>刪除試卷</value>
+  </data>
+  <data name="Delete Questions" xml:space="preserve">
+    <value>刪除題目</value>
+  </data>
+  <data name="Delete Roles" xml:space="preserve">
+    <value>刪除角色</value>
+  </data>
+  <data name="Delete Users" xml:space="preserve">
+    <value>刪除用戶</value>
+  </data>
+  <data name="Delete VIP Products" xml:space="preserve">
+    <value>刪除 VIP 產品</value>
+  </data>
+  <data name="Edit Any Category" xml:space="preserve">
+    <value>編輯任何類別</value>
+  </data>
+  <data name="Edit Any KnowledgePoint" xml:space="preserve">
+    <value>編輯任何知識點</value>
+  </data>
+  <data name="Edit Articles" xml:space="preserve">
+    <value>編輯文章</value>
+  </data>
+  <data name="Edit Distribution Channels" xml:space="preserve">
+    <value>編輯分發管道</value>
+  </data>
+  <data name="Edit Exams" xml:space="preserve">
+    <value>編輯考試</value>
+  </data>
+  <data name="Edit Feedbacks" xml:space="preserve">
+    <value>編輯反饋</value>
+  </data>
+  <data name="Edit Papers" xml:space="preserve">
+    <value>編輯文件</value>
+  </data>
+  <data name="Edit Questions" xml:space="preserve">
+    <value>編輯試題</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>編輯角色資訊</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>編輯用戶資料</value>
+  </data>
+  <data name="Edit VIP Products" xml:space="preserve">
+    <value>編輯 VIP 產品</value>
+  </data>
+  <data name="Grants permission to create new distribution channels." xml:space="preserve">
+    <value>授予建立新分發渠道的權限。</value>
+  </data>
+  <data name="Grants permission to create new roles." xml:space="preserve">
+    <value>授予創建新角色嘅權限。</value>
+  </data>
+  <data name="Grants permission to create new user accounts." xml:space="preserve">
+    <value>授予建立新用戶帳戶的權限。</value>
+  </data>
+  <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
+    <value>授予重啟應用程式實例嘅權限。可能會導致服務中斷，但所有設定同快取將會重新載入。</value>
+  </data>
+  <data name="Manage Accounting" xml:space="preserve">
+    <value>管理會計</value>
+  </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>管理系統設定</value>
+  </data>
+  <data name="Manage Tags" xml:space="preserve">
+    <value>管理標籤</value>
+  </data>
+  <data name="Manage VIP Members" xml:space="preserve">
+    <value>管理 VIP 會員</value>
+  </data>
+  <data name="Read Distribution Channels" xml:space="preserve">
+    <value>讀取分發渠道</value>
+  </data>
+  <data name="Read Exams" xml:space="preserve">
+    <value>讀取考試</value>
+  </data>
+  <data name="Read Feedbacks" xml:space="preserve">
+    <value>閱讀反饋</value>
+  </data>
+  <data name="Read Payment Orders" xml:space="preserve">
+    <value>閱讀付款訂單</value>
+  </data>
+  <data name="Read Questions" xml:space="preserve">
+    <value>讀取問題</value>
+  </data>
+  <data name="Read Roles" xml:space="preserve">
+    <value>讀取角色</value>
+  </data>
+  <data name="Read Users" xml:space="preserve">
+    <value>讀取用戶</value>
+  </data>
+  <data name="Read VIP Products" xml:space="preserve">
+    <value>閱讀 VIP 產品</value>
+  </data>
+  <data name="Reboot This App" xml:space="preserve">
+    <value>重新啟動此應用程式</value>
+  </data>
+  <data name="Trigger Optimization Jobs" xml:space="preserve">
+    <value>觸發優化作業</value>
+  </data>
+  <data name="Use AI Extractor" xml:space="preserve">
+    <value>使用 AI 提取器</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>檢視背景作業</value>
+  </data>
+  <data name="View System Context" xml:space="preserve">
+    <value>檢視系統內容</value>
+  </data>
+
+</root>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="-- Select --" xml:space="preserve">
+    <value>-- Chọn --</value>
+  </data>
+  <data name="-- Select Category (Optional) --" xml:space="preserve">
+    <value>-- Chọn Danh mục (Tùy chọn) --</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>Thêm câu hỏi</value>
+  </data>
+  <data name="Add Selected" xml:space="preserve">
+    <value>Thêm các mục đã chọn</value>
+  </data>
+  <data name="Add Selected ({0})" xml:space="preserve">
+    <value>Thêm mục đã chọn ({0})</value>
+  </data>
+  <data name="Advanced: Tag Expression (MTQL)" xml:space="preserve">
+    <value>Nâng cao: Biểu thức thẻ (MTQL)</value>
+  </data>
+  <data name="AI Semantic Search" xml:space="preserve">
+    <value>Tìm kiếm ngữ nghĩa bằng AI</value>
+  </data>
+  <data name="AI semantic search was not used. Showing keyword results." xml:space="preserve">
+    <value>Không sử dụng tìm kiếm ngữ nghĩa bằng AI. Đang hiển thị kết quả tìm kiếm theo từ khóa.</value>
+  </data>
+  <data name="All Types" xml:space="preserve">
+    <value>Tất cả loại</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Câu trả lời</value>
+  </data>
+  <data name="Batch Add via MTQL" xml:space="preserve">
+    <value>Thêm hàng loạt qua MTQL</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Hủy bỏ</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="Combine tags, for example: rock &amp;&amp; not metal" xml:space="preserve">
+    <value>Kết hợp các thẻ, ví dụ: rock &amp;&amp; không phải metal</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="Default Score" xml:space="preserve">
+    <value>Điểm mặc định</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>xóa</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Bản nháp</value>
+  </data>
+  <data name="e.g. rock &amp;&amp; not metal" xml:space="preserve">
+    <value>ví dụ: rock &amp;&amp; không phải metal</value>
+  </data>
+  <data name="Edit Paper" xml:space="preserve">
+    <value>Sửa bài kiểm tra</value>
+  </data>
+  <data name="Enter a few words to find questions." xml:space="preserve">
+    <value>Nhập vài từ để tìm câu hỏi.</value>
+  </data>
+  <data name="Enter a topic or a few words..." xml:space="preserve">
+    <value>Nhập một chủ đề hoặc vài từ...</value>
+  </data>
+  <data name="Exam Question Type" xml:space="preserve">
+    <value>Loại câu hỏi thi</value>
+  </data>
+  <data name="Find exact words and related meanings." xml:space="preserve">
+    <value>Tìm từ ngữ chính xác và các nghĩa liên quan.</value>
+  </data>
+  <data name="Find Questions" xml:space="preserve">
+    <value>Tìm câu hỏi</value>
+  </data>
+  <data name="Find Similar Questions" xml:space="preserve">
+    <value>Tìm câu hỏi tương tự</value>
+  </data>
+  <data name="Free Paper" xml:space="preserve">
+    <value>Bài kiểm tra miễn phí</value>
+  </data>
+  <data name="Freeze" xml:space="preserve">
+    <value>Đóng băng</value>
+  </data>
+  <data name="Keyword Search" xml:space="preserve">
+    <value>Tìm kiếm theo từ khóa</value>
+  </data>
+  <data name="Mark as Publishable" xml:space="preserve">
+    <value>Đánh dấu là có thể đăng</value>
+  </data>
+  <data name="Match words in the question text, answers and explanations." xml:space="preserve">
+    <value>Khớp các từ trong nội dung câu hỏi, câu trả lời và phần giải thích.</value>
+  </data>
+  <data name="No questions found." xml:space="preserve">
+    <value>Không tìm thấy câu hỏi nào.</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="Paper Info" xml:space="preserve">
+    <value>Thông tin Bài thi</value>
+  </data>
+  <data name="Press Enter to add a tag, or select from suggestions. Click X to remove." xml:space="preserve">
+    <value>Nhấn Enter để thêm thẻ, hoặc chọn từ các gợi ý. Nhấp vào X để xóa.</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Xem trước</value>
+  </data>
+  <data name="Publish Snapshot" xml:space="preserve">
+    <value>Công bố Bản chụp</value>
+  </data>
+  <data name="Publishable" xml:space="preserve">
+    <value>Có thể xuất bản</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Câu hỏi</value>
+  </data>
+  <data name="Questions in Paper" xml:space="preserve">
+    <value>Câu hỏi trong bài thi</value>
+  </data>
+  <data name="Real Exam" xml:space="preserve">
+    <value>Đề thi thật</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="Revert to Draft" xml:space="preserve">
+    <value>Hoàn tác về bản nháp</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="Save and return to content checks" xml:space="preserve">
+    <value>Lưu và quay lại phần kiểm tra nội dung</value>
+  </data>
+  <data name="Score" xml:space="preserve">
+    <value>Điểm</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="Search &amp; Add Questions" xml:space="preserve">
+    <value>Tìm kiếm và Thêm Câu hỏi</value>
+  </data>
+  <data name="Search is unavailable. Please try again." xml:space="preserve">
+    <value>Tính năng tìm kiếm hiện không khả dụng. Vui lòng thử lại.</value>
+  </data>
+  <data name="Search Mode" xml:space="preserve">
+    <value>Chế độ tìm kiếm</value>
+  </data>
+  <data name="Searching..." xml:space="preserve">
+    <value>Đang tìm kiếm...</value>
+  </data>
+  <data name="Select All Results" xml:space="preserve">
+    <value>Chọn tất cả kết quả</value>
+  </data>
+  <data name="Select Question" xml:space="preserve">
+    <value>Chọn câu hỏi</value>
+  </data>
+  <data name="Selected Questions" xml:space="preserve">
+    <value>Câu hỏi đã chọn</value>
+  </data>
+  <data name="Selecting a category will filter available questions." xml:space="preserve">
+    <value>Chọn một danh mục sẽ lọc các câu hỏi có sẵn.</value>
+  </data>
+  <data name="Selections are kept when you search again. Add them when you are ready." xml:space="preserve">
+    <value>Các lựa chọn sẽ được giữ lại khi bạn tìm kiếm lần nữa. Hãy thêm chúng khi bạn sẵn sàng.</value>
+  </data>
+  <data name="Similar questions are unavailable. Please try again later." xml:space="preserve">
+    <value>Không thể tìm thấy câu hỏi tương tự. Vui lòng thử lại sau.</value>
+  </data>
+  <data name="Similar to: {0}" xml:space="preserve">
+    <value>Tương tự như: {0}</value>
+  </data>
+  <data name="Smart Search (Default)" xml:space="preserve">
+    <value>Tìm kiếm thông minh (Mặc định)</value>
+  </data>
+  <data name="Starting Order" xml:space="preserve">
+    <value>Thứ tự bắt đầu</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="Status Actions" xml:space="preserve">
+    <value>Hành động trạng thái</value>
+  </data>
+  <data name="Tag Expression Search (MTQL)" xml:space="preserve">
+    <value>Tìm kiếm theo biểu thức thẻ (MTQL)</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Thẻ</value>
+  </data>
+  <data name="Time Limit (minutes)" xml:space="preserve">
+    <value>Giới hạn thời gian (phút)</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+  <data name="Type to search or add tags..." xml:space="preserve">
+    <value>Gõ để tìm kiếm hoặc thêm thẻ...</value>
+  </data>
+  <data name="Up to five similar questions in the selected category, or all categories if none is selected. Existing paper questions are excluded. Select candidates to add; the original question stays unchanged." xml:space="preserve">
+    <value>Tối đa năm câu hỏi tương tự trong danh mục đã chọn, hoặc trong tất cả danh mục nếu chưa chọn danh mục nào. Các câu hỏi đã có trong đề thi sẽ bị loại trừ. Chọn các câu hỏi muốn thêm; câu hỏi ban đầu sẽ không bị thay đổi.</value>
+  </data>
+
+</root>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>الإجراءات</value>
+  </data>
+  <data name="Add Question" xml:space="preserve">
+    <value>إضافة سؤال</value>
+  </data>
+  <data name="AI Auto Categorize" xml:space="preserve">
+    <value>التصنيف التلقائي بالذكاء الاصطناعي</value>
+  </data>
+  <data name="AI Auto Tagging" xml:space="preserve">
+    <value>التصنيف التلقائي بالذكاء الاصطناعي</value>
+  </data>
+  <data name="AI Classify" xml:space="preserve">
+    <value>تصنيف بالذكاء الاصطناعي</value>
+  </data>
+  <data name="AI Classify - Select Categories" xml:space="preserve">
+    <value>تصنيف الذكاء الاصطناعي - اختيار الفئات</value>
+  </data>
+  <data name="AI Generate Answers" xml:space="preserve">
+    <value>إجابة ذكاء اصطناعي توليد</value>
+  </data>
+  <data name="AI Generate Explanations" xml:space="preserve">
+    <value>إنشاء تفسيرات بواسطة الذكاء الاصطناعي</value>
+  </data>
+  <data name="All Categories" xml:space="preserve">
+    <value>جميع الفئات</value>
+  </data>
+  <data name="All Types" xml:space="preserve">
+    <value>جميع الأنواع</value>
+  </data>
+  <data name="An error occurred during deletion." xml:space="preserve">
+    <value>حدث خطأ أثناء الحذف.</value>
+  </data>
+  <data name="An error occurred while starting AI answer generation." xml:space="preserve">
+    <value>حدث خطأ أثناء بدء إنشاء إجابة الذكاء الاصطناعي.</value>
+  </data>
+  <data name="An error occurred while starting AI categorization." xml:space="preserve">
+    <value>حدث خطأ أثناء بدء تصنيف الذكاء الاصطناعي.</value>
+  </data>
+  <data name="An error occurred while starting AI generation." xml:space="preserve">
+    <value>حدث خطأ أثناء بدء توليد الذكاء الاصطناعي.</value>
+  </data>
+  <data name="An error occurred while starting AI tagging." xml:space="preserve">
+    <value>حدث خطأ أثناء بدء وضع العلامات الذكية الاصطناعية.</value>
+  </data>
+  <data name="An error occurred while starting classification." xml:space="preserve">
+    <value>حدث خطأ أثناء بدء التصنيف.</value>
+  </data>
+  <data name="Apply Filters" xml:space="preserve">
+    <value>تطبيق الفلاتر</value>
+  </data>
+  <data name="Are you sure you want to delete" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد حذف</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>الفئة</value>
+  </data>
+  <data name="Confirm Batch Delete" xml:space="preserve">
+    <value>تأكيد الحذف الجماعي</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>المحتوى</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>تم الإنشاء</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Delete Selected" xml:space="preserve">
+    <value>حذف المحدد</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>التفاصيل</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>تاريخ الانتهاء</value>
+  </data>
+  <data name="Failed to delete questions. Please try again." xml:space="preserve">
+    <value>فشل حذف الأسئلة. يرجى المحاولة مرة أخرى.</value>
+  </data>
+  <data name="Failed to start AI answer generation." xml:space="preserve">
+    <value>فشل في بدء إنشاء إجابة الذكاء الاصطناعي</value>
+  </data>
+  <data name="Failed to start AI categorization." xml:space="preserve">
+    <value>فشل في بدء التصنيف الذكي الاصطناعي</value>
+  </data>
+  <data name="Failed to start AI generation." xml:space="preserve">
+    <value>فشل بدء توليد الذكاء الاصطناعي.</value>
+  </data>
+  <data name="Failed to start AI tagging." xml:space="preserve">
+    <value>فشل في بدء التصنيف التلقائي بالذكاء الاصطناعي.</value>
+  </data>
+  <data name="Failed to start classification." xml:space="preserve">
+    <value>فشل في بدء التصنيف.</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>تصفية</value>
+  </data>
+  <data name="Filters &amp; Search" xml:space="preserve">
+    <value>التصفية والبحث</value>
+  </data>
+  <data name="Go" xml:space="preserve">
+    <value>انتقل</value>
+  </data>
+  <data name="Items per page" xml:space="preserve">
+    <value>عناصر في الصفحة</value>
+  </data>
+  <data name="MTQL Query" xml:space="preserve">
+    <value>استعلام MTQL</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="No categories available. Please create categories first." xml:space="preserve">
+    <value>لا توجد فئات متاحة. يُرجى إنشاء الفئات أولاً.</value>
+  </data>
+  <data name="No questions found" xml:space="preserve">
+    <value>لم يتم العثور على أسئلة</value>
+  </data>
+  <data name="No questions found matching your criteria" xml:space="preserve">
+    <value>لم يتم العثور على أسئلة تطابق المعايير</value>
+  </data>
+  <data name="Please enter a valid page number between 1 and" xml:space="preserve">
+    <value>الرجاء إدخال رقم صفحة صالح بين 1 و</value>
+  </data>
+  <data name="Please select at least one category." xml:space="preserve">
+    <value>الرجاء تحديد فئة على الأقل.</value>
+  </data>
+  <data name="Please select at least one question." xml:space="preserve">
+    <value>يرجى اختيار سؤال واحد على الأقل.</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+  <data name="Question List" xml:space="preserve">
+    <value>قائمة الأسئلة</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>الأسئلة</value>
+  </data>
+  <data name="questions?" xml:space="preserve">
+    <value>الأسئلة؟</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>إعادة تعيين</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="Search Questions and Knowledge Points" xml:space="preserve">
+    <value>البحث عن الأسئلة والنقاط المعرفية</value>
+  </data>
+  <data name="Search questions and knowledge points..." xml:space="preserve">
+    <value>ابحث عن الأسئلة والنقاط المعرفية...</value>
+  </data>
+  <data name="Select All / Deselect All" xml:space="preserve">
+    <value>تحديد الكل / إلغاء تحديد الكل</value>
+  </data>
+  <data name="Select the candidate categories for AI classification. The AI will choose exactly one category for each question." xml:space="preserve">
+    <value>حدد الفئات المرشحة للتصنيف بواسطة الذكاء الاصطناعي. سيختار الذكاء الاصطناعي فئة واحدة بالضبط لكل سؤال.</value>
+  </data>
+  <data name="selected" xml:space="preserve">
+    <value>محددة</value>
+  </data>
+  <data name="Start Classification" xml:space="preserve">
+    <value>بدء التصنيف</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>تاريخ البدء</value>
+  </data>
+  <data name="Submitting..." xml:space="preserve">
+    <value>جاري الإرسال...</value>
+  </data>
+  <data name="Tag" xml:space="preserve">
+    <value>علامة</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>الوسوم</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>النص</value>
+  </data>
+  <data name="This action cannot be undone." xml:space="preserve">
+    <value>لا يمكن التراجع عن هذه الإجراء.</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+
+</root>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Option" xml:space="preserve">
+    <value>Προσθήκη Επιλογής</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Ακύρωση</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Κατηγορία</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Περιεχόμενο</value>
+  </data>
+  <data name="Correct" xml:space="preserve">
+    <value>Σωστή</value>
+  </data>
+  <data name="Custom order index. Lower numbers come first. Current max index is:" xml:space="preserve">
+    <value>Δείκτης προσαρμοσμένης σειράς. Οι χαμηλότεροι αριθμοί εμφανίζονται πρώτοι. Το τρέχον μέγιστο δείκτης είναι:</value>
+  </data>
+  <data name="Edit Question" xml:space="preserve">
+    <value>Επεξεργασία Ερώτησης</value>
+  </data>
+  <data name="Explanation" xml:space="preserve">
+    <value>Επεξήγηση</value>
+  </data>
+  <data name="Fill In" xml:space="preserve">
+    <value>Συμπλήρωση</value>
+  </data>
+  <data name="Fill In Correct (for fill in, JSON array)" xml:space="preserve">
+    <value>Σωστή Συμπλήρωση (για συμπλήρωση, πίνακας JSON)</value>
+  </data>
+  <data name="Grading Strategy" xml:space="preserve">
+    <value>Στρατηγική βαθμολόγησης</value>
+  </data>
+  <data name="Incorrect" xml:space="preserve">
+    <value>Λάθος</value>
+  </data>
+  <data name="Metadata (e.g. Choices JSON)" xml:space="preserve">
+    <value>Μεταδεδομένα (π.χ. Choices JSON)</value>
+  </data>
+  <data name="Option content" xml:space="preserve">
+    <value>Περιεχόμενο επιλογής</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Επιλογές</value>
+  </data>
+  <data name="Options (for single choice, JSON array)" xml:space="preserve">
+    <value>Επιλογές (για μονή επιλογή, πίνακας JSON)</value>
+  </data>
+  <data name="Order Index" xml:space="preserve">
+    <value>Δείκτης Ταξινόμησης</value>
+  </data>
+  <data name="Press Enter to add a tag, or select from suggestions. Click X to remove." xml:space="preserve">
+    <value>Πατήστε το Enter για να προσθέσετε μια ετικέτα ή επιλέξτε από τις προτάσεις. Κάντε κλικ στο X για να την αφαιρέσετε.</value>
+  </data>
+  <data name="Remove Option" xml:space="preserve">
+    <value>Αφαίρεση επιλογής</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Αποθήκευση</value>
+  </data>
+  <data name="Save and return to content checks" xml:space="preserve">
+    <value>Αποθήκευση και επιστροφή στους ελέγχους περιεχομένου</value>
+  </data>
+  <data name="Select category" xml:space="preserve">
+    <value>Επιλέξτε κατηγορία</value>
+  </data>
+  <data name="Select strategy" xml:space="preserve">
+    <value>Επιλέξτε στρατηγική</value>
+  </data>
+  <data name="Select type" xml:space="preserve">
+    <value>Επιλέξτε τύπο</value>
+  </data>
+  <data name="Single Choice" xml:space="preserve">
+    <value>Μονή Επιλογή</value>
+  </data>
+  <data name="Single Correct (for single choice)" xml:space="preserve">
+    <value>Μονή Σωστή (για μονή επιλογή)</value>
+  </data>
+  <data name="Standard Answer" xml:space="preserve">
+    <value>Πρότυπη Απάντηση</value>
+  </data>
+  <data name="Tags" xml:space="preserve">
+    <value>Ετικέτες</value>
+  </data>
+  <data name="Tags (space separated)" xml:space="preserve">
+    <value>Ετικέτες (χωρισμένες με κενό)</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Κείμενο</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Τύπος</value>
+  </data>
+  <data name="Type to search or add tags..." xml:space="preserve">
+    <value>Πληκτρολογήστε για αναζήτηση ή προσθήκη ετικετών...</value>
+  </data>
+
+</root>

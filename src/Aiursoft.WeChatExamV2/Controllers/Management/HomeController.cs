@@ -1,0 +1,59 @@
+using Aiursoft.UiStack.Navigation;
+using Aiursoft.WebTools.Attributes;
+using Aiursoft.WeChatExamV2.Models.HomeViewModels;
+using Aiursoft.WeChatExamV2.Services;
+using Aiursoft.Canon.TaskQueue;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+
+namespace Aiursoft.WeChatExamV2.Controllers.Management;
+
+[Authorize]
+[LimitPerMin]
+public class HomeController : Controller
+{
+    [AllowAnonymous]
+    public IActionResult Index()
+    {
+        return this.SimpleView(new IndexViewModel());
+    }
+
+    [HttpGet]
+    [Authorize]
+    [RenderInNavBar(
+        NavGroupName = "Features",
+        NavGroupOrder = 1,
+        CascadedLinksGroupName = "Home",
+        CascadedLinksIcon = "home",
+        CascadedLinksOrder = 1,
+        LinkText = "Ask Ollama",
+        LinkOrder = 2)]
+    public IActionResult AskOllama()
+    {
+        return this.StackView(new AskOllamaViewModel
+        {
+            PageTitle = "Ask Ollama"
+        });
+    }
+
+    [HttpPost]
+    [Authorize]
+    public IActionResult AskOllama(string question, [FromServices] ServiceTaskQueue taskQueue)
+    {
+        if (string.IsNullOrWhiteSpace(question))
+        {
+            return this.StackView(new AskOllamaViewModel
+            {
+                Question = question
+            });
+        }
+
+        taskQueue.QueueWithDependency<IOllamaService>(
+            queueName: "OllamaChat",
+            taskName: $"Ask Ollama: {question}",
+            task: async (ollamaService) => await ollamaService.AskQuestion(question)
+        );
+
+        return RedirectToAction("Index", "Jobs");
+    }
+}

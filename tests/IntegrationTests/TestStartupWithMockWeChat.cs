@@ -1,0 +1,169 @@
+using Aiursoft.CSTools.Tools;
+using Aiursoft.DbTools.Switchable;
+using Aiursoft.Scanner;
+using Aiursoft.UiStack;
+using Aiursoft.UiStack.Layout;
+using Aiursoft.UiStack.Navigation;
+using Aiursoft.WebTools.Abstractions.Models;
+using Aiursoft.WeChatExamV2.Configuration;
+using Aiursoft.WeChatExamV2.InMemory;
+using Aiursoft.WeChatExamV2.MySql;
+using Aiursoft.WeChatExamV2.Services;
+using Aiursoft.WeChatExamV2.Services.Authentication;
+using Aiursoft.WeChatExamV2.Sqlite;
+using Aiursoft.GptClient.Services;
+using Aiursoft.Canon.TaskQueue;
+using Aiursoft.Canon.BackgroundJobs;
+using Aiursoft.Canon.ScheduledTasks;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Aiursoft.WeChatExamV2.Tests.TestServices;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+
+namespace Aiursoft.WeChatExamV2.Tests.IntegrationTests;
+
+/// <summary>
+/// 测试专用的Startup类，用于注册Mock的WeChatService
+/// </summary>
+public class TestStartupWithMockWeChat : IWebStartup
+{
+    public static StubWeChatService? MockWeChatService { get; set; }
+    public static StubWeChatPayService? MockWeChatPayService { get; set; }
+    public static StubDistributionChannelService? MockDistributionChannelService { get; set; }
+    public static StubOllamaService? MockOllamaService { get; set; }
+    public static StubVipProductService? MockVipProductService { get; set; }
+
+    public void ConfigureServices(IConfiguration configuration, IWebHostEnvironment environment, IServiceCollection services)
+    {
+        // AppSettings.
+        services.Configure<AppSettings>(configuration.GetSection("AppSettings"));
+
+        // Relational database
+        var (connectionString, dbType, allowCache) = configuration.GetDbSettings();
+        services.AddSwitchableRelationalDatabase(
+            dbType: EntryExtends.IsInUnitTests() ? "InMemory" : dbType,
+            connectionString: connectionString,
+            supportedDbs:
+            [
+                new MySqlSupportedDb(allowCache: allowCache, splitQuery: false),
+                new SqliteSupportedDb(allowCache: allowCache, splitQuery: true),
+                new InMemorySupportedDb()
+            ]);
+
+        // Authentication and Authorization
+        services.AddWeChatExamV2Authentication(configuration);
+
+        // Services
+        services.AddMemoryCache();
+        services.AddHttpClient();
+        services.AddAssemblyDependencies(typeof(Startup).Assembly);
+        services.AddScoped<IGlobalSettingsService, GlobalSettingsService>();
+        services.AddScoped<IGradingService, GradingService>();
+        services.AddScoped<ITagService, TagService>();
+        services.AddScoped<ITaxonomyService, TaxonomyService>();
+        services.AddScoped<IPaperService, PaperService>();
+        services.AddScoped<ChatClient>();
+        services.AddSingleton<AiTaskService>();
+        services.AddSingleton<PaperImportTasks>();
+        services.AddScoped<PaperImportService>();
+        services.AddScoped<IExamService, ExamService>();
+        services.AddScoped<IExtractService, ExtractService>();
+        services.AddScoped<IOptimizationService, OptimizationService>();
+        services.AddScoped<IFeedbackService, FeedbackService>();
+        services.AddScoped<IPaperAccessService, PaperAccessService>();
+        services.AddScoped<ContentCheckService>();
+        services.AddSingleton<ContentEmbeddingCache>();
+
+        // Background job queue
+        services.AddTaskQueueEngine();
+        services.AddScheduledTaskEngine();
+        services.RegisterBackgroundJob<Services.BackgroundJobs.DummyJob>();
+
+        // Configure Mock SKIT WeChat API Client instead of real one
+        if (MockWeChatService != null)
+        {
+            services.AddScoped<IWeChatService>(_ => MockWeChatService);
+        }
+
+        if (MockWeChatPayService != null)
+        {
+            services.AddScoped<IWeChatPayService>(_ => MockWeChatPayService);
+        }
+        
+        if (MockDistributionChannelService != null)
+        {
+            services.AddScoped<IDistributionChannelService>(_ => MockDistributionChannelService);
+        }
+
+        if (MockOllamaService != null)
+        {
+            services.AddScoped<IOllamaService>(_ => MockOllamaService);
+        }
+        else
+        {
+            services.AddScoped<IOllamaService, OllamaService>();
+        }
+
+        if (MockVipProductService != null)
+        {
+            services.AddScoped<IVipProductService>(_ => MockVipProductService);
+        }
+        else
+        {
+            services.AddScoped<IVipProductService, VipProductService>();
+        }
+
+        // Add Razor Pages and MVC for admin web interface
+        services.AddControllersWithViews();
+        services.AddRazorPages();
+        services.AddAssemblyDependencies(typeof(Startup).Assembly);
+        services.AddSingleton<NavigationState<Startup>>();
+
+        // Controllers
+        services.AddControllers()
+            .AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
+                options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            })
+            .AddApplicationPart(typeof(Startup).Assembly)
+            .AddApplicationPart(typeof(UiStackLayoutViewModel).Assembly)
+            .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+            .AddDataAnnotationsLocalization();
+
+        services.AddSwaggerGen(c =>
+        {
+            // Only include API controllers (exclude Management controllers which return views)
+            c.DocInclusionPredicate((_, apiDesc) => apiDesc.RelativePath?.StartsWith("api/") == true);
+
+            // Add JWT Bearer support in Swagger
+            var securityScheme = new Microsoft.OpenApi.OpenApiSecurityScheme
+            {
+                Name = "Authorization",
+                Description = "Enter 'Bearer {token}'",
+                In = Microsoft.OpenApi.ParameterLocation.Header,
+                Type = Microsoft.OpenApi.SecuritySchemeType.Http,
+                Scheme = "bearer",
+                BearerFormat = "JWT"
+            };
+
+            c.AddSecurityDefinition("Bearer", securityScheme);
+
+            // Only add security requirement to endpoints that are NOT decorated with [AllowAnonymous]
+            c.OperationFilter<SecurityRequirementsOperationFilter>();
+        });
+    }
+
+    public void Configure(WebApplication app)
+    {
+        app.UseExceptionHandler("/Error/Error");
+        app.UseUIStack();
+        app.UseStaticFiles();
+        app.UseRouting();
+        app.UseAuthentication();
+        app.UseAuthorization();
+        app.UseSwagger();
+        app.UseSwaggerUI();
+        app.MapDefaultControllerRoute();
+    }
+}

@@ -1,0 +1,173 @@
+@using Aiursoft.WebTools
+@model Aiursoft.WeChatExamV2.Models.DistributionChannelsViewModels.DetailsViewModel
+
+<h1 class="h3 mb-3">@Localizer["Channel Details"]</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Channel Information"]</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row mb-0">
+                    <dt class="col-sm-4">@Localizer["Agency Name"]</dt>
+                    <dd class="col-sm-8">@Model.Channel.AgencyName</dd>
+
+                    <dt class="col-sm-4">@Localizer["Status"]</dt>
+                    <dd class="col-sm-8">
+                        @if (Model.Channel.IsEnabled)
+                        {
+                            <span class="badge bg-success">@Localizer["Enabled"]</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">@Localizer["Disabled"]</span>
+                        }
+                    </dd>
+
+                    <dt class="col-sm-4">@Localizer["Created At"]</dt>
+                    <dd class="col-sm-8"><span data-utc-time="@Model.Channel.CreatedAt.ToHtmlDateTime()"></span></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title mb-0">@Localizer["Statistics"]</h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <div class="display-6 text-primary">@Model.Stats.RegistrationCount</div>
+                        <div class="text-muted">@Localizer["Registrations"]</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="display-6 text-success">@Model.Stats.PaidOrderCount</div>
+                        <div class="text-muted">@Localizer["Paid Orders"]</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="display-6 text-info">@Model.Stats.TotalPaidAmount.ToString("C")</div>
+                        <div class="text-muted">@Localizer["Total Amount"]</div>
+                    </div>
+                </div>
+                @if (Model.Stats.PaidOrderCount == 0 && Model.Stats.TotalPaidAmount == 0)
+                {
+                    <div class="alert alert-warning mt-3 mb-0" role="alert">
+                        <div class="alert-icon">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <div class="alert-message">
+                            @Localizer["Payment statistics are not yet implemented."]
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="card-title mb-0">@Localizer["Coupons"]</h5>
+        <a asp-action="CreateCoupon" asp-route-channelId="@Model.Channel.Id" class="btn btn-sm btn-primary">
+            <i data-lucide="plus"></i> @Localizer["Add Coupon"]
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover mb-0">
+                <thead>
+                    <tr>
+                        <th>@Localizer["Code"]</th>
+                        <th>@Localizer["Type"]</th>
+                        <th>@Localizer["Discount"]</th>
+                        <th>@Localizer["Usage"]</th>
+                        <th>@Localizer["Status"]</th>
+                        <th class="text-end">@Localizer["Actions"]</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var coupon in Model.Channel.Coupons)
+                    {
+                        <tr>
+                            <td><code class="user-select-all">@coupon.Code</code></td>
+                            <td>
+                                @if (coupon.IsSingleUse)
+                                {
+                                    <span class="badge bg-info">@Localizer["Single Use"]</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-primary">@Localizer["Multi Use"]</span>
+                                }
+                            </td>
+                            <td>¥@(coupon.AmountInFen / 100m)</td>
+                            <td>
+                                @if (coupon.IsSingleUse)
+                                {
+                                    if (coupon.UsedByUserId != null)
+                                    {
+                                        <span class="text-success" title="@coupon.UsedAt">@Localizer["Used by {0}", coupon.UsedByUserId]</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">@Localizer["Not Used"]</span>
+                                    }
+                                }
+                                else
+                                {
+                                    <span>@Localizer["Global"]</span>
+                                }
+                            </td>
+                            <td>
+                                @if (coupon.IsEnabled)
+                                {
+                                    <span class="text-success">@Localizer["Active"]</span>
+                                }
+                                else
+                                {
+                                    <span class="text-danger">@Localizer["Disabled"]</span>
+                                }
+                            </td>
+                            <td class="text-end">
+                                <form method="post" asp-action="DeleteCoupon" asp-route-id="@coupon.Id" asp-route-channelId="@Model.Channel.Id" onsubmit="return confirm('@Localizer["Are you sure?"]')" style="display: inline;">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">
+                                        <i data-lucide="trash-2"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex gap-2">
+    <form method="post" asp-action="ToggleEnabled" asp-route-id="@Model.Channel.Id" style="display: inline;">
+        @Html.AntiForgeryToken()
+        @if (Model.Channel.IsEnabled)
+        {
+            <button type="submit" class="btn btn-warning">
+                <i data-lucide="pause"></i> @Localizer["Disable Channel"]
+            </button>
+        }
+        else
+        {
+            <button type="submit" class="btn btn-success">
+                <i data-lucide="play"></i> @Localizer["Enable Channel"]
+            </button>
+        }
+    </form>
+    <a asp-action="Delete" asp-route-id="@Model.Channel.Id" class="btn btn-danger">
+        <i data-lucide="trash-2"></i> @Localizer["Delete"]
+    </a>
+    <a asp-action="Index" class="btn btn-secondary">
+        <i data-lucide="arrow-left"></i> @Localizer["Back to List"]
+    </a>
+</div>

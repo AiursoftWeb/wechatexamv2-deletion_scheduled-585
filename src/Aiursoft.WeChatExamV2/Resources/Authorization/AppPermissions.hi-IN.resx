@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Add Any KnowledgePoint" xml:space="preserve">
+    <value>कोई भी नॉलेजपॉइंट जोड़ें</value>
+  </data>
+  <data name="Add Articles" xml:space="preserve">
+    <value>लेख जोड़ें</value>
+  </data>
+  <data name="Add Distribution Channels" xml:space="preserve">
+    <value>वितरण चैनल जोड़ें</value>
+  </data>
+  <data name="Add Exams" xml:space="preserve">
+    <value>परीक्षाएँ जोड़ें</value>
+  </data>
+  <data name="Add New Roles" xml:space="preserve">
+    <value>नए भूमिकाएँ जोड़ें</value>
+  </data>
+  <data name="Add New Users" xml:space="preserve">
+    <value>नए उपयोगकर्ता जोड़ें</value>
+  </data>
+  <data name="Add Papers" xml:space="preserve">
+    <value>पेपर्स जोड़ें</value>
+  </data>
+  <data name="Add Questions" xml:space="preserve">
+    <value>प्रश्न जोड़ें</value>
+  </data>
+  <data name="Add VIP Products" xml:space="preserve">
+    <value>वीआईपी उत्पाद जोड़ें</value>
+  </data>
+  <data name="Allows adding of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>किसी भी knowledgePoint को, स्वामित्व की परवाह किए बिना, जोड़ने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows adding of articles, regardless of ownership." xml:space="preserve">
+    <value>लेखों को मालिकाना हक के बिना जोड़ने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows adding of exams, regardless of ownership." xml:space="preserve">
+    <value>परीक्षाओं को मालिकाना हक के बिना जोड़ने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows adding of papers, regardless of ownership." xml:space="preserve">
+    <value>किसी भी मालिकत्व के बिना पेपर्स को जोड़ने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows adding of questions, regardless of ownership." xml:space="preserve">
+    <value>स्वामित्व की परवाह किए बिना, प्रश्न जोड़ने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows assigning or removing roles for any user." xml:space="preserve">
+    <value>किसी भी उपयोगकर्ता को भूमिकाएँ सौंपने या हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows creating new VIP products with category, price, and duration settings." xml:space="preserve">
+    <value>श्रेणी, मूल्य और अवधि सेटिंग्स के साथ नए VIP उत्पाद बनाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows deleting tags from the system. Note that deleting a tag will not delete associated questions." xml:space="preserve">
+    <value>प्रणाली से टैग को हटाने की अनुमति देता है। ध्यान दें कि एक टैग को हटाने से जुड़े प्रश्नों को हटाया नहीं जाएगा।</value>
+  </data>
+  <data name="Allows deleting user feedbacks." xml:space="preserve">
+    <value>उपयोगकर्ता प्रतिक्रियाओं को हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows deletion of any category, regardless of ownership." xml:space="preserve">
+    <value>किसी भी श्रेणी को, स्वामित्व की परवाह किए बिना, हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows deletion of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>किसी भी knowledgePoint को, स्वामित्व की परवाह किए बिना, हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows deletion of articles, regardless of ownership." xml:space="preserve">
+    <value>लेखों को स्वामित्व के बिना हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows deletion of exams, regardless of ownership." xml:space="preserve">
+    <value>परीक्षाओं को स्वामित्व के बिना हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows deletion of papers, regardless of ownership." xml:space="preserve">
+    <value>किसी भी मालिकत्व के बिना पेपर्स को हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows deletion of questions, regardless of ownership." xml:space="preserve">
+    <value>स्वामित्व की परवाह किए बिना प्रश्नों को हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows editing of any category, regardless of ownership." xml:space="preserve">
+    <value>किसी भी श्रेणी को, स्वामित्व की परवाह किए बिना, संपादित करने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows editing of any knowledgePoint, regardless of ownership." xml:space="preserve">
+    <value>किसी भी knowledgePoint को, स्वामित्व की परवाह किए बिना, संपादित करने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows editing of articles, regardless of ownership." xml:space="preserve">
+    <value>लेखों के संपादन की अनुमति देता है, स्वामित्व के बिना किसी भी तरह।</value>
+  </data>
+  <data name="Allows editing of exams, regardless of ownership." xml:space="preserve">
+    <value>परीक्षाओं के संपादन की अनुमति देता है, स्वामित्व के बिना कोई भी नहीं।</value>
+  </data>
+  <data name="Allows editing of papers, regardless of ownership." xml:space="preserve">
+    <value>किसी भी मालिकत्व के बिना पेपर्स के संपादन की अनुमति देता है।</value>
+  </data>
+  <data name="Allows editing of questions, regardless of ownership." xml:space="preserve">
+    <value>सवालों को संपादित करने की अनुमति देता है, चाहे उनका स्वामित्व किसी के पास हो।</value>
+  </data>
+  <data name="Allows extracting knowledge points, questions, tags from articles using AI." xml:space="preserve">
+    <value>AI का उपयोग करके लेखों से ज्ञान बिंदुओं, प्रश्नों, टैग्स को निकालने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows managing accounting." xml:space="preserve">
+    <value>लेखांकन प्रबंधन की अनुमति देता है।</value>
+  </data>
+  <data name="Allows modification of distribution channel details and enabling/disabling channels." xml:space="preserve">
+    <value>वितरण चैनल विवरण में संशोधन और चैनल सक्षम/अक्षम करने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
+    <value>रोल नामों और उनके सौंपे गए अनुमतियों में संशोधन की अनुमति देता है।</value>
+  </data>
+  <data name="Allows modification of user details like email and roles, and can also reset user passwords." xml:space="preserve">
+    <value>उपयोगकर्ता के विवरण जैसे ईमेल और भूमिकाओं में संशोधन की अनुमति देता है, और उपयोगकर्ता के पासवर्ड को रीसेट भी कर सकता है।</value>
+  </data>
+  <data name="Allows modifying global system settings." xml:space="preserve">
+    <value>ग्लोबल सिस्टम सेटिंग्स को संशोधित करने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows modifying VIP product settings including price, duration, and enabled status." xml:space="preserve">
+    <value>कीमत, अवधि और सक्षम स्थिति सहित VIP उत्पाद सेटिंग्स को संशोधित करने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows Reading of exams, regardless of ownership." xml:space="preserve">
+    <value>परीक्षाओं को पढ़ने की अनुमति देता है, स्वामित्व के बिना भी।</value>
+  </data>
+  <data name="Allows reading of questions, regardless of ownership." xml:space="preserve">
+    <value>प्रश्नों को मालिकाना हक के बिना पढ़ने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows the permanent deletion of distribution channels." xml:space="preserve">
+    <value>वितरण चैनलों के स्थायी रूप से हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows the permanent deletion of roles." xml:space="preserve">
+    <value>भूमिकाओं को स्थायी रूप से हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows the permanent deletion of user accounts." xml:space="preserve">
+    <value>उपयोगकर्ता खातों को स्थायी रूप से हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows the permanent deletion of VIP products." xml:space="preserve">
+    <value>वीआईपी उत्पादों की स्थायी हटाने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows triggering background jobs to optimize question answers and explanations using AI." xml:space="preserve">
+    <value>AI का उपयोग करके प्रश्न के उत्तर और व्याख्याओं को अनुकूलित करने के लिए पृष्ठभूमि कार्यों को ट्रिगर करने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows updating the status of user feedbacks." xml:space="preserve">
+    <value>उपयोगकर्ता प्रतिक्रियाओं की स्थिति को अपडेट करने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing and managing background job queues and their execution status." xml:space="preserve">
+    <value>पृष्ठभूमि कार्य भंडारण और उनके निष्पादन स्थिति के दृश्य देखने और प्रबंधन की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing payment orders, payment details, and user payment history." xml:space="preserve">
+    <value>भुगतान आदेशों, भुगतान विवरण और उपयोगकर्ता भुगतान इतिहास को देखने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing system-level information and settings." xml:space="preserve">
+    <value>सिस्टम-स्तरीय जानकारी और सेटिंग्स देखने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing the list of all users." xml:space="preserve">
+    <value>सभी उपयोगकर्ताओं की सूची देखने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing the list of distribution channels and their statistics." xml:space="preserve">
+    <value>वितरण चैनलों की सूची और उनके आंकड़ों को देखने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
+    <value>भूमिकाओं की सूची और उनके सौंपे गए अनुमतियों को देखने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing the list of user feedbacks." xml:space="preserve">
+    <value>उपयोगकर्ता फीडबैक की सूची देखने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing VIP products and their configuration." xml:space="preserve">
+    <value>वीआईपी उत्पादों और उनकी कॉन्फ़िगरेशन को देखने की अनुमति देता है।</value>
+  </data>
+  <data name="Allows viewing, adding, and deleting VIP memberships for users." xml:space="preserve">
+    <value>उपयोगकर्ताओं के लिए VIP सदस्यताएं देखना, जोड़ना और हटाना की अनुमति देता है।</value>
+  </data>
+  <data name="Assign Roles to Users" xml:space="preserve">
+    <value>उपयोगकर्ताओं को भूमिकाएँ नियत करें</value>
+  </data>
+  <data name="Delete Any Category" xml:space="preserve">
+    <value>किसी भी श्रेणी को हटाएं</value>
+  </data>
+  <data name="Delete Any KnowledgePoint" xml:space="preserve">
+    <value>किसी भी ज्ञान बिंदु को हटाएं</value>
+  </data>
+  <data name="Delete Articles" xml:space="preserve">
+    <value>लेख हटाएं</value>
+  </data>
+  <data name="Delete Distribution Channels" xml:space="preserve">
+    <value>वितरण चैनल्स हटाएँ</value>
+  </data>
+  <data name="Delete Exams" xml:space="preserve">
+    <value>परीक्षाओं को हटाएं</value>
+  </data>
+  <data name="Delete Feedbacks" xml:space="preserve">
+    <value>प्रतिक्रियाओं को हटाएं</value>
+  </data>
+  <data name="Delete Papers" xml:space="preserve">
+    <value>कागजात हटाएं</value>
+  </data>
+  <data name="Delete Questions" xml:space="preserve">
+    <value>प्रश्न हटाएं</value>
+  </data>
+  <data name="Delete Roles" xml:space="preserve">
+    <value>भूमिकाएँ हटाएँ</value>
+  </data>
+  <data name="Delete Users" xml:space="preserve">
+    <value>उपयोगकर्ता हटाएं</value>
+  </data>
+  <data name="Delete VIP Products" xml:space="preserve">
+    <value>वीआईपी उत्पादों को हटाएं</value>
+  </data>
+  <data name="Edit Any Category" xml:space="preserve">
+    <value>किसी भी श्रेणी को संपादित करें</value>
+  </data>
+  <data name="Edit Any KnowledgePoint" xml:space="preserve">
+    <value>किसी भी ज्ञानबिंदु को संपादित करें</value>
+  </data>
+  <data name="Edit Articles" xml:space="preserve">
+    <value>लेख संपादित करें</value>
+  </data>
+  <data name="Edit Distribution Channels" xml:space="preserve">
+    <value>वितरण चैनलों को संपादित करें</value>
+  </data>
+  <data name="Edit Exams" xml:space="preserve">
+    <value>परीक्षाओं के संपादित करें</value>
+  </data>
+  <data name="Edit Feedbacks" xml:space="preserve">
+    <value>प्रतिक्रियाओं को संपादित करें</value>
+  </data>
+  <data name="Edit Papers" xml:space="preserve">
+    <value>पेपर्स संपादित करें</value>
+  </data>
+  <data name="Edit Questions" xml:space="preserve">
+    <value>प्रश्न संपादित करें</value>
+  </data>
+  <data name="Edit Role Information" xml:space="preserve">
+    <value>भूमिका की जानकारी संपादित करें</value>
+  </data>
+  <data name="Edit User Information" xml:space="preserve">
+    <value>उपयोगकर्ता जानकारी संपादित करें</value>
+  </data>
+  <data name="Edit VIP Products" xml:space="preserve">
+    <value>वीआईपी उत्पादों को संपादित करें</value>
+  </data>
+  <data name="Grants permission to create new distribution channels." xml:space="preserve">
+    <value>नए वितरण चैनलों को बनाने की अनुमति देता है।</value>
+  </data>
+  <data name="Grants permission to create new roles." xml:space="preserve">
+    <value>नए भूमिकाएँ बनाने की अनुमति प्रदान करता है।</value>
+  </data>
+  <data name="Grants permission to create new user accounts." xml:space="preserve">
+    <value>नए उपयोगकर्ता खाते बनाने की अनुमति प्रदान करता है।</value>
+  </data>
+  <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
+    <value>एप्लिकेशन इंस्टेंस को पुनरारंभ करने की अनुमति प्रदान करता है। इससे उपलब्धता में व्यवधान हो सकता है, लेकिन सभी सेटिंग्स और कैश पुनः लोड हो जाएंगे।</value>
+  </data>
+  <data name="Manage Accounting" xml:space="preserve">
+    <value>लेखा प्रबंधन</value>
+  </data>
+  <data name="Manage Global Settings" xml:space="preserve">
+    <value>सभी सेटिंग्स का प्रबंधन करें</value>
+  </data>
+  <data name="Manage Tags" xml:space="preserve">
+    <value>टैग प्रबंधित करें</value>
+  </data>
+  <data name="Manage VIP Members" xml:space="preserve">
+    <value>VIP सदस्यों का प्रबंधन</value>
+  </data>
+  <data name="Read Distribution Channels" xml:space="preserve">
+    <value>वितरण चैनल्स पढ़ें</value>
+  </data>
+  <data name="Read Exams" xml:space="preserve">
+    <value>परीक्षाओं को पढ़ें</value>
+  </data>
+  <data name="Read Feedbacks" xml:space="preserve">
+    <value>प्रतिक्रियाएँ पढ़ें</value>
+  </data>
+  <data name="Read Payment Orders" xml:space="preserve">
+    <value>भुगतान आदेश पढ़ें</value>
+  </data>
+  <data name="Read Questions" xml:space="preserve">
+    <value>प्रश्न पढ़ें</value>
+  </data>
+  <data name="Read Roles" xml:space="preserve">
+    <value>भूमिकाएँ पढ़ें</value>
+  </data>
+  <data name="Read Users" xml:space="preserve">
+    <value>उपयोगकर्ताओं को पढ़ें</value>
+  </data>
+  <data name="Read VIP Products" xml:space="preserve">
+    <value>VIP उत्पाद पढ़ें</value>
+  </data>
+  <data name="Reboot This App" xml:space="preserve">
+    <value>इस ऐप को पुनरारंभ करें</value>
+  </data>
+  <data name="Trigger Optimization Jobs" xml:space="preserve">
+    <value>अनुकूलन कार्यों को सक्रिय करें</value>
+  </data>
+  <data name="Use AI Extractor" xml:space="preserve">
+    <value>AI एक्सट्रैक्टर का उपयोग करें</value>
+  </data>
+  <data name="View Background Jobs" xml:space="preserve">
+    <value>पृष्ठभूमि कार्य देखें</value>
+  </data>
+  <data name="View System Context" xml:space="preserve">
+    <value>सिस्टम संदर्भ देखें</value>
+  </data>
+
+</root>
