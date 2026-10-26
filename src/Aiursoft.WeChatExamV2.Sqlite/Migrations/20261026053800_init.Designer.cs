@@ -12,7 +12,7 @@ namespace Aiursoft.WeChatExamV2.Sqlite.Migrations
 {
     [DbContext(typeof(SqliteContext))]
     [Migration("20261026053800_init")]
-    partial class init
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -13,7 +13,7 @@ namespace Aiursoft.WeChatExamV2.MySql.Migrations
 {
     [DbContext(typeof(MySqlContext))]
     [Migration("20261026053738_init")]
-    partial class init
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
